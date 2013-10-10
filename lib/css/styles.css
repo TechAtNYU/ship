@@ -156,13 +156,14 @@ header.main a:hover {
   text-decoration: none;
 }
 .project {
-  background: green;
   float: left;
-  min-width: 100px;
-  min-height: 100px;
   overflow: auto;
 }
+.project div {
+  padding: 20px;
+}
 .footer {
+  display: none;
   margin: 0 auto;
   margin-top: 2em;
 }
