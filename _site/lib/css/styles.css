@@ -179,6 +179,7 @@ header.main .tagline {
   text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
   position: relative;
   text-align: center;
+  text-transform: normal;
 }
 header.main .tagline h1 {
   font-family: "Radikal-UltraThin", helvetica, arial, sans-serif;
