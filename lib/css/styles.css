@@ -271,7 +271,6 @@ footer .colophon {
   }
   header.main nav li {
     display: inline-block;
-    border: 1px solid black;
     height: 21em;
     width: 5em;
     padding-top: 13em;
