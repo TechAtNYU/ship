@@ -156,11 +156,14 @@ header.main a:hover {
   text-decoration: none;
 }
 .project {
+  background-position: center center;
   float: left;
   overflow: auto;
 }
 .project div {
   padding: 20px;
+  background: rgba(255, 255, 255, 0.75);
+  display: none;
 }
 .footer {
   display: none;

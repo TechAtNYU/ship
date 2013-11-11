@@ -8,11 +8,12 @@
  }
 body {
 	 padding-bottom: 2em;
+	 //background: #00BCF2 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAQ0lEQVQYV2NkIBIwYlPHKmb7//erwyhyGAphitAVoyhEV4SsGK4QlyKYOFghLuuQxRlxKYJ5EquJuEIKpBhuIqHgBADHSEq4yTIx7QAAAABJRU5ErkJggg==);
 }
 
 ::selection {
 	background: @nyu; /* Safari */
-	}
+}
 ::-moz-selection {
 	background: @nyu; /* Firefox */
 }
@@ -53,11 +54,13 @@ header.main {
 
 }
 .project {
-	
+	background-position: center center;
 	float: left;
 	overflow: auto;
 	div {
 		padding: 20px;
+		background: rgba(255, 255, 255, .75);
+		display: none;
 	}
 }
 
