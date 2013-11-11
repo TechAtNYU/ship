@@ -1,22 +1,22 @@
 body {
-	font-family: 'Cabin', sans-serif;
+	font: 1em @font;
 	font-weight: normal;
 	line-height: 1.5;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
+	font-weight: normal;
 	line-height: 1.25;
 	margin-bottom: .1em;
 }
-
 h1 {
 	font-size: 2.5em;
 	font-weight: bold;
-	
+	font-family: @bold;
 }
 h2 {
 	font-size: 1.75em;
 	font-weight: bold;
+	font-family: @bold;
 }
 h3 {
 	font-size: 1.5em;
@@ -28,29 +28,26 @@ h5 {
 	font-size: 1em;
 	font-style: italic;
 }
-.intro {
-	font-weight: lighter;
-	p {
-		font-size: 1.25em;
+.header {
+	font-family: @light;
+	h1 {
+		line-height: 1;
 	}
 }
 hr {
 	clear: both;
 }
-ul + h5 {
-	margin-top: .5em;
-}
 p {
 	font-size: 100%;
 	line-height: 1.75;
-	margin-bottom: .5em;
+	margin-bottom: .75em;
 }
 a:link, a:visited, a:active {
-	color: @nyu;
+	color: @accent;
 }
 a:hover {
-	color: lighten(@nyu, 20%);
+	color: lighten(@accent, 20%);
 }
-.see {
-	text-align: center;
+h3 + ul {
+	margin-bottom: 1em;
 }

@@ -1,18 +1,49 @@
 //colors
 
-
+@grayLightest: #eee;
 @grayLight: #ccc;
 @grayMed: #666;
 @grayMedDark: #444;
 
-@nyu: #57068c;
-@nyurgba: rgba(87, 6, 140, .5);
-
-@blue: #1f0e75;
+@accent: #EE70A5;
+@accentBold: #B2145C;
 
 //sizes
 
-@oversize: 10em;
 @bump: 125%;
+@miniBump: 110%;
 
-@golden: 1.61803398875;
+@font: "Helvetica Neue", helvetica, arial, sans-serif;
+@light: "Helvetica Neue", helvetica, arial, sans-serif;
+@black: "Helvetica Neue", helvetica, arial, sans-serif;
+@bold: "Helvetica Neue", helvetica, arial, sans-serif;
+
+@font: "Radikal", helvetica, arial, sans-serif;
+@light: "Radikal-UltraThin", helvetica, arial, sans-serif;
+@black: "Radikal-Black", helvetica, arial, sans-serif;
+@bold: "Radikal-Bold", helvetica, arial, sans-serif;
+
+
+
+@bshadow: rgba(0,0,0,.3);
+@boxshadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+@glow: 0px 0px 20px rgba(255,255,255, .8);
+
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+.box-shadow (@shadow: 0px 0px 5px rgba(50, 50, 50, 0.75)) {
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow:    @shadow;
+	box-shadow:         @shadow;
+}
+
+
+
+@sparse: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+@dense: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAE0lEQVQIW2NkYGD4D8SMjEACDAAOKQEDKKNmJgAAAABJRU5ErkJggg==);
+@densest: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFUlEQVQIW2NkYGD4D8SMjEACBP4DAA8oAgK5wqQTAAAAAElFTkSuQmCC);

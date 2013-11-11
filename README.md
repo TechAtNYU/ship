@@ -1,4 +1,2 @@
-ship-techatnyu
-==============
-
-ship at tech@nyu
+techatnyu-startup-week
+======================

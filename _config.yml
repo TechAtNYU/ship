@@ -1,4 +1,3 @@
-name: grungerabbit
+name: demodays
 markdown: redcarpet
 pygments: true
-golden: 1.61803398875;
