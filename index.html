@@ -1,33 +1,56 @@
 ---
 layout: default
-title: ship tech@NYU
+title: Ship
 ---
-<!--
-<div class="intro">
-	
+<div class="overlay">hi</div>
+<section class="intro">
+<div class="site">
 {% capture intro %}
   {% include intro.markdown %}
 {% endcapture %}
 {{ intro | unindent | markdownify }}
-	
+</div>
+</section>
 
-
-</div>-->
-
+<section class="intro">
+<div class="site">
 <ul class="posts">
-	  {% for post in site.posts %}
-  		<li class="project" data-bg="{% if post.bg %}{{post.bg}}{% else %}{{ post.title }}{% endif %}">
-  			<div>
-				<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  			
-  			  <div class="attribution">
-  				<p>{{ post.date | date_to_string }}</p>
-				
-  				</div>  
-  			
-  			<p>{{post.content}}</p>
-  			<p><a href="{{ post.url }}">Read more</a></p>
-			</div>
-		</li>
-  	{% endfor %}
-</ul>		
+{% for post in site.posts %}
+	<li class="project" data-bg="{% if post.bg %}{{post.bg}}{% else %}{{ post.title }}{% endif %}">
+		<div>
+			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		
+<div class="attribution">
+	<p>{{ post.date | date_to_string }}</p>
+	
+	</div>  
+
+		<p>{{post.content}}</p>
+		<p><a href="{{ post.url }}">Read more</a></p>
+		</div>
+	</li>
+{% endfor %}
+</ul>	
+</div>
+</section>
+
+<section class="details">
+<div class="overlay">
+<div class="site">
+{% capture details %}
+  {% include details.markdown %}
+{% endcapture %}
+{{ details | unindent | markdownify }}
+</div>
+</div>
+</section>
+</section>
+<section class="main-copy">
+<div class="site">
+{% capture copy %}
+  {% include copy.markdown %}
+{% endcapture %}
+{{ copy | unindent | markdownify }}
+</div>
+</section>
+{% include footer.html %}
