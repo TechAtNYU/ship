@@ -104,7 +104,7 @@ h3 + ul {
   box-sizing: border-box;
 }
 body {
-  padding-bottom: 2em;
+  background: black;
 }
 ::selection {
   background: #00bcf2;
@@ -136,16 +136,39 @@ hr {
   max-width: 100%;
 }
 .overlay {
-  background-color: rgba(205, 35, 26, 0.15);
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPElEQVQYV2NkQAP/gYARCNDFUQRgirAphitEl0TngxXisg5ZnBGXIpgbYfIYjkb3BNxGbBLYxIgyEaQRAA8KKAWYsZtjAAAAAElFTkSuQmCC);
+  *zoom: 1;
+  background-color: rgba(33, 52, 71, 0.5);
   padding: 1.5em 0 3em;
   height: 100%;
 }
+.overlay:before,
+.overlay:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.overlay:after {
+  clear: both;
+}
+.overlay:before,
+.overlay:after {
+  content: " ";
+  display: table;
+}
+.overlay:after {
+  clear: both;
+}
+.waves {
+  padding: .125em 0;
+  color: white;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPElEQVQYV2NkQAP/gYARCNDFUQRgirAphitEl0TngxXisg5ZnBGXIpgbYfIYjkb3BNxGbBLYxIgyEaQRAA8KKAWYsZtjAAAAAElFTkSuQmCC);
+  background-position: center center;
+}
 header.main {
   *zoom: 1;
-  background-repeat: no-repeat;
-  background-color: white;
-  color: black;
+  background-color: #222222;
+  background-repeat: repeat;
+  color: white;
 }
 header.main:before,
 header.main:after {
@@ -179,10 +202,19 @@ header.main .logo h1 {
 }
 header.main .logo h1 {
   font-size: 10em;
+  text-shadow: 5px 5px 0px #cd231a, 4px 4px 0px #cd231a, 3px 3px 0px #cd231a, 2px 2px 0px #cd231a, 1px 1px 0px #cd231a;
 }
 header.main nav li {
-  text-align: center;
+  text-align: right;
   vertical-align: bottom;
+}
+header.main nav li a {
+  color: white;
+  opacity: .5;
+  text-decoration: none;
+}
+header.main nav li:hover a {
+  opacity: 1;
 }
 header.main .tagline {
   float: right;
@@ -198,18 +230,20 @@ header.main .tagline h1 {
 }
 .container > section {
   font-size: 110%;
+  background: white;
 }
-.container > section:nth-child(2n) {
-  background: #eeeeee;
+.container > section.blog ul {
+  list-style: none;
 }
 footer {
   font-size: 110%;
   padding: .5em 0;
+  color: white;
 }
 footer a:link,
 footer a:visited,
 footer a:active {
-  color: black;
+  color: white;
   font-weight: bold;
   font-family: "Radikal-Bold", helvetica, arial, sans-serif;
   text-decoration: none;
@@ -230,9 +264,10 @@ footer ul li {
   display: inline-block;
 }
 footer ul li a {
+  color: black;
   padding: .5em .4em .25em;
   text-decoration: none;
-  background: white;
+  background: #222222;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -273,7 +308,7 @@ footer .colophon {
   header.main nav li {
     display: inline-block;
     height: 21em;
-    width: 5em;
+    width: 6em;
     padding-top: 13em;
   }
   .tagline {

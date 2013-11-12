@@ -17,7 +17,7 @@
   }
 }
 body {
-  padding-bottom: 2em;
+  background: black;
 }
 ::selection {
 	background: @accent; /* Safari */
@@ -46,16 +46,23 @@ hr {
 	max-width: 100%;
 }
 .overlay {
-	background-color: @redT;
-	background-image: @chevronw;
+	.clearfix();
+	background-color: @gentGreyT;
+//	background-image: @tinyv;
 	padding: 1.5em 0 3em;
 	height: 100%;
 }
+.waves {
+	padding: .125em 0;
+	color: white;
+	background-image: @chevronw;
+	background-position: center center;
+}
 header.main {
 	.clearfix();
-	background-repeat: no-repeat;
-	background-color: white;
-	color: black;
+	background-color: @grayDark;
+	background-repeat: repeat;
+	color: white;
 	li {
 		list-style: none;
 	}
@@ -68,17 +75,27 @@ header.main {
 		float: left;
 		img, h1 {
 			display: block;
-			
 		}
 		h1 {
 			font-size: 10em;
-			//text-shadow: 0px 0px 20px @bshadow;
+			text-shadow: 5px 5px 0px @red, 4px 4px 0px @red, 3px 3px 0px @red, 2px 2px 0px @red, 1px 1px 0px @red;;
 		}
 	}
 	nav {
 		li {
-			text-align: center;
+			text-align: right;
 			vertical-align: bottom;
+			a {
+				color: white;
+				opacity: .5;
+				text-decoration: none;
+				
+			}
+			&:hover {
+				a {
+					opacity: 1;
+				}
+			}
 		}
 	}
 	.tagline {
@@ -96,15 +113,20 @@ header.main {
 }
 .container > section {
 	font-size: @miniBump;
+	background: white;
 	&:nth-child(2n) {
-		background: @grayLightest;
+	//	background: @grayLightest;
+	}
+	&.blog ul {
+		list-style: none;
 	}
 }
 footer {	
 	font-size: @miniBump;
 	padding: .5em 0;
+	color: white;
 	a:link, a:visited, a:active {
-		color: black;
+		color: white;
 		font-weight: bold;
 		font-family: @bold;
 		text-decoration: none;
@@ -123,9 +145,10 @@ footer {
 		li {
 			display: inline-block;
 			a {
+				color: black;
 				padding: .5em .4em .25em;
 				text-decoration: none;
-				background: white;
+				background: @grayDark;
 				.rounded-corners(50px);
 			}
 		}
