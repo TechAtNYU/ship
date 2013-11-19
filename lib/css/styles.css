@@ -204,6 +204,9 @@ header.main .logo h1 {
   font-size: 10em;
   text-shadow: 5px 5px 0px #cd231a, 4px 4px 0px #cd231a, 3px 3px 0px #cd231a, 2px 2px 0px #cd231a, 1px 1px 0px #cd231a;
 }
+header.main .logo aside {
+  display: none;
+}
 header.main nav li {
   text-align: right;
   vertical-align: bottom;
@@ -215,6 +218,39 @@ header.main nav li a {
 }
 header.main nav li:hover a {
   opacity: 1;
+}
+header.main .sticky {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 8em;
+}
+header.main .sticky div {
+  background: #213447;
+  width: 156px;
+  height: 90em;
+  margin-top: -10px;
+  padding: .75em;
+}
+header.main .sticky span {
+  display: none;
+}
+header.main .sticky img {
+  max-width: 15em;
+}
+header.main .sticky h2 {
+  font-size: 5em;
+}
+header.main .sticky-header {
+  position: fixed;
+  background: black;
+  top: 0;
+}
+header.main .sticky-header li {
+  position: static;
+  width: 20px;
+  padding: 0;
 }
 header.main .tagline {
   float: right;
@@ -230,7 +266,11 @@ header.main .tagline h1 {
 }
 .container > section {
   font-size: 110%;
-  background: white;
+  background-color: white;
+}
+.container > section.load-wave {
+  background-image: url(/lib/img/wave2.png);
+  background-repeat: repeat-y;
 }
 .container > section.blog ul {
   list-style: none;
@@ -298,18 +338,24 @@ footer .colophon {
     width: 65%;
     font-size: 125%;
   }
+  .description {
+    width: 50%;
+  }
   header.main {
     height: 100%;
     background-repeat: repeat;
   }
   header.main nav {
-    float: right;
+    position: absolute;
+    top: 0;
   }
   header.main nav li {
     display: inline-block;
-    height: 21em;
-    width: 6em;
-    padding-top: 13em;
+    position: relative;
+    width: 8.75em;
+    height: 24em;
+    padding-top: 22em;
+    padding-bottom: 3em;
   }
   .tagline {
     font-size: 1.25em;

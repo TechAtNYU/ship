@@ -1,3 +1,4 @@
+
 * {
 	margin: 0;
 	padding: 0;
@@ -58,6 +59,7 @@ hr {
 	background-image: @chevronw;
 	background-position: center center;
 }
+
 header.main {
 	.clearfix();
 	background-color: @grayDark;
@@ -80,6 +82,9 @@ header.main {
 			font-size: 10em;
 			text-shadow: 5px 5px 0px @red, 4px 4px 0px @red, 3px 3px 0px @red, 2px 2px 0px @red, 1px 1px 0px @red;;
 		}
+		aside {
+			display: none;
+		}
 	}
 	nav {
 		li {
@@ -98,6 +103,40 @@ header.main {
 			}
 		}
 	}
+
+	.sticky {
+		position: fixed;
+		display: none;
+		left: 0;
+		top: 0;
+		width: 8em;
+		div {
+			background: @gentGrey;
+			width: 156px;
+			height: 90em;
+			margin-top: -10px;
+			padding: .75em;
+		}
+		span {
+			display: none;
+		}
+		img {
+			max-width: 15em;
+		}
+		h2 {
+			font-size: 5em;
+		}
+	}
+	.sticky-header {
+		position: fixed;
+		background: black;
+		top: 0;
+		li {
+			position: static;
+			width: 20px;
+			padding: 0;
+		}
+	}
 	.tagline {
 		float: right;
 		text-shadow: @glow;
@@ -113,9 +152,13 @@ header.main {
 }
 .container > section {
 	font-size: @miniBump;
-	background: white;
+		background-color: white;
+		&.load-wave {
+			background-image: url(/lib/img/wave2.png);
+			background-repeat: repeat-y;
+		}
 	&:nth-child(2n) {
-	//	background: @grayLightest;
+		//background: @grayLightest;
 	}
 	&.blog ul {
 		list-style: none;
