@@ -272,6 +272,9 @@ header.main .tagline h1 {
   background-image: url(/lib/img/wave2.png);
   background-repeat: repeat-y;
 }
+.container > section.intro {
+  font-size: 1.5em;
+}
 .container > section.blog ul {
   list-style: none;
 }
@@ -344,6 +347,7 @@ footer .colophon {
   header.main {
     height: 100%;
     background-repeat: repeat;
+    background-position: center top;
   }
   header.main nav {
     position: absolute;
