@@ -183,11 +183,22 @@ header.main {
 			background-image: url(/lib/img/wave2.png);
 			background-repeat: repeat-y;
 		}
-	&:nth-child(2n) {
-		//background: @blue;
+	&:nth-child(2) {
+		background-color: @boatLightest;
+	}
+	&:nth-child(3) {
+		background-color: @boatLighter;
+	}
+	&:nth-child(4) {
+		background-color: @boatMed;
+	}
+	&:nth-child(5) {
+		background-color: @boatDark;
+	}
+	&:nth-child(6) {
+		background-color: @boatDarker;
 	}
 	&.intro {
-		//background: lighten(@accent, 35%);
 		p {
 			font-size: 1.25em;
 			line-height: 1.75;
@@ -205,17 +216,37 @@ header.main {
 	&.blog ul {
 		list-style: none;
 	}
+	.category {
+		color: @gentGreyT;
+		text-align: center;
+		letter-spacing: .5em;
+		font-family: @light;
+		font-style: normal;
+		font-weight: light;
+		margin-bottom: 1em;
+		text-transform: uppercase;
+		//background: @chevronw;
+		//background-repeat: repeat-x;
+		//background-position: center;
+	}
 }
 .posts {
 	li {
 		padding: 1em 0;
+	}
+	.project {
+		img {
+			max-width: 45%;
+			float: right;
+		}
 	}
 }
 footer {	
 	font-size: @miniBump;
 	padding: .5em 0;
 	color: white;
-	background: black;
+	background: @boatDarkest;
+	min-height: 50em;
 	a:link, a:visited, a:active {
 		color: white;
 		font-weight: bold;

@@ -11,11 +11,15 @@ title: SHIP tech@NYU
 </div>
 </section>
 
-<section class="blog">
+<section class="blog featured">
 <div class="site">
+	<h5 class="category">Featured</h5>
+	
 <ul class="posts">
 {% for post in site.posts %}
-	<li class="project" data-bg="{% if post.bg %}{{post.bg}}{% else %}{{ post.title }}{% endif %}">
+	{% if post.featured %}
+	<li class="project">
+		<img src="{{ post.image }}">
 		<div class="description">
 			<h1>{{ post.title }}</h1>
 			
@@ -28,10 +32,94 @@ title: SHIP tech@NYU
 			<p><a href="{{ post.site }}">{{ post.site }}</a></p>
 		</div>
 	</li>
+	{% endif %}
 {% endfor %}
 </ul>	
 </div>
 </section>
+
+<section class="blog demodays">
+<div class="site">
+	<h5 class="category">DemoDays</h5>
+<ul class="posts">
+{% for post in site.posts %}
+	{% if post.demodays %}
+	<li class="project">
+		<img src="{{ post.image }}">
+		<div class="description">
+			<h1>{{ post.title }}</h1>
+			
+			<div class="attribution">
+				<p>{{ post.creator }}</p>
+	
+			</div>  
+			<p>{{post.content}}</p>
+			<!--<img src="http://localhost:4000/lib/img/cats/five.jpg" class="project-image">-->
+			<p><a href="{{ post.site }}">{{ post.site }}</a></p>
+		</div>
+	</li>
+	{% endif %}
+{% endfor %}
+</ul>	
+</div>
+</section>
+
+
+
+<section class="blog eboard">
+<div class="site">
+	<h5 class="category">2013-2014 e-board</h5>
+<ul class="posts">
+{% for post in site.posts %}
+	{% if post.eboard %}
+	<li class="project">
+		<img src="{{ post.image }}">
+		<div class="description">
+			<h1>{{ post.title }}</h1>
+			
+			<div class="attribution">
+				<p>{{ post.creator }}</p>
+	
+			</div>  
+			<p>{{post.content}}</p>
+			<!--<img src="http://localhost:4000/lib/img/cats/five.jpg" class="project-image">-->
+			<p><a href="{{ post.site }}">{{ post.site }}</a></p>
+		</div>
+	</li>
+	{% endif %}
+{% endfor %}
+</ul>	
+</div>
+</section>
+
+
+<section class="blog alumni">
+<div class="site">
+	<h5 class="category">Alumni</h5>
+<ul class="posts">
+{% for post in site.posts %}
+	{% if post.alumni %}
+	<li class="project">
+		<img src="{{ post.image }}">
+		<div class="description">
+			<h1>{{ post.title }}</h1>
+			
+			<div class="attribution">
+				<p>{{ post.creator }}</p>
+	
+			</div>  
+			<p>{{post.content}}</p>
+			<!--<img src="http://localhost:4000/lib/img/cats/five.jpg" class="project-image">-->
+			<p><a href="{{ post.site }}">{{ post.site }}</a></p>
+		</div>
+	</li>
+	{% endif %}
+{% endfor %}
+</ul>	
+</div>
+</section>
+
+
 
 <section class="details">
 <div class="site">
@@ -41,5 +129,13 @@ title: SHIP tech@NYU
 {{ details | unindent | markdownify }}
 </div>
 </section>
+
+<section class="details">
+<div class="site">
+
+</div>
+</section>
+
+
 
 {% include footer.html %}

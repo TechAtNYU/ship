@@ -155,12 +155,12 @@ $(document).ready(function() {
 		function removeSidebar() {
 			$(".logo aside").fadeOut("fast");
 			$("header.main nav").fadeIn();
-			$("section").removeClass("load-wave");
+			//$("section").removeClass("load-wave");
 		}
 		function showSidebar() {
 			$(".logo aside").fadeIn().addClass("sticky");
 			$("header.main nav").fadeOut();
-			$("section").addClass("load-wave");
+			//$("section").addClass("load-wave");
 		}
 		
 		

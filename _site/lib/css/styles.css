@@ -134,7 +134,7 @@ hr {
 }
 .overlay {
   *zoom: 1;
-  background-color: rgba(33, 52, 71, 0.5);
+  background-color: rgba(33, 52, 71, 0.25);
   padding: 1.5em 0 3em;
   height: 100%;
 }
@@ -293,6 +293,21 @@ header.main .tagline h1 {
   background-image: url(/lib/img/wave2.png);
   background-repeat: repeat-y;
 }
+.container > section:nth-child(2) {
+  background-color: #e6f9ff;
+}
+.container > section:nth-child(3) {
+  background-color: #cff4ff;
+}
+.container > section:nth-child(4) {
+  background-color: #8de5ff;
+}
+.container > section:nth-child(5) {
+  background-color: #64dcff;
+}
+.container > section:nth-child(6) {
+  background-color: #0cc8fe;
+}
 .container > section.intro p {
   font-size: 1.25em;
   line-height: 1.75;
@@ -309,14 +324,29 @@ header.main .tagline h1 {
 .container > section.blog ul {
   list-style: none;
 }
+.container > section .category {
+  color: rgba(33, 52, 71, 0.25);
+  text-align: center;
+  letter-spacing: .5em;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: light;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
 .posts li {
   padding: 1em 0;
+}
+.posts .project img {
+  max-width: 45%;
+  float: right;
 }
 footer {
   font-size: 110%;
   padding: .5em 0;
   color: white;
-  background: black;
+  background: #00a1c6;
+  min-height: 50em;
 }
 footer a:link,
 footer a:visited,
