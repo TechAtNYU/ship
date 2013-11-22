@@ -24,7 +24,7 @@ title: SHIP tech@NYU
 			<h1>{{ post.title }}</h1>
 			
 			<div class="attribution">
-				<p>{{ post.creator }}</p>
+				<p>{{ post.creator }} {% if post.twitter %}<i class="icon-social-twitter"><span>{{ post.twitter }}</span></i>{% endif %}</p>
 	
 			</div>  
 			<p>{{post.content}}</p>
@@ -38,6 +38,8 @@ title: SHIP tech@NYU
 </div>
 </section>
 
+
+
 <section class="blog demodays">
 <div class="site">
 	<h5 class="category">DemoDays</h5>
@@ -50,8 +52,7 @@ title: SHIP tech@NYU
 			<h1>{{ post.title }}</h1>
 			
 			<div class="attribution">
-				<p>{{ post.creator }}</p>
-	
+				<p>{{ post.creator }} {% if post.twitter %}<i class="icon-social-twitter"><span>{{ post.twitter }}</span></i>{% endif %}</p>
 			</div>  
 			<p>{{post.content}}</p>
 			<!--<img src="http://localhost:4000/lib/img/cats/five.jpg" class="project-image">-->
@@ -78,7 +79,7 @@ title: SHIP tech@NYU
 			<h1>{{ post.title }}</h1>
 			
 			<div class="attribution">
-				<p>{{ post.creator }}</p>
+				<p>{{ post.creator }} {% if post.twitter %}<i class="icon-social-twitter"><span>{{ post.twitter }}</span></i>{% endif %}</p>
 	
 			</div>  
 			<p>{{post.content}}</p>
@@ -105,7 +106,8 @@ title: SHIP tech@NYU
 			<h1>{{ post.title }}</h1>
 			
 			<div class="attribution">
-				<p>{{ post.creator }}</p>
+				<p>{{ post.creator }} {% if post.twitter %}<i class="icon-social-twitter"><span>{{ post.twitter }}</span></i>{% endif %}</p>
+				
 	
 			</div>  
 			<p>{{post.content}}</p>
