@@ -18,7 +18,7 @@
   }
 }
 body {
-  background: black;
+  background: white;
 }
 ::selection {
 	background: @accent; /* Safari */
@@ -62,9 +62,27 @@ hr {
 
 header.main {
 	.clearfix();
+	background-image: url(/lib/img/branch.jpg);
 	background-color: @grayDark;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	color: white;
+	
+	&.demodays {
+		background-image: url(/lib/img/beer.jpg);
+	}
+	&.eboard {
+		background-image: url(/lib/img/beer.jpg);
+	}
+	&.alumni {
+		background-image: url(/lib/img/branch.jpg);
+	}
+	&.about {
+		background-image: url(/lib/img/hotdogs.jpg);
+	}
+	&.submit {
+		background-image: url(/lib/img/gumball.jpg);
+	}
+	
 	li {
 		list-style: none;
 	}
@@ -74,9 +92,17 @@ header.main {
 		}
 	}
 	.logo {
+		display: block;
+		width: 100%;
 		float: left;
 		img, h1 {
 			display: block;
+			position: relative;
+			z-index: 100;
+		}
+		a {
+			text-decoration: none;
+			color: white;
 		}
 		h1 {
 			font-size: 10em;
@@ -158,19 +184,38 @@ header.main {
 			background-repeat: repeat-y;
 		}
 	&:nth-child(2n) {
-		//background: @grayLightest;
+		//background: @blue;
 	}
 	&.intro {
-		font-size: 1.5em;
+		//background: lighten(@accent, 35%);
+		p {
+			font-size: 1.25em;
+			line-height: 1.75;
+		}
+		h2 {
+			text-align: center;
+			font-size: 2.5em;
+			position: relative;
+			padding-top: 1em;
+		}
+		h2 + p {
+			padding-bottom: 2em;
+		}
 	}
 	&.blog ul {
 		list-style: none;
+	}
+}
+.posts {
+	li {
+		padding: 1em 0;
 	}
 }
 footer {	
 	font-size: @miniBump;
 	padding: .5em 0;
 	color: white;
+	background: black;
 	a:link, a:visited, a:active {
 		color: white;
 		font-weight: bold;

@@ -1,5 +1,4 @@
 @import "ionicons.css";
-
 @import "webfonts.css";
 /* -- FLUID GRID STYLES -- */
 .grid {
@@ -30,7 +29,7 @@
   display: inline-block;
 }
 body {
-  font: 1em "Radikal", helvetica, arial, sans-serif;
+  font: 1em "Open Sans", helvetica, arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
 }
@@ -67,7 +66,7 @@ h5 {
   font-style: italic;
 }
 .header {
-  font-family: "Radikal-UltraThin", helvetica, arial, sans-serif;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
 }
 .header h1 {
   line-height: 1;
@@ -104,17 +103,15 @@ h3 + ul {
   box-sizing: border-box;
 }
 body {
-  background: black;
+  background: white;
 }
 ::selection {
   background: #00bcf2;
   /* Safari */
-
 }
 ::-moz-selection {
   background: #00bcf2;
   /* Firefox */
-
 }
 .container {
   width: 100%;
@@ -166,8 +163,9 @@ hr {
 }
 header.main {
   *zoom: 1;
+  background-image: url(/lib/img/branch.jpg);
   background-color: #222222;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   color: white;
 }
 header.main:before,
@@ -187,6 +185,21 @@ header.main:after {
 header.main:after {
   clear: both;
 }
+header.main.demodays {
+  background-image: url(/lib/img/beer.jpg);
+}
+header.main.eboard {
+  background-image: url(/lib/img/beer.jpg);
+}
+header.main.alumni {
+  background-image: url(/lib/img/branch.jpg);
+}
+header.main.about {
+  background-image: url(/lib/img/hotdogs.jpg);
+}
+header.main.submit {
+  background-image: url(/lib/img/gumball.jpg);
+}
 header.main li {
   list-style: none;
 }
@@ -194,11 +207,19 @@ header.main a:hover {
   text-decoration: none;
 }
 header.main .logo {
+  display: block;
+  width: 100%;
   float: left;
 }
 header.main .logo img,
 header.main .logo h1 {
   display: block;
+  position: relative;
+  z-index: 100;
+}
+header.main .logo a {
+  text-decoration: none;
+  color: white;
 }
 header.main .logo h1 {
   font-size: 10em;
@@ -259,7 +280,7 @@ header.main .tagline {
   width: 50%;
 }
 header.main .tagline h1 {
-  font-family: "Radikal-UltraThin", helvetica, arial, sans-serif;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: 100;
   text-transform: none;
   font-style: normal;
@@ -272,23 +293,37 @@ header.main .tagline h1 {
   background-image: url(/lib/img/wave2.png);
   background-repeat: repeat-y;
 }
-.container > section.intro {
-  font-size: 1.5em;
+.container > section.intro p {
+  font-size: 1.25em;
+  line-height: 1.75;
+}
+.container > section.intro h2 {
+  text-align: center;
+  font-size: 2.5em;
+  position: relative;
+  padding-top: 1em;
+}
+.container > section.intro h2 + p {
+  padding-bottom: 2em;
 }
 .container > section.blog ul {
   list-style: none;
+}
+.posts li {
+  padding: 1em 0;
 }
 footer {
   font-size: 110%;
   padding: .5em 0;
   color: white;
+  background: black;
 }
 footer a:link,
 footer a:visited,
 footer a:active {
   color: white;
   font-weight: bold;
-  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
   text-decoration: none;
 }
 footer a:hover {
@@ -331,12 +366,16 @@ footer .colophon {
   .container > section {
     padding: 2em 0;
   }
+  .container > section.intro p {
+    padding: 0 3em;
+  }
   footer p {
     font-size: 75%;
   }
 }
 @media only screen and (min-width: 70em) {
-  .site {
+  .site,
+  .normal {
     max-width: 50em;
     width: 65%;
     font-size: 125%;
@@ -345,12 +384,16 @@ footer .colophon {
     width: 50%;
   }
   header.main {
-    height: 100%;
     background-repeat: repeat;
     background-position: center top;
   }
+  header.main,
+  header.main .overlay {
+    min-height: 32em;
+  }
   header.main nav {
     position: absolute;
+    z-index: 1;
     top: 0;
   }
   header.main nav li {
