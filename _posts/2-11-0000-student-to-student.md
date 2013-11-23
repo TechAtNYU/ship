@@ -2,6 +2,7 @@
 layout: post
 title: Student to Student
 creator: Steven Chan
+twitter: _SteveChan
 site: 
 image: /lib/img/cats/three.jpg
 featured: false

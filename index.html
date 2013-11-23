@@ -19,7 +19,7 @@ title: SHIP tech@NYU
 {% for post in site.posts %}
 	{% if post.featured %}
 	<li class="project">
-		<img src="{{ post.image }}">
+		<a href="{{ post.site }}"><img src="{{ post.image }}"></a>
 		<div class="description">
 			<h1>{{ post.title }}</h1>
 			
@@ -28,8 +28,7 @@ title: SHIP tech@NYU
 	
 			</div>  
 			<p>{{post.content}}</p>
-			<!--<img src="http://localhost:4000/lib/img/cats/five.jpg" class="project-image">-->
-			<p><a href="{{ post.site }}">{{ post.site }}</a></p>
+			{% if post.site %}<p><a href="{{ post.site }}" class="project-link">{{ post.site }}</a></p>{% endif %}
 		</div>
 	</li>
 	{% endif %}
@@ -43,24 +42,22 @@ title: SHIP tech@NYU
 <section class="blog" id="demodays">
 <div class="site">
 	<h5 class="category">DemoDays</h5>
-<ul class="posts">
+<ul class="posts grid">
 {% for post in site.posts %}
 	{% if post.demodays %}
 	<li class="project">
-		<img src="{{ post.image }}">
 		<div class="description">
-			<h1>{{ post.title }}</h1>
+			<a href="{{ post.site }}"><img src="{{ post.image }}">
+			<h2>{{ post.title }}</h2>
 			
-			<div class="attribution">
-				<p>{{ post.creator }} {% if post.twitter %}<i class="icon-social-twitter"><span>{{ post.twitter }}</span></i>{% endif %}</p>
-			</div>  
-			<p>{{post.content}}</p>
-			<!--<img src="http://localhost:4000/lib/img/cats/five.jpg" class="project-image">-->
-			<p><a href="{{ post.site }}">{{ post.site }}</a></p>
+			<p>{{ post.creator }}</p></a>
+		
 		</div>
 	</li>
 	{% endif %}
 {% endfor %}
+	<li class="placeholder"></li>
+	<li class="placeholder"></li>
 </ul>	
 </div>
 </section>
@@ -74,7 +71,7 @@ title: SHIP tech@NYU
 {% for post in site.posts %}
 	{% if post.eboard %}
 	<li class="project">
-		<img src="{{ post.image }}">
+		<a href="{{ post.site }}"><img src="{{ post.image }}"></a>
 		<div class="description">
 			<h1>{{ post.title }}</h1>
 			
@@ -83,8 +80,7 @@ title: SHIP tech@NYU
 	
 			</div>  
 			<p>{{post.content}}</p>
-			<!--<img src="http://localhost:4000/lib/img/cats/five.jpg" class="project-image">-->
-			<p><a href="{{ post.site }}">{{ post.site }}</a></p>
+			{% if post.site %}<p><a href="{{ post.site }}" class="project-link">{{ post.site }}</a></p>{% endif %}
 		</div>
 	</li>
 	{% endif %}
@@ -101,7 +97,7 @@ title: SHIP tech@NYU
 {% for post in site.posts %}
 	{% if post.alumni %}
 	<li class="project">
-		<img src="{{ post.image }}">
+		<a href="{{ post.site }}"><img src="{{ post.image }}"></a>
 		<div class="description">
 			<h1>{{ post.title }}</h1>
 			
@@ -111,8 +107,7 @@ title: SHIP tech@NYU
 	
 			</div>  
 			<p>{{post.content}}</p>
-			<!--<img src="http://localhost:4000/lib/img/cats/five.jpg" class="project-image">-->
-			<p><a href="{{ post.site }}">{{ post.site }}</a></p>
+			{% if post.site %}<p><a href="{{ post.site }}" class="project-link">{{ post.site }}</a></p>{% endif %}
 		</div>
 	</li>
 	{% endif %}

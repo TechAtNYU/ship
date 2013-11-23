@@ -164,7 +164,7 @@ $(document).ready(function() {
 		}
 		
 		
-		if (windowTest < 780) {
+		if (windowTest < 1100) {
 			if ($(".logo aside").is(":visible")) {
 				removeSidebar();
 			}

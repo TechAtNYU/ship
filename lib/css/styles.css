@@ -5,9 +5,10 @@
   margin-bottom: 40px;
   text-align: justify;
 }
-.grid.sponsors li {
+.grid.posts li {
   display: inline-block;
   width: 31%;
+  margin-bottom: 2%;
 }
 .grid li {
   display: inline-block;
@@ -337,9 +338,76 @@ header.main .tagline h1 {
 .posts li {
   padding: 1em 0;
 }
+.posts .project {
+  min-height: 15em;
+  *zoom: 1;
+}
+.posts .project:before,
+.posts .project:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.posts .project:after {
+  clear: both;
+}
+.posts .project:before,
+.posts .project:after {
+  content: " ";
+  display: table;
+}
+.posts .project:after {
+  clear: both;
+}
 .posts .project img {
   max-width: 45%;
   float: right;
+}
+.posts .project .project-link {
+  color: black;
+  background: white;
+  text-decoration: none;
+  padding: .25em;
+  -webkit-box-shadow: 5px 5px 0px #cd231a, 4px 4px 0px #cd231a, 3px 3px 0px #cd231a, 2px 2px 0px #cd231a, 1px 1px 0px #cd231a;
+  -moz-box-shadow: 5px 5px 0px #cd231a, 4px 4px 0px #cd231a, 3px 3px 0px #cd231a, 2px 2px 0px #cd231a, 1px 1px 0px #cd231a;
+  box-shadow: 5px 5px 0px #cd231a, 4px 4px 0px #cd231a, 3px 3px 0px #cd231a, 2px 2px 0px #cd231a, 1px 1px 0px #cd231a;
+}
+.posts .project .project-link:hover {
+  background: rgba(205, 35, 26, 0.15);
+}
+.posts.grid {
+  *zoom: 1;
+}
+.posts.grid:before,
+.posts.grid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.posts.grid:after {
+  clear: both;
+}
+.posts.grid:before,
+.posts.grid:after {
+  content: " ";
+  display: table;
+}
+.posts.grid:after {
+  clear: both;
+}
+.posts.grid .project {
+  vertical-align: top;
+}
+.posts.grid .project img,
+.posts.grid .project h2 {
+  max-width: 100%;
+}
+.posts.grid .project img {
+  float: none;
+}
+.posts.grid .project .description {
+  width: 100%;
+  text-align: left;
 }
 footer {
   font-size: 110%;
@@ -410,7 +478,7 @@ footer .colophon {
     width: 65%;
     font-size: 125%;
   }
-  .description {
+  .posts .project .description {
     width: 50%;
   }
   header.main {
@@ -472,7 +540,7 @@ footer .colophon {
 }
 @media only screen and (max-width: 30em) {
   .grid li,
-  .grid.sponsors li {
+  .grid.posts li {
     width: 100%;
     padding: 1em;
     margin-bottom: 5%;
