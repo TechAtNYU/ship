@@ -4,7 +4,7 @@ title: Student to Student
 creator: Steven Chan
 twitter: _SteveChan
 site: 
-image: /lib/img/cats/three.jpg
+image:
 featured: false
 demodays: false
 eboard: true

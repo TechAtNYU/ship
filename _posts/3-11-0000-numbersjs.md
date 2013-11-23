@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Numbers.js
-creator: Stephen Kaliski
+creator: Stephen Kaliski, David Byrd, Ethan Resnick
 site: https://github.com/sjkaliski/numbers.js
-image: /lib/img/cats/three.jpg
+image: 
 featured: false
 demodays: false
 eboard: false

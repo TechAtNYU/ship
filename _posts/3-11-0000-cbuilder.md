@@ -3,7 +3,7 @@ layout: post
 title: Cbuilder
 creator: Nate Berkopec
 site: http://caffeinatedlabs.github.com/cbuilder
-image: /lib/img/cats/three.jpg
+image: /lib/img/projects/cbuilder.jpg
 featured: false
 demodays: false
 eboard: false

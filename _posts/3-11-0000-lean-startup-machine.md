@@ -4,7 +4,7 @@ title: Lean Startup Machine
 creator: Trevor Owens
 twitter: to
 site: http://leanstartupmachine.com/
-image: /lib/img/cats/three.jpg
+image: http://cdn.techinasia.com/wp-content/uploads/2012/07/Byoyo-Lean-Startup-Machine-Shanghai-2012.jpg
 featured: false
 demodays: false
 eboard: false

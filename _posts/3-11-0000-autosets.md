@@ -4,7 +4,7 @@ title: Autosets
 creator: Matt Ruzicka
 twitter: mattruzicka
 site: http://www.autosets.com/
-image: /lib/img/cats/three.jpg
+image: /lib/img/projects/autosets.jpg
 featured: false
 demodays: false
 eboard: false

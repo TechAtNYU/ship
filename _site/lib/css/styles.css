@@ -340,6 +340,7 @@ header.main .tagline h1 {
 }
 .posts .project {
   min-height: 15em;
+  padding: 2em 0;
   *zoom: 1;
 }
 .posts .project:before,
@@ -374,6 +375,13 @@ header.main .tagline h1 {
 }
 .posts .project .project-link:hover {
   background: rgba(205, 35, 26, 0.15);
+}
+.posts .attribution a {
+  color: rgba(33, 52, 71, 0.25);
+  text-decoration: none;
+}
+.posts .attribution a:hover {
+  color: #213447;
 }
 .posts.grid {
   *zoom: 1;

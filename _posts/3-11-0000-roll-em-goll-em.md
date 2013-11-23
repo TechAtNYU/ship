@@ -3,7 +3,7 @@ layout: post
 title: Roll'em Goll'em
 creator: Michael Bartnett
 site: http://archive.globalgamejam.org/2012/rollem-golem
-image: /lib/img/cats/three.jpg
+image: http://archive.globalgamejam.org/sites/default/files/uploads/2012/4676/rollemgollem1.png?1328052130
 featured: false
 demodays: false
 eboard: false

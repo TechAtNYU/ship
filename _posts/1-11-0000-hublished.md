@@ -3,8 +3,8 @@ layout: post
 title: Hublished
 creator: Ryan Kuhel
 twitter: false
-site: https://itunes.apple.com/us/app/to-due/id665679538?mt=8&ign-mpt=uo%3D4
-image: http://a2.mzstatic.com/us/r30/Purple/v4/48/f7/f5/48f7f59c-c24d-b64b-cf4c-e7c4dc1042bb/mzl.lxpidbji.175x175-75.jpg
+site: https://hublished.com/HublishedWeb/index;jsessionid=DFD4BA3FFB91A061C3D5589F91BAD074
+image: /lib/img/projects/hublished.jpg
 featured: false
 demodays: true
 eboard: false

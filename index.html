@@ -24,7 +24,7 @@ title: SHIP tech@NYU
 			<h1>{{ post.title }}</h1>
 			
 			<div class="attribution">
-				<p>{{ post.creator }} {% if post.twitter %}<i class="icon-social-twitter"><span>{{ post.twitter }}</span></i>{% endif %}</p>
+				<p>{{ post.creator }} {% if post.twitter %}<a href="http://twitter.com/{{ post.twitter }}"><i class="icon-social-twitter"></i></a>{% endif %}</p>
 	
 			</div>  
 			<p>{{post.content}}</p>
@@ -76,7 +76,7 @@ title: SHIP tech@NYU
 			<h1>{{ post.title }}</h1>
 			
 			<div class="attribution">
-				<p>{{ post.creator }} {% if post.twitter %}<i class="icon-social-twitter"><span>{{ post.twitter }}</span></i>{% endif %}</p>
+				<p>{{ post.creator }} {% if post.twitter %}<a href="http://twitter.com/{{ post.twitter }}"><i class="icon-social-twitter"></i></a>{% endif %}</p>
 	
 			</div>  
 			<p>{{post.content}}</p>
@@ -102,7 +102,7 @@ title: SHIP tech@NYU
 			<h1>{{ post.title }}</h1>
 			
 			<div class="attribution">
-				<p>{{ post.creator }} {% if post.twitter %}<i class="icon-social-twitter"><span>{{ post.twitter }}</span></i>{% endif %}</p>
+				<p>{{ post.creator }} {% if post.twitter %}<a href="http://twitter.com/{{ post.twitter }}"><i class="icon-social-twitter"></i></a>{% endif %}</p>
 				
 	
 			</div>  
@@ -116,22 +116,6 @@ title: SHIP tech@NYU
 </div>
 </section>
 
-
-
-<section class="details">
-<div class="site">
-{% capture details %}
-  {% include details.markdown %}
-{% endcapture %}
-{{ details | unindent | markdownify }}
-</div>
-</section>
-
-<section class="details">
-<div class="site">
-
-</div>
-</section>
 
 
 

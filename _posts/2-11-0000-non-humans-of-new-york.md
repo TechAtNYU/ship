@@ -3,7 +3,7 @@ layout: post
 title: Non-humans of New York
 creator: Sarah Scott
 site: 
-image: /lib/img/cats/three.jpg
+image: /lib/img/projects/terrapin.jpg
 featured: false
 demodays: false
 eboard: true

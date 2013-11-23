@@ -3,7 +3,7 @@ layout: post
 title: Grantophone
 creator: Grant Kot
 site: http://grantkot.com/grantophone.html
-image: /lib/img/cats/three.jpg
+image: /lib/img/projects/grantophone.jpg
 featured: false
 demodays: false
 eboard: false

@@ -2,8 +2,8 @@
 layout: post
 title: 20-something in NYC
 creator: Kim Pham
-site: 20somethinginnyc.com
-image: /lib/img/cats/three.jpg
+site: http://20somethinginnyc.com
+image: /lib/img/projects/20something.jpg
 featured: false
 demodays: false
 eboard: true

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Phys.Js
-creator: Abhi Agarwal, Philip Ottesen
+title: WhatupNYU
+creator: Abhi Agarwal
 twitter: AbhiAgarwal
-site: http://www.physjs.org/
-image: /lib/img/cats/three.jpg
+site: http://whatupnyu.com
+image: /lib/img/projects/whatupnyu.jpg
 featured: false
 demodays: false
 eboard: true
 alumni: false
 ---
-Physics Library for Javascript. Needs testers and physics nerds!
+NYU's social media together into one place. Had 6,000++ people on the first night using the app.

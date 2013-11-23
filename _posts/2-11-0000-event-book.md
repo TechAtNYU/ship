@@ -4,7 +4,7 @@ title: Event Book 2.0
 creator: Abhinay Ashutosh
 twitter: abhinayashutosh
 site: https://itunes.apple.com/us/app/event-book/id599232745
-image: /lib/img/cats/three.jpg
+image: http://a2.mzstatic.com/us/r30/Purple6/v4/d7/50/1f/d7501fa5-3a6d-b01c-fe27-9d6ba9a6dc04/screen568x568.jpeg
 featured: false
 demodays: false
 eboard: true
