@@ -49,15 +49,8 @@ hr {
 .overlay {
 	.clearfix();
 	background-color: @gentGreyT;
-//	background-image: @tinyv;
 	padding: 1.5em 0 3em;
 	height: 100%;
-}
-.waves {
-	padding: .125em 0;
-	color: white;
-	background-image: @chevronw;
-	background-position: center center;
 }
 
 header.main {
@@ -100,6 +93,9 @@ header.main {
 			position: relative;
 			z-index: 100;
 		}
+		img {
+			max-width: 100%;
+		}
 		a {
 			text-decoration: none;
 			color: white;
@@ -110,7 +106,8 @@ header.main {
 		}
 		aside {
 			display: none;
-			canvas:hover {
+			a:hover {
+				color: @accent;
 			}
 		}
 	}
@@ -256,6 +253,7 @@ header.main {
 			-webkit-box-shadow: @aggro;
 			-moz-box-shadow:    @aggro;
 			box-shadow:         @aggro;
+			overflow-wrap: break-word;
 			&:hover {
 				background: @redT;
 			}

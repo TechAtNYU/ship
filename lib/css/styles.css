@@ -12,7 +12,6 @@
 }
 .grid li {
   display: inline-block;
-  width: 20%;
 }
 .grid li.half {
   width: 45%;
@@ -160,12 +159,6 @@ hr {
 .overlay:after {
   clear: both;
 }
-.waves {
-  padding: .125em 0;
-  color: white;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPElEQVQYV2NkQAP/gYARCNDFUQRgirAphitEl0TngxXisg5ZnBGXIpgbYfIYjkb3BNxGbBLYxIgyEaQRAA8KKAWYsZtjAAAAAElFTkSuQmCC);
-  background-position: center center;
-}
 header.main {
   *zoom: 1;
   background-image: url(/lib/img/branch.jpg);
@@ -222,6 +215,9 @@ header.main .logo h1 {
   position: relative;
   z-index: 100;
 }
+header.main .logo img {
+  max-width: 100%;
+}
 header.main .logo a {
   text-decoration: none;
   color: white;
@@ -232,6 +228,9 @@ header.main .logo h1 {
 }
 header.main .logo aside {
   display: none;
+}
+header.main .logo aside a:hover {
+  color: #00bcf2;
 }
 header.main nav li {
   text-align: right;
@@ -383,6 +382,7 @@ header.main .tagline h1 {
   -webkit-box-shadow: 5px 5px 0px #cd231a, 4px 4px 0px #cd231a, 3px 3px 0px #cd231a, 2px 2px 0px #cd231a, 1px 1px 0px #cd231a;
   -moz-box-shadow: 5px 5px 0px #cd231a, 4px 4px 0px #cd231a, 3px 3px 0px #cd231a, 2px 2px 0px #cd231a, 1px 1px 0px #cd231a;
   box-shadow: 5px 5px 0px #cd231a, 4px 4px 0px #cd231a, 3px 3px 0px #cd231a, 2px 2px 0px #cd231a, 1px 1px 0px #cd231a;
+  overflow-wrap: break-word;
 }
 .posts .project .project-link:hover {
   background: rgba(205, 35, 26, 0.15);
@@ -484,6 +484,20 @@ footer .colophon {
   header.main .logo {
     padding: 1em 0 0;
   }
+  header.main nav {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    margin-left: -2em;
+  }
+  header.main nav li {
+    display: inline-block;
+    position: relative;
+    height: 24em;
+    padding-top: 22em;
+    min-width: 2em;
+    padding-bottom: 3em;
+  }
   .container > section {
     padding: 2em 0;
   }
@@ -511,19 +525,6 @@ footer .colophon {
   header.main,
   header.main .overlay {
     min-height: 32em;
-  }
-  header.main nav {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-  }
-  header.main nav li {
-    display: inline-block;
-    position: relative;
-    width: 8.75em;
-    height: 24em;
-    padding-top: 22em;
-    padding-bottom: 3em;
   }
   .tagline {
     font-size: 1.25em;
@@ -584,27 +585,20 @@ footer .colophon {
   header.main .overlay {
     padding: 1.5em 0 4em;
   }
-  header.main .info {
-    margin: 2em 0;
-    display: static;
-    text-align: center;
-  }
-  header.main .info > ul.icons {
-    display: none;
-  }
-  header.main .info > ul.logistics {
+  header.main nav {
+    position: static;
     width: 100%;
   }
-  header.main .info > ul.logistics li {
-    display: inline-block;
-    padding: .5em 1em;
+  header.main nav ul {
+    width: 100%;
   }
-  header.main .info > ul.logistics li:last-child {
-    display: none;
-  }
-  header.main .info .micro {
-    display: none;
-    font-size: 0;
+  header.main nav li {
+    display: block;
+    width: 100%;
+    font-size: 2em;
+    padding: .5em 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(33, 52, 71, 0.25);
   }
   .container > section.speaker h1 + p {
     text-align: center;
