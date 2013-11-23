@@ -80,6 +80,10 @@ p {
   line-height: 1.75;
   margin-bottom: .75em;
 }
+a {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-weight: normal;
+}
 a:link,
 a:visited,
 a:active {
@@ -429,41 +433,45 @@ footer {
   padding: .5em 0;
   color: white;
   background: #00a1c6;
-  min-height: 50em;
+}
+footer.cta {
+  background: #006070;
 }
 footer a:link,
 footer a:visited,
 footer a:active {
   color: white;
-  font-weight: bold;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
-  text-decoration: none;
+  text-decoration: underline;
 }
 footer a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 footer i span {
   display: none;
-}
-footer p {
-  line-height: 1.25;
 }
 footer ul {
   list-style: none;
 }
 footer ul li {
   display: inline-block;
+  vertical-align: top;
+  text-align: center;
 }
 footer ul li a {
   color: black;
-  padding: .5em .4em .25em;
+  text-decoration: none !important;
+  padding: .25em;
+  -webkit-box-shadow: 5px 5px 0px #cd231a, 4px 4px 0px #cd231a, 3px 3px 0px #cd231a, 2px 2px 0px #cd231a, 1px 1px 0px #cd231a;
+  -moz-box-shadow: 5px 5px 0px #cd231a, 4px 4px 0px #cd231a, 3px 3px 0px #cd231a, 2px 2px 0px #cd231a, 1px 1px 0px #cd231a;
+  box-shadow: 5px 5px 0px #cd231a, 4px 4px 0px #cd231a, 3px 3px 0px #cd231a, 2px 2px 0px #cd231a, 1px 1px 0px #cd231a;
+}
+footer ul li a:hover {
+  background: rgba(205, 35, 26, 0.15);
   text-decoration: none;
-  background: #222222;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
+}
+footer .info {
+  font-size: 75%;
+  line-height: 1;
 }
 footer .colophon {
   clear: both;
@@ -483,7 +491,7 @@ footer .colophon {
     padding: 0 3em;
   }
   footer p {
-    font-size: 75%;
+    font-size: 95%;
   }
 }
 @media only screen and (min-width: 70em) {
