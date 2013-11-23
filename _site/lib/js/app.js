@@ -193,7 +193,7 @@ $(document).ready(function() {
 				test = "url(/lib/img/beer.jpg)";
 				break;
 			case 1:
-				test = "url(/lib/img/pattern/2.png)";
+				test = "url(/lib/img/phys.jpg)";
 				break;
 			case 2:
 				test = "url(/lib/img/branch.jpg)";
