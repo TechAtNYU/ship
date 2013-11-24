@@ -2,6 +2,7 @@
 layout: post
 title: 20-something in NYC
 creator: Kim Pham
+twitter: kim617
 site: http://20somethinginnyc.com
 image: /lib/img/projects/20something.jpg
 featured: false
