@@ -4,7 +4,7 @@ title: Roll'em Goll'em
 creator: Michael Bartnett
 twitter: michaelbartnett
 site: http://archive.globalgamejam.org/2012/rollem-golem
-image: http://archive.globalgamejam.org/sites/default/files/uploads/2012/4676/rollemgollem1.png?1328052130
+image: /lib/img/projects/rollemgollem.png
 featured: false
 demodays: false
 eboard: false

@@ -4,7 +4,7 @@ title: Kipin Hall
 creator: Abhinay Ashutosh
 twitter: abhinayashutosh
 site: http://kipinhall.com/
-image: https://s3.amazonaws.com/kipinhall-main/static/img/screen-class-page-big.jpg
+image: /lib/img/projects/kipinhall.jpg
 featured: true
 demodays: false
 eboard: true
