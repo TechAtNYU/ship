@@ -387,11 +387,11 @@ header.main .tagline h1 {
 .posts .project .project-link:hover {
   background: rgba(205, 35, 26, 0.15);
 }
-.posts .attribution a {
+.posts .twitter {
   color: rgba(33, 52, 71, 0.25);
   text-decoration: none;
 }
-.posts .attribution a:hover {
+.posts .twitter:hover {
   color: #213447;
 }
 .posts.grid {
