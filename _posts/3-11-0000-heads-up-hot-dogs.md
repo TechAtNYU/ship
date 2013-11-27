@@ -2,6 +2,7 @@
 layout: post
 title: Heads Up! Hot Dogs
 creator: Emmett Butler
+twitter: emmett9001
 site: https://itunes.apple.com/app/heads-up!-hot-dogs/id557891567?mt=8
 image: http://a1.mzstatic.com/us/r30/Purple/v4/3f/42/91/3f429115-7152-740c-5a28-3c61922122b8/screen568x568.jpeg
 featured: false

@@ -2,6 +2,7 @@
 layout: post
 title: Raise Cache
 creator: Rebecca Zhou
+twitter: rbeccazhou
 site: http://thenextweb.com/insider/2011/11/20/raise-cache-one-party-in-nyc-raises-over-100000-for-local-hackers/
 image: http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2011/11/IMG_5130-520x781.jpg
 featured: false

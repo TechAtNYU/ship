@@ -2,6 +2,7 @@
 layout: post
 title: Grantophone
 creator: Grant Kot
+twitter: kotsoft
 site: http://grantkot.com/grantophone.html
 image: /lib/img/projects/grantophone.jpg
 featured: false
