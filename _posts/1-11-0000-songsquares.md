@@ -2,7 +2,8 @@
 layout: post
 title: SongSquares
 creator: Robert Vinluan
-twitter: false
+school: Parsons
+twitter: RobertVinluan
 site: http://robertvinluan.com/songsquares/
 image: /lib/img/projects/songsquares.jpg
 

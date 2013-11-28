@@ -47,12 +47,17 @@ title: SHIP tech@NYU
 	{% if post.demodays %}
 	<li class="project">
 		<div class="description">
-			<a href="{{ post.site }}"><img src="{{ post.image }}">
-			<h2>{{ post.title }}</h2>
+			<div class="img-wrap">
+				<a href="{{ post.site }}"><img src="{{ post.image }}"></a>
+			</div>
+			<a href="{{ post.site }}">
+				<h2>{{ post.title }}</h2>
+				
 			</a>
 			
 			
-			<p>{{ post.creator }} {% if post.twitter %}<a href="http://twitter.com/{{ post.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+			<p>{{ post.creator }} {% if post.twitter %}<a href="http://twitter.com/{{ post.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p> 
+			{% if post.school %}<p class="dd__school">{{post.school}}</p>{% endif %}
 			
 		</div>
 	</li>

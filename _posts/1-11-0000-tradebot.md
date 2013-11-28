@@ -2,7 +2,8 @@
 layout: post
 title: Tradebot
 creator: Prathamesh Godbole
-twitter: false
+school: NYU Poly
+twitter: PrathameshGod
 site: http://morning-depths-9766.herokuapp.com/
 image: /lib/img/projects/tradebot.png
 featured: false
