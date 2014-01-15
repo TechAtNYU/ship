@@ -161,7 +161,6 @@ hr {
 }
 header.main {
   *zoom: 1;
-  background-image: url(/lib/img/branch.jpg);
   background-color: #222222;
   background-repeat: no-repeat;
   color: white;
@@ -182,21 +181,6 @@ header.main:after {
 }
 header.main:after {
   clear: both;
-}
-header.main.demodays {
-  background-image: url(/lib/img/beer.jpg);
-}
-header.main.eboard {
-  background-image: url(/lib/img/beer.jpg);
-}
-header.main.alumni {
-  background-image: url(/lib/img/branch.jpg);
-}
-header.main.about {
-  background-image: url(/lib/img/hotdogs.jpg);
-}
-header.main.submit {
-  background-image: url(/lib/img/gumball.jpg);
 }
 header.main li {
   list-style: none;
@@ -499,6 +483,22 @@ footer .colophon {
 @media only screen and (min-width: 40em) {
   header.main {
     background-position: center bottom;
+    background-image: url(/lib/img/branch.jpg);
+  }
+  header.main.demodays {
+    background-image: url(/lib/img/beer.jpg);
+  }
+  header.main.eboard {
+    background-image: url(/lib/img/beer.jpg);
+  }
+  header.main.alumni {
+    background-image: url(/lib/img/branch.jpg);
+  }
+  header.main.about {
+    background-image: url(/lib/img/hotdogs.jpg);
+  }
+  header.main.submit {
+    background-image: url(/lib/img/gumball.jpg);
   }
   header.main .logo {
     padding: 1em 0 0;
