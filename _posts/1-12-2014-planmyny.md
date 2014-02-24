@@ -4,8 +4,8 @@ title: PlanMyNY
 creator: Matt Piccolella
 school: Columbia
 twitter: false
-site: www.planmyny.com
-image:
+site: http://www.planmyny.com
+image: lib/img/projects/planmyny.png
 featured: false
 demodays: true
 eboard: false

@@ -5,7 +5,7 @@ creator: Alyssa Davis
 school: Cooper Union
 twitter: false
 site: http://students.cooper.edu/davis4/cu/cooperspaces.html
-image:
+image: lib/img/projects/cs_1.jpg
 featured: false
 demodays: true
 eboard: false

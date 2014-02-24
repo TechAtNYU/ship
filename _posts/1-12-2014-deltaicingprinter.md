@@ -5,7 +5,7 @@ creator: Jackie Song
 school: Cooper Union
 twitter: false
 site: http://jsong.cc/cnc-icing-printer.html
-image:
+image: /lib/img/projects/deltaprintr.png
 featured: false
 demodays: true
 eboard: false

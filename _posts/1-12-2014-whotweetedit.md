@@ -4,8 +4,8 @@ title: Who Tweeted it?
 creator: Dan Schlosser
 school: Columbia
 twitter: false
-site: whotweeted.it
-image:
+site: http://whotweeted.it
+image: lib/img/projects/twiddler.jpg
 featured: false
 demodays: true
 eboard: false

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Numbers.js
-creator: Stephen Kaliski, David Byrd, Ethan Resnick
+creator: Stephen Kaliski, David Byrd & Ethan Resnick
 site: https://github.com/sjkaliski/numbers.js
 image: 
 featured: false
