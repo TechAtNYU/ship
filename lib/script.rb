@@ -4,7 +4,7 @@ applicants = CSV.open "application_form_feb_22.csv", headers: true, header_conve
 Dir.mkdir("applicants_feb_22") unless Dir.exists? "applicants_feb_22"
 
 applicants.each do |applicant|
-  # could not get symbols to work for this 
+  # could not get symbol headers to work for this CVS file, using indexes instead 
   md = String.new 
   md += "---\n"
   md += "layout: post\n"
@@ -14,7 +14,7 @@ applicants.each do |applicant|
   md += "twitter: false\n"
   # these markdown files seem to need indictators to exterior resources, 
   # such as projects, to be prefixed with an "http://"    
-  # the following line tests whether the link has this prefix & adds it in the case it is not 
+  # the following line tests whether the given link has this prefix & adds it in the case it is not 
   applicant[7][0..6] == "http://" ? md += "site: http://#{applicant[7]}\n" : md += "site: #{applicant[7]}\n"
   md += "image:\n"
   md += "featured: false\n"
