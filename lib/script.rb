@@ -8,7 +8,7 @@ applicants.each do |applicant|
   md = String.new 
   md += "---\n"
   md += "layout: post\n"
-  md += "title: #{applicant[applicant[6]]}\n"
+  md += "title: #{applicant[6]}\n"
   md += "creator: #{applicant[1]}\n"
   md += "school: #{applicant[3]}\n"
   md += "twitter: false\n"

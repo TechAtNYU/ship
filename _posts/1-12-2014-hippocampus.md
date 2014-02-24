@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Hippocampus
 creator: Isha Patel, Neema Aggarwal & Polina Smirnova
 school: Cooper Union
 twitter: false

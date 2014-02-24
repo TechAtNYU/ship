@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Git-mo-money
 creator: Sharang Phadke
 school: Cooper Union 
 twitter: false

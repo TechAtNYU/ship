@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Delta Icing Printer
 creator: Jackie Song
 school: Cooper Union
 twitter: false

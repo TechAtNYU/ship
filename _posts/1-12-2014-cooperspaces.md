@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Cooper Spaces
 creator: Alyssa Davis
 school: Cooper Union
 twitter: false

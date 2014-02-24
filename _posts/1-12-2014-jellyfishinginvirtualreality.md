@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Jellyfishing in Virtual Reality
 creator: Dani Grant
 school: NYU
 twitter: false

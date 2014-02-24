@@ -2,7 +2,7 @@
 layout: post
 title: Deltaprintr
 creator: Shai Schechter & Andrey Kovalev
-school: Purchase
+school: SUNY Purchase
 twitter: shaischechter
 site: http://deltaprintr.com/
 image: /lib/img/projects/deltaprintr.png

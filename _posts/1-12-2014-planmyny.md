@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: PlanMyNY
 creator: Matt Piccolella
 school: Columbia
 twitter: false

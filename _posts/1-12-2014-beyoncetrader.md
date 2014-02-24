@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Beyonce Trader
 creator: Terri Burns & Cheryl Wu
 school: NYU
 twitter: false
