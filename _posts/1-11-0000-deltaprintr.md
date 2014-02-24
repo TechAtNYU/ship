@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deltaprintr
-creator: Shai Schechter and Andrey Kovalev
+creator: Shai Schechter & Andrey Kovalev
 school: Purchase
 twitter: shaischechter
 site: http://deltaprintr.com/

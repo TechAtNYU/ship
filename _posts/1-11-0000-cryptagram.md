@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cryptagram
-creator: Ian Spiro and Matt Tierney
+creator: Ian Spiro & Matt Tierney
 school: NYU
 twitter: false
 site: https://chrome.google.com/webstore/detail/cryptagram/adabfepaidfgaecmkcekhefdgjaihahc?hl=en
