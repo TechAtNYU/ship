@@ -12,7 +12,10 @@ applicants.each do |applicant|
   md += "creator: #{applicant[1]}\n"
   md += "school: #{applicant[3]}\n"
   md += "twitter: false\n"
-  md += "site: #{applicant[7]}\n"
+  # these markdown files seem to need indictators to exterior resources, 
+  # such as projects, to be prefixed with an "http://"    
+  # the following line tests whether the link has this prefix & adds it in the case it is not 
+  applicant[7][0..6] == "http://" ? md += "site: http://#{applicant[7]}\n" : md += "site: #{applicant[7]}\n"
   md += "image:\n"
   md += "featured: false\n"
   md += "demodays: true\n"
