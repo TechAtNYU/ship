@@ -5,7 +5,7 @@ creator: Isha Patel, Neema Aggarwal & Polina Smirnova
 school: Cooper Union
 twitter: ishapatel
 site: http://shivmevawala.com/scraps/scrapbook.php
-image: lib/img/projects/hippo.png
+image: lib/img/projects/sqHippo.png
 featured: false
 demodays: true
 eboard: false
