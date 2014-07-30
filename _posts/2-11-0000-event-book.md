@@ -9,6 +9,7 @@ featured: false
 demodays: false
 eboard: true
 alumni: false
+whichdd: october 2013
 ---
 Apple and TechCrunch featured calendar app integrating weather, maps, and location with beautiful and simple design.
 
