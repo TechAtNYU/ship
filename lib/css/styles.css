@@ -522,7 +522,7 @@ footer .eboard li img {
     position: absolute;
     z-index: 1;
     top: 0;
-    margin-left: -2em;
+    left: 0;
   }
   header.main nav li {
     display: inline-block;
