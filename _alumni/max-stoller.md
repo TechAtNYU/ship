@@ -8,7 +8,7 @@ position: ??
 positionURL: http://www.techatnyu.org/position
 now: Lerer Ventures
 nowURL: http://www.google.com
-twitter: 
+twitter: maxstoller
 email: t@NYU email?
 graduate: 2014
 weight: 11

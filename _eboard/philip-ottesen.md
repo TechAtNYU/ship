@@ -7,7 +7,7 @@ image: https://static.squarespace.com/static/50354720c4aa2d2d3150d3d8/t/522fa7c9
 lego: /lib/img/people/lego/philip.jpg
 position: GameDays
 positionURL: http://www.techatnyu.org/position
-twitter: 
+twitter: PhilipOttesen
 email: t@NYU email?
 graduate: 2015
 weight: 3

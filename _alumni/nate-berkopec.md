@@ -8,7 +8,7 @@ position: ??
 positionURL: http://www.techatnyu.org/position
 now: Craft Coffee
 nowURL: http://www.google.com
-twitter: 
+twitter: nateberkopec
 email: t@NYU email?
 graduate: 2014
 weight: 11

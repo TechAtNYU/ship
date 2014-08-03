@@ -30,8 +30,13 @@
 							{% else %}
 								<img src="{{eboard.image}}" title="{{eboard.title}}">
 							{% endif %}
-							<h4>{{eboard.title}}</h4>
+							<h4>{{eboard.title}} </h4>
+							
 							<p>{{eboard.position}}</p>
+							
+							{% if eboard.twitter %}
+								<small><a href="http://twitter.com/{{ eboard.twitter }}" class="twitter" title="{{eboard.twitter}}"><i class="icon-social-twitter"></i> {{eboard.twitter}}</a></small>
+							{% endif %}
 						</li>
 					{% endif %}
 					
@@ -50,6 +55,10 @@
 							<h4>{{alumni.title}}</h4>
 							<p>{{alumni.position}}</p>
 							<p>{{alumni.now}}</p>
+							
+							{% if alumni.twitter %}
+								<small><a href="http://twitter.com/{{ alumni.twitter }}" class="twitter" title="{{alumni.twitter}}"><i class="icon-social-twitter"></i> {{alumni.twitter}}</a></small>
+							{% endif %}
 						</li>
 						{% endif %}
 					{% endfor %}

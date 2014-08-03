@@ -7,7 +7,7 @@ image: https://static.squarespace.com/static/50354720c4aa2d2d3150d3d8/t/53d83172
 lego: /lib/img/people/lego/freia.jpg
 position: Freshman Circuit
 positionURL: http://www.techatnyu.org/position
-twitter: 
+twitter: freialisa
 email: t@NYU email?
 graduate: 2016
 weight: 3

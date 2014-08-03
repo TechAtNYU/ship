@@ -7,7 +7,7 @@ image: https://static.squarespace.com/static/50354720c4aa2d2d3150d3d8/t/52499ed3
 lego: /lib/img/people/lego/eric.jpg
 position: Create@Cooper Liason
 positionURL: http://www.techatnyu.org/position
-twitter: 
+twitter: ericwleong
 email: t@NYU email?
 graduate: 2014
 weight: 5

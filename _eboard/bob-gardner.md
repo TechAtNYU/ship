@@ -7,7 +7,7 @@ image: https://static.squarespace.com/static/50354720c4aa2d2d3150d3d8/t/522fac76
 lego: /lib/img/people/lego/bob.jpg
 position: HackNights
 positionURL: http://www.techatnyu.org/position
-twitter: boppers327
+twitter: rgardner929
 email: t@NYU email?
 graduate: 2016
 weight: 3
