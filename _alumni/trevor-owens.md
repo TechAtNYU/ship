@@ -11,4 +11,5 @@ nowURL: http://www.google.com
 twitter: 
 email: t@NYU email?
 graduate: 2014
+weight: 1
 ---

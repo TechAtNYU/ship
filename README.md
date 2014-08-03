@@ -1,7 +1,7 @@
 techatnyu ships
 ======================
 
-##Schema
+#Project Schema
 
 	layout: [layout]
 	title: Name of Project
@@ -34,9 +34,11 @@ techatnyu ships
 
 Media is tentative
 
-##People Schema
+#People Schema
 
 For eboard and alumni collections. Tenative, should align with platform.
+
+###E-board
 
 	title: Person Name
 	school: NYU
@@ -51,15 +53,43 @@ For eboard and alumni collections. Tenative, should align with platform.
 
 Weight is the way we force sort the grid, in an ugly double for loop. This is based off the [old team page](https://tech-nyu.squarespace.com/team/). As of now, weights correspond to:
 
-1. President (or Trevor)
-2. Chair (or former presidents in case of alumni)
+1. President
+2. Chair
 3. External
 4. Internal
 5. Other school liasons
 
 Within each weight, it sorts alphabetically.
 
-##Collections
+###Alumni
+
+Alumni is very similar, with the addition of "now", which shows off what alumni are doing nowadays:
+
+	now: Javelin
+	nowURL: http://www.javelin.com
+
+Also, instead of our 1-10 loop, we have a count from 1-20. We reserve the first 10 for presidents, in order:
+
+1. Trevor
+2. Ben
+3. Vivek
+4. Kim
+5. (Emanuel)
+6. (Ethan)
+
+etc.
+
+We start our alumni sorting at 11, sorted by the year the alumni left tech@NYU. I don't know peoples' tenures exactly (except for the latest batch) so we'll have to add this in.
+
+1. 2009-2010
+2. 2010-2011
+3. 2011-2012
+4. 2012-2013
+5. 2013-2014
+
+----
+
+#Collections
 
 Of the collections, we will have:
 
@@ -113,7 +143,7 @@ Games!: *Heads Up Hot Dogs*
 
 -----
 
-##Legacy Notes
+#Legacy Notes
 
 Notes on the migration
 
