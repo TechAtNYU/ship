@@ -25,7 +25,11 @@
 					{% for eboard in site.eboard %}
 					{% if eboard.weight == weight %}
 						<li class="person">
-							<img src="{{eboard.image}}" title="{{eboard.title}}">
+							{% if page.lego == true %}
+								<img src="{{eboard.lego}}" title="{{eboard.title}}">
+							{% else %}
+								<img src="{{eboard.image}}" title="{{eboard.title}}">
+							{% endif %}
 							<h4>{{eboard.title}}</h4>
 							<p>{{eboard.position}}</p>
 						</li>

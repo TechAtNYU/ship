@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Cheryl Wu
+title: Sahil Trikha
 school: NYU
 major: Major?
-image: /lib/img/people/headshot/cheryl-wu.jpg
-lego: /lib/img/people/lego/cheryl.jpg
-position: Operations
+image: http://placekitten.com/300/300
+position: Business Development
 positionURL: http://www.techatnyu.org/position
 twitter: 
 email: t@NYU email?

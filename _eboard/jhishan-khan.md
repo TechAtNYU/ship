@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Cheryl Wu
+title: Jhishan Khan
 school: NYU
 major: Major?
-image: /lib/img/people/headshot/cheryl-wu.jpg
-lego: /lib/img/people/lego/cheryl.jpg
-position: Operations
+image: http://placekitten.com/300/300
+position: DemoDays
 positionURL: http://www.techatnyu.org/position
 twitter: 
 email: t@NYU email?
 graduate: 2016
-weight: 4
+weight: 3
 ---
