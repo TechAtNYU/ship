@@ -34,15 +34,35 @@ techatnyu ships
 
 Media is tentative
 
-##Layout/collections
+##People Schema
 
-Of the layouts, we will have:
+For eboard and alumni collections. Tenative, should align with platform.
+
+	title: Person Name
+	school: NYU
+	major: Major?
+	position: Lead of thing
+	positionURL: http://www.techatnyu.org/position
+	twitter: someperson
+	email: t@NYU email?
+	graduated: 2015
+
+##Collections
+
+Of the collections, we will have:
 
 - Project
 - Startup
 - Library
 - Event
 - Game
+
+Plus
+
+- Eboard
+- Alumni
+
+Which are just for individuals.
 
 ###Project
 Basic category. One-off and ongoing projects: *Beytrader*

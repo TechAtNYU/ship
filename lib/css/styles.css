@@ -273,13 +273,21 @@ header.main .tagline h1 {
   text-transform: none;
   font-style: normal;
 }
+.category {
+  color: rgba(33, 52, 71, 0.25);
+  text-align: center;
+  letter-spacing: .5em;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: light;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.category.light {
+  color: rgba(244, 244, 244, 0.25);
+}
 .container > section {
   font-size: 110%;
-  background-color: white;
-}
-.container > section.load-wave {
-  background-image: url(/lib/img/wave2.png);
-  background-repeat: repeat-y;
 }
 .container > section:nth-child(2) {
   background-color: #e6f9ff;
@@ -320,16 +328,6 @@ header.main .tagline h1 {
 }
 .container > section.blog ul {
   list-style: none;
-}
-.container > section .category {
-  color: rgba(33, 52, 71, 0.25);
-  text-align: center;
-  letter-spacing: .5em;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
-  font-style: normal;
-  font-weight: light;
-  margin-bottom: 1em;
-  text-transform: uppercase;
 }
 .posts a {
   color: #213447;

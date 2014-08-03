@@ -12,3 +12,7 @@ collections:
     output: true
   game:
     output: true
+  eboard:
+    output: true
+  alumni:
+    output: true

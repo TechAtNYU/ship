@@ -158,13 +158,21 @@ header.main {
 		}
 	}
 }
+.category {
+	color: @gentGreyT;
+	text-align: center;
+	letter-spacing: .5em;
+	font-family: @light;
+	font-style: normal;
+	font-weight: light;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	&.light {
+		color: @lightGreyT;
+	}
+}
 .container > section {
 	font-size: @miniBump;
-		background-color: white;
-		&.load-wave {
-			background-image: url(/lib/img/wave2.png);
-			background-repeat: repeat-y;
-		}
 	&:nth-child(2) {
 		background-color: @boatLightest;
 	}
@@ -206,16 +214,6 @@ header.main {
 	}
 	&.blog ul {
 		list-style: none;
-	}
-	.category {
-		color: @gentGreyT;
-		text-align: center;
-		letter-spacing: .5em;
-		font-family: @light;
-		font-style: normal;
-		font-weight: light;
-		margin-bottom: 1em;
-		text-transform: uppercase;
 	}
 }
 .posts {
