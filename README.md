@@ -41,6 +41,7 @@ Of the layouts, we will have:
 - Startup
 - Library
 - Event
+- Game
 
 ###Project
 Basic category. One-off and ongoing projects: *Beytrader*
@@ -65,6 +66,12 @@ An event that's really cool: *Raise Cache*
 - Time
 - Location
 - Media coverage
+
+###Game
+Games!: *Heads Up Hot Dogs*
+
+- Platform
+- Where to get
 
 ##Development
 

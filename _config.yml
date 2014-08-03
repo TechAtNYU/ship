@@ -8,3 +8,5 @@ collections:
     output: true
   event:
     output: true
+  game:
+    output: true
