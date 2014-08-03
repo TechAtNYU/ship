@@ -296,6 +296,15 @@ header.main .tagline h1 {
 .container > section:nth-child(6) {
   background-color: #0cc8fe;
 }
+.container > section:nth-child(7) {
+  background-color: #0db0d6;
+}
+.container > section:nth-child(8) {
+  background-color: #0a86a3;
+}
+.container > section:nth-child(9) {
+  background-color: #08697f;
+}
 .container > section.intro p {
   font-size: 1.25em;
   line-height: 1.75;
@@ -435,10 +444,10 @@ footer {
   font-size: 110%;
   padding: .5em 0;
   color: white;
-  background: #00a1c6;
+  background: #065466;
 }
 footer.cta {
-  background: #006070;
+  background: #172633;
 }
 footer a:link,
 footer a:visited,
