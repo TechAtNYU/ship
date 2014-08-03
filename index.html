@@ -45,6 +45,33 @@ title: SHIP tech@NYU
 <section class="blog" id="event">
 	<div class="site">
 		<h5 class="category">Events</h5>
+		<ul class="posts">
+			{% for event in site.event %}
+			<li class="project">
+				<a href="{{ event.site }}"><img src="{{ event.image }}"></a>
+				<div class="description">
+					<h1>{{ event.title }}</h1>
+			
+					<div class="attribution">
+						{% for creator in event.creator %}
+						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+						<p>{{creator.school}}</p>
+						<p>{{creator.eboard}}</p>
+						<p>{{creator.current}}</p>
+						
+							{% for role in creator.role %}
+								{{ role }}
+							{% endfor %}
+						
+						{% endfor %}
+	
+					</div>  
+					<p>{{event.content}}</p>
+					{% if event.site %}<p><a href="{{ event.site }}" class="project-link">{{ event.site }}</a></p>{% endif %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
 	</div>
 </section>
 
