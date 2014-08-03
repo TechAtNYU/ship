@@ -16,19 +16,35 @@
 
 
 <footer id="board">
-	<h5 class="category light">Current Eboard</h5>
+	<h5 class="category light">Executive Board 2014-2015</h5>
 		<div class="site">
 			<ul class="eboard grid">
-				{% for eboard in site.eboard %}
-				<li class="person">
-					<img src="{{eboard.image}}" title="{{eboard.title}}">
-					<h4>{{eboard.title}}</h4>
-					<p>{{eboard.position}}</p>
-				</li>
+				{% for weight in (1..10) %}
+					{% for eboard in site.eboard %}
+					{% if eboard.weight == weight %}
+						<li class="person">
+							<img src="{{eboard.image}}" title="{{eboard.title}}">
+							<h4>{{eboard.title}}</h4>
+							<p>{{eboard.position}}</p>
+						</li>
+					{% endif %}
+					
+					{% endfor %}
 				{% endfor %}
 			</ul>
 	
 			<h5 class="category light">Alumni</h5>
+			
+			<ul class="eboard grid">
+				{% for alumni in site.alumni %}
+				<li class="person">
+					<img src="{{alumni.image}}" title="{{eboard.title}}">
+					<h4>{{alumni.title}}</h4>
+					<p>{{alumni.position}}</p>
+					<p>{{alumni.now}}</p>
+				</li>
+				{% endfor %}
+			</ul>
 		</div>
 </footer>
 

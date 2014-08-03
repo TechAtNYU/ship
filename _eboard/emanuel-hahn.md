@@ -9,4 +9,5 @@ positionURL: http://www.techatnyu.org/position
 twitter: hahnbo
 email: t@NYU email?
 graduate: 2014
+weight: 2
 ---

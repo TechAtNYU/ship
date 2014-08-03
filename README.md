@@ -47,6 +47,17 @@ For eboard and alumni collections. Tenative, should align with platform.
 	twitter: someperson
 	email: t@NYU email?
 	graduate: 2015
+	weight [int 1-10]
+
+Weight is the way we force sort the grid, in an ugly double for loop. This is based off the [old team page](https://tech-nyu.squarespace.com/team/). As of now, weights correspond to:
+
+1. President (or Trevor)
+2. Chair (or former presidents in case of alumni)
+3. External
+4. Internal
+5. Other school liasons
+
+Within each weight, it sorts alphabetically.
 
 ##Collections
 

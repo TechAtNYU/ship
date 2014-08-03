@@ -9,4 +9,5 @@ positionURL: http://www.techatnyu.org/position
 twitter: ethanresnick
 email: t@NYU email?
 graduate: 2015
+weight: 1
 ---

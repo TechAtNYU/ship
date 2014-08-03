@@ -9,4 +9,5 @@ positionURL: http://www.techatnyu.org/position
 twitter: abhinayashutosh
 email: t@NYU email?
 graduate: 2016
+weight: 4
 ---
