@@ -1,6 +1,3 @@
-techatnyu ships
-======================
-
 #Project Schema
 
 	layout: [layout]
