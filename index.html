@@ -22,28 +22,30 @@ title: SHIP tech@NYU
 	<div class="site">
 		<h5 class="category">Demodays</h5>
 		<ul class="posts">
+			<!--
 			{% for demodays in site.demodays %}
-			<li class="project">
-					<div class="description">
-						<div class="img-wrap">
-							<a href="{{ demodays.site }}"><img src="{{ demodays.image }}"></a>
-						</div>
-						<a href="{{ demodays.site }}">
-							<h2>{{ demodays.title }}</h2>
-
-						</a>
-
-
-							{% for creator in demodays.creator %}
-							<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
-							<p>{{creator.school}}</p>
-						
-						
-							{% endfor %}
-	
-					</div>
-				</li>
-			{% endfor %}
+						<li class="project">
+								<div class="description">
+									<div class="img-wrap">
+										<a href="{{ demodays.site }}"><img src="{{ demodays.image }}"></a>
+									</div>
+									<a href="{{ demodays.site }}">
+										<h2>{{ demodays.title }}</h2>
+			
+									</a>
+			
+			
+										{% for creator in demodays.creator %}
+										<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+										<p>{{creator.school}}</p>
+									
+									
+										{% endfor %}
+				
+								</div>
+							</li>
+						{% endfor %}-->
+			
 		</ul>
 	</div>
 </section>
