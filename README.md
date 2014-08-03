@@ -41,11 +41,12 @@ For eboard and alumni collections. Tenative, should align with platform.
 	title: Person Name
 	school: NYU
 	major: Major?
+	image: /lib/img/person.jpg
 	position: Lead of thing
 	positionURL: http://www.techatnyu.org/position
 	twitter: someperson
 	email: t@NYU email?
-	graduated: 2015
+	graduate: 2015
 
 ##Collections
 

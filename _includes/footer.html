@@ -17,8 +17,19 @@
 
 <footer id="board">
 	<h5 class="category light">Current Eboard</h5>
+		<div class="site">
+			<ul class="eboard grid">
+				{% for eboard in site.eboard %}
+				<li class="person">
+					<img src="{{eboard.image}}" title="{{eboard.title}}">
+					<h4>{{eboard.title}}</h4>
+					<p>{{eboard.position}}</p>
+				</li>
+				{% endfor %}
+			</ul>
 	
-	<h5 class="category light">Alumni</h5>
+			<h5 class="category light">Alumni</h5>
+		</div>
 </footer>
 
 

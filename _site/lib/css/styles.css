@@ -12,6 +12,7 @@
 }
 .grid li {
   display: inline-block;
+  width: 25%;
 }
 .grid li.half {
   width: 45%;
@@ -486,6 +487,13 @@ footer .info {
 footer .colophon {
   clear: both;
   text-align: right;
+}
+footer .eboard li {
+  width: 24%;
+}
+footer .eboard li img {
+  width: 75%;
+  border-radius: 1000px;
 }
 @media only screen and (min-width: 40em) {
   header.main {
