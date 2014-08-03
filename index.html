@@ -79,7 +79,10 @@ title: SHIP tech@NYU
 	
 					</div>  
 					<p>{{library.content}}</p>
-					{% if library.site %}<p><a href="{{ library.site }}" class="project-link">{{ library.site }}</a></p>{% endif %}
+					
+					{% unless library.inactive %}
+						{% if library.site %}<p><a href="{{ library.site }}" class="project-link">{{ library.site }}</a></p>{% endif %}
+					{% endunless %}
 				</div>
 			</li>
 			{% endfor %}
@@ -118,7 +121,9 @@ title: SHIP tech@NYU
 	
 					</div>  
 					<p>{{project.content}}</p>
-					{% if project.site %}<p><a href="{{ project.site }}" class="project-link">{{ project.site }}</a></p>{% endif %}
+					{% unless project.inactive %}
+						{% if project.site %}<p><a href="{{ project.site }}" class="project-link">{{ project.site }}</a></p>{% endif %}
+					{% endunless %}
 				</div>
 			</li>
 			{% endfor %}
@@ -157,7 +162,9 @@ title: SHIP tech@NYU
 	
 					</div>  
 					<p>{{game.content}}</p>
-					{% if game.site %}<p><a href="{{ game.site }}" class="project-link">{{ game.site }}</a></p>{% endif %}
+					{% unless game.inactive %}
+						{% if game.site %}<p><a href="{{ game.site }}" class="project-link">{{ game.site }}</a></p>{% endif %}
+					{% endunless %}
 				</div>
 			</li>
 			{% endfor %}
@@ -196,7 +203,9 @@ title: SHIP tech@NYU
 	
 					</div>  
 					<p>{{event.content}}</p>
-					{% if event.site %}<p><a href="{{ event.site }}" class="project-link">{{ event.site }}</a></p>{% endif %}
+					{% unless event.inactive %}
+						{% if event.site %}<p><a href="{{ event.site }}" class="project-link">{{ event.site }}</a></p>{% endif %}
+					{% endunless %}
 				</div>
 			</li>
 			{% endfor %}
@@ -235,7 +244,9 @@ title: SHIP tech@NYU
 	
 					</div>  
 					<p>{{startup.content}}</p>
-					{% if startup.site %}<p><a href="{{ startup.site }}" class="project-link">{{ startup.site }}</a></p>{% endif %}
+					{% unless startup.inactive %}
+						{% if startup.site %}<p><a href="{{ startup.site }}" class="project-link">{{ startup.site }}</a></p>{% endif %}
+					{% endunless %}
 				</div>
 			</li>
 			{% endfor %}

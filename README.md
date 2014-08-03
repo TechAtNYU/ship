@@ -30,6 +30,7 @@ techatnyu ships
 	  - unordered list of media
 	  - facebook
 	  - whatever
+	inactive: false
 
 Media is tentative
 

@@ -9,5 +9,6 @@ featured: false
 demodays: false
 eboard: false
 alumni: true
+inactive: true
 ---
 Posts your most-liked Instagram photos to Tumblr automatically at an interval of your choosing.
