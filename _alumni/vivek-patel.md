@@ -8,7 +8,7 @@ position: President, 2011–2012
 positionURL: http://www.techatnyu.org/position
 now: Oyster
 nowURL: http://www.google.com
-twitter: 
+twitter: revivek
 email: t@NYU email?
 graduate: 2014
 weight: 3

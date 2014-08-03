@@ -8,7 +8,7 @@ position: DesignDays
 positionURL: http://www.techatnyu.org/position
 now: ChatID
 nowURL: http://www.google.com
-twitter: 
+twitter: nwhistles
 email: t@NYU email?
 graduate: 2014
 weight: 14

@@ -8,7 +8,7 @@ position: ??
 positionURL: http://www.techatnyu.org/position
 now: Google
 nowURL: http://www.google.com
-twitter: 
+twitter: blackrabbit
 email: t@NYU email?
 graduate: 2014
 weight: 14

@@ -8,7 +8,7 @@ position: ??
 positionURL: http://www.techatnyu.org/position
 now: Goldman Sachs
 nowURL: http://www.google.com
-twitter: 
+twitter: thezhangover
 email: t@NYU email?
 graduate: 2014
 weight: 11

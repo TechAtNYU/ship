@@ -8,7 +8,7 @@ position: Startup Week
 positionURL: http://www.techatnyu.org/position
 now: 
 nowURL: http://www.google.com
-twitter: 
+twitter: josh_nussbaum
 email: t@NYU email?
 graduate: 2014
 weight: 15

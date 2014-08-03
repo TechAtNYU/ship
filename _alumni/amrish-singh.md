@@ -8,7 +8,7 @@ position: ??
 positionURL: http://www.techatnyu.org/position
 now: Digital First Ventures
 nowURL: http://www.google.com
-twitter: 
+twitter: amrish
 email: t@NYU email?
 graduate: 2014
 weight: 14

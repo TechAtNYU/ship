@@ -7,8 +7,8 @@ image: https://static.squarespace.com/static/50354720c4aa2d2d3150d3d8/t/523b09e4
 position: ??
 positionURL: http://www.techatnyu.org/position
 now: Bowery.io
-nowURL: http://www.google.com
-twitter: 
+nowURL: http://bowery.io/
+twitter: thebyrd
 email: t@NYU email?
 graduate: 2014
 weight: 14

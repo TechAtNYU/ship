@@ -8,7 +8,7 @@ position: DemoDays
 positionURL: http://www.techatnyu.org/position
 now: 
 nowURL: http://www.google.com
-twitter: 
+twitter: jprez38
 email: t@NYU email?
 graduate: 2014
 weight: 15
