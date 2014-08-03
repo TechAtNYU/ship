@@ -21,24 +21,147 @@ title: SHIP tech@NYU
 <section class="blog" id="demodays">
 	<div class="site">
 		<h5 class="category">Demodays</h5>
+		<ul class="posts">
+			{% for demodays in site.demodays %}
+			<li class="project">
+					<div class="description">
+						<div class="img-wrap">
+							<a href="{{ demodays.site }}"><img src="{{ demodays.image }}"></a>
+						</div>
+						<a href="{{ demodays.site }}">
+							<h2>{{ demodays.title }}</h2>
+
+						</a>
+
+
+							{% for creator in demodays.creator %}
+							<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+							<p>{{creator.school}}</p>
+						
+						
+							{% endfor %}
+	
+					</div>
+				</li>
+			{% endfor %}
+		</ul>
 	</div>
 </section>
 
 <section class="blog" id="library">
 	<div class="site">
 		<h5 class="category">Libraries</h5>
+		<ul class="posts">
+			{% for library in site.library %}
+			<li class="project">
+				<a href="{{ library.site }}"><img src="{{ library.image }}"></a>
+				<div class="description">
+					<h1>{{ library.title }}</h1>
+			
+					<div class="attribution">
+						{% for creator in library.creator %}
+						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+						<p>{{creator.school}}</p>
+						
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<p>tech@NYU e-board</p>
+								{% else %}
+									<p>tech@NYU Alumni</p>
+								{% endif %}
+							{% endif %}
+						
+							{% for role in creator.role %}
+								<small>{{ role }}</small>
+							{% endfor %}
+						
+						{% endfor %}
+	
+					</div>  
+					<p>{{library.content}}</p>
+					{% if library.site %}<p><a href="{{ library.site }}" class="project-link">{{ library.site }}</a></p>{% endif %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
 	</div>
 </section>
 
 <section class="blog" id="project">
 	<div class="site">
 		<h5 class="category">Projects</h5>
+		<ul class="posts">
+			{% for project in site.project %}
+			<li class="project">
+				<a href="{{ project.site }}"><img src="{{ project.image }}"></a>
+				<div class="description">
+					<h1>{{ project.title }}</h1>
+			
+					<div class="attribution">
+						{% for creator in project.creator %}
+						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+						<p>{{creator.school}}</p>
+						
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<p>tech@NYU e-board</p>
+								{% else %}
+									<p>tech@NYU Alumni</p>
+								{% endif %}
+							{% endif %}
+						
+							{% for role in creator.role %}
+								<small>{{ role }}</small>
+							{% endfor %}
+						
+						{% endfor %}
+	
+					</div>  
+					<p>{{project.content}}</p>
+					{% if project.site %}<p><a href="{{ project.site }}" class="project-link">{{ project.site }}</a></p>{% endif %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
 	</div>
 </section>
 
 <section class="blog" id="game">
 	<div class="site">
 		<h5 class="category">Games</h5>
+		<ul class="posts">
+			{% for game in site.game %}
+			<li class="project">
+				<a href="{{ game.site }}"><img src="{{ game.image }}"></a>
+				<div class="description">
+					<h1>{{ game.title }}</h1>
+			
+					<div class="attribution">
+						{% for creator in game.creator %}
+						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+						<p>{{creator.school}}</p>
+						
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<p>tech@NYU e-board</p>
+								{% else %}
+									<p>tech@NYU Alumni</p>
+								{% endif %}
+							{% endif %}
+						
+							{% for role in creator.role %}
+								<small>{{ role }}</small>
+							{% endfor %}
+						
+						{% endfor %}
+	
+					</div>  
+					<p>{{game.content}}</p>
+					{% if game.site %}<p><a href="{{ game.site }}" class="project-link">{{ game.site }}</a></p>{% endif %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
 	</div>
 </section>
 
@@ -56,11 +179,17 @@ title: SHIP tech@NYU
 						{% for creator in event.creator %}
 						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
 						<p>{{creator.school}}</p>
-						<p>{{creator.eboard}}</p>
-						<p>{{creator.current}}</p>
+						
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<p>tech@NYU e-board</p>
+								{% else %}
+									<p>tech@NYU Alumni</p>
+								{% endif %}
+							{% endif %}
 						
 							{% for role in creator.role %}
-								{{ role }}
+								<small>{{ role }}</small>
 							{% endfor %}
 						
 						{% endfor %}
@@ -78,6 +207,39 @@ title: SHIP tech@NYU
 <section class="blog" id="startup">
 	<div class="site">
 		<h5 class="category">Startups</h5>
+		<ul class="posts">
+			{% for startup in site.startup %}
+			<li class="project">
+				<a href="{{ startup.site }}"><img src="{{ startup.image }}"></a>
+				<div class="description">
+					<h1>{{ startup.title }}</h1>
+			
+					<div class="attribution">
+						{% for creator in startup.creator %}
+						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+						<p>{{creator.school}}</p>
+						
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<p>tech@NYU e-board</p>
+								{% else %}
+									<p>tech@NYU Alumni</p>
+								{% endif %}
+							{% endif %}
+						
+							{% for role in creator.role %}
+								<small>{{ role }}</small>
+							{% endfor %}
+						
+						{% endfor %}
+	
+					</div>  
+					<p>{{startup.content}}</p>
+					{% if startup.site %}<p><a href="{{ startup.site }}" class="project-link">{{ startup.site }}</a></p>{% endif %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
 	</div>
 </section>
 
