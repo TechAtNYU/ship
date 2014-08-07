@@ -1,13 +1,20 @@
 ---
 layout: post
 title: Bowery
-creator: David Byrd & Stephen Kaliski
-twitter: thebyrd
 site: http://bowery.io/
 image: /lib/img/projects/bowery.png
-featured: false
+creator:
+  - name: David Byrd
+    school: NYU
+    twitter: thebyrd
+    eboard: true
+    current: false
+  - name: Steve Kaliski
+    school: NYU
+    twitter: stevekaliski
+    eboard: true
+    current: false
+launchdate:
 demodays: false
-eboard: false
-alumni: true
 ---
-The Next Generation of Web Development. Build products, not infrastructure.
+Bowery is a limitless development environment. Does your application need to run on multiple machines? Does it need more computing resources than your laptop has? Are you tired of installing, configuring, and reconfiguring software? Perfect.

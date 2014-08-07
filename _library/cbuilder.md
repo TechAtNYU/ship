@@ -1,13 +1,17 @@
 ---
 layout: post
 title: Cbuilder
-creator: Nate Berkopec
-twitter: nateberkopec
 site: http://caffeinatedlabs.github.com/cbuilder
 image: /lib/img/projects/cbuilder.jpg
-featured: false
-demodays: false
-eboard: false
-alumni: true
+creator:
+  - name: Nate Berkopec
+    school: NYU
+    twitter: nateberkopec
+    eboard: true
+    current: false
+    role:
+    - design
+launchdate:
+demodays:
 ---
 A lightweight DSL for comma-separated value output in Ruby.

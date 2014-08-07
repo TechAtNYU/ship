@@ -1,5 +1,5 @@
 ---
-layout: event
+layout: post
 title: Raise Cache
 image: /lib/img/projects/raisecache.jpg
 site: http://thenextweb.com/insider/2011/11/20/raise-cache-one-party-in-nyc-raises-over-100000-for-local-hackers/

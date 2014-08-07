@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Samplrs
-creator: Jake Siegal
-twitter: jakesiegal
 site: http://samplrs.com
 image: /lib/img/projects/samplrs.jpeg
-featured: false
+creator:
+  - name: Jake Siegal
+    school: NYU
+    twitter: jakesiegal
+    eboard: true
+    current: false
+launchdate:
 demodays: false
-eboard: false
-alumni: true
 ---
 A subscription service for getting amazing local food delivered to your door once a month. Also features a loyalty points system and food-themed events for members. Acquired by Fancy.

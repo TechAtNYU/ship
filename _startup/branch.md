@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Branch
-creator: Hursh Agrawal
-twitter: branch
 site: http://branch.com
 image: /lib/img/projects/branch.jpg
-featured: false
+creator:
+  - name: Hursh Agrawal
+    school: NYU
+    twitter: hursh
+    eboard: true
+    current: false
+launchdate:
 demodays: false
-eboard: false
-alumni: true
 ---
 An online conversation platform. In addition to co-founder Hursh (founder of Tech@NYU's HackDays), employed two Tech@NYU alumni. Raised $2m from Obvious Corporation, Lerer Ventures, and SV Angel. Acquired by Facebook.

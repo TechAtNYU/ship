@@ -1,15 +1,20 @@
 ---
 layout: post
 title: Bento
-creator: Jon Chan
-site: http://bentobox.io
-twitter: jonhmchan
 image: /lib/img/projects/bento.jpg
-featured: false
+site: http://bentobox.io
+creator: 
+  - name: Jon Chan
+    school: NYU
+    twitter: jonhmchan
+    eboard: true
+    current: false
+    role:
+    - everything
+launchdate:
 demodays: false
-eboard: false
-alumni: true
 ---
+
 Provides resources for people to learn how to code intuitively. Made front page of Reddit and HackerNews, press coverage.
 
 Looking for sponsors.

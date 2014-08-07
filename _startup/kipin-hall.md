@@ -1,14 +1,16 @@
 ---
 layout: post
 title: Kipin Hall
-creator: Abhinay Ashutosh
-twitter: abhinayashutosh
 site: http://kipinhall.com/
 image: /lib/img/projects/kipinhall.jpg
-featured: true
-demodays: false
-eboard: true
-alumni: false
+creator:
+  - name: Abhinay Ashutosh
+    school: NYU
+    twitter: abhinayashutosh
+    eboard: true
+    current: true
+launchdate:
+demodays:
 ---
 Kipin Hall is an education and community life platform rolling out to NYU and the greater NYC area next semester.
 

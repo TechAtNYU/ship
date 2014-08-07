@@ -1,12 +1,17 @@
 ---
 layout: post
 title: HashMash
-creator: Matt Ruzicka
-twitter: mattruzicka
 site: http://hashmash.me/
 image: /lib/img/projects/hashmash.jpg
-featured: false
+creator: 
+  - name: Matt Ruzicka
+    school: NYU
+    twitter: mattruzicka
+    eboard: true
+    current: false
+    role:
+    - everything
+launchdate:
 demodays: false
-eboard: false
-alumni: true
+inactive: true
 ---

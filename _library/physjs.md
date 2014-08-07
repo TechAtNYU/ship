@@ -1,13 +1,18 @@
 ---
 layout: post
 title: Phys.Js
-creator: Abhi Agarwal & Philip Ottesen
-twitter: AbhiAgarwal
 site: http://www.physjs.org/
 image: /lib/img/projects/physics.jpg
-featured: false
-demodays: false
-eboard: true
-alumni: false
+creator:
+  - name: Abhi Agarwal
+    school: NYU
+    twitter: AbhiAgarwal
+    eboard: true
+    current: true
+  - name: Philip Ottesen
+    school: NYU
+    twitter: PhilipOttesen
+    eboard: true
+    current: true
 ---
 Physics Library for Javascript. Needs testers and physics nerds!

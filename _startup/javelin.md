@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Javelin
-creator: Trevor Owens
-twitter: to
 site: https://javelinapp.com/
-image: /lib/img/projects/javelin.png
-featured: false
+image: http://www.javelin.com/img/logo@2x.png
+creator:
+  - name: Trevor Owens
+    school: NYU
+    twitter: to
+    eboard: true
+    current: false
+launchdate:
 demodays: false
-eboard: false
-alumni: true
 ---
-Javelin is Lean Startup software for enterprise teams to launch new products and improve existing ones. Currently in beta.
+Javelin creates tools and services to help you change your world. Creator of the popular Lean Startup Machine workshop, QuickMVP and Experiment Board.

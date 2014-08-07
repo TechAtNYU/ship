@@ -1,12 +1,16 @@
 ---
 layout: post
 title: Kazzly
-creator: Ben Paster
-twitter: BenPaster
 site: http://kazzly.com
 image: http://kazzly.s3.amazonaws.com/home-demo.png
-featured: false
-demodays: false
-eboard: true
-alumni: false
+creator:
+  - name: Ben Paster
+    school: NYU
+    twitter: BenPaster
+    eboard: true
+    current: true
+    role:
+    - everything
+launchdate:
+demodays:
 ---

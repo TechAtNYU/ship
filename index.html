@@ -38,7 +38,7 @@ lego: false
 			
 										{% for creator in demodays.creator %}
 										<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
-										<p>{{creator.school}}</p>
+										
 									
 									
 										{% endfor %}
@@ -64,7 +64,7 @@ lego: false
 					<div class="attribution">
 						{% for creator in library.creator %}
 						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
-						<p>{{creator.school}}</p>
+						
 						
 							{% if creator.eboard %}
 								{% if creator.current == true %}
@@ -74,9 +74,7 @@ lego: false
 								{% endif %}
 							{% endif %}
 						
-							{% for role in creator.role %}
-								<small>{{ role }}</small>
-							{% endfor %}
+							
 						
 						{% endfor %}
 	
@@ -106,7 +104,7 @@ lego: false
 					<div class="attribution">
 						{% for creator in project.creator %}
 						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
-						<p>{{creator.school}}</p>
+						
 						
 							{% if creator.eboard %}
 								{% if creator.current == true %}
@@ -116,9 +114,7 @@ lego: false
 								{% endif %}
 							{% endif %}
 						
-							{% for role in creator.role %}
-								<small>{{ role }}</small>
-							{% endfor %}
+							
 						
 						{% endfor %}
 	
@@ -147,7 +143,7 @@ lego: false
 					<div class="attribution">
 						{% for creator in game.creator %}
 						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
-						<p>{{creator.school}}</p>
+						
 						
 							{% if creator.eboard %}
 								{% if creator.current == true %}
@@ -157,9 +153,7 @@ lego: false
 								{% endif %}
 							{% endif %}
 						
-							{% for role in creator.role %}
-								<small>{{ role }}</small>
-							{% endfor %}
+							
 						
 						{% endfor %}
 	
@@ -188,7 +182,7 @@ lego: false
 					<div class="attribution">
 						{% for creator in event.creator %}
 						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
-						<p>{{creator.school}}</p>
+						
 						
 							{% if creator.eboard %}
 								{% if creator.current == true %}
@@ -198,9 +192,7 @@ lego: false
 								{% endif %}
 							{% endif %}
 						
-							{% for role in creator.role %}
-								<small>{{ role }}</small>
-							{% endfor %}
+							
 						
 						{% endfor %}
 	
@@ -229,7 +221,7 @@ lego: false
 					<div class="attribution">
 						{% for creator in startup.creator %}
 						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
-						<p>{{creator.school}}</p>
+						
 						
 							{% if creator.eboard %}
 								{% if creator.current == true %}
@@ -239,9 +231,7 @@ lego: false
 								{% endif %}
 							{% endif %}
 						
-							{% for role in creator.role %}
-								<small>{{ role }}</small>
-							{% endfor %}
+							
 						
 						{% endfor %}
 	

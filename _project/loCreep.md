@@ -1,13 +1,19 @@
 ---
 layout: post
 title: LoCreep
-creator: Misha Ponizil
-twitter: mishaponizil
-site:
 image:
-featured: false
-demodays: false
-eboard: false
-alumni: true
+site:
+creator:
+  - name: Misha Ponizil
+    school: NYU
+    twitter: mishaponizil
+    eboard: true
+    current: false
+    role:
+    - everything
+launchdate:
+demodays:
+inactive: true
 ---
+
 A text-message service for dealing with the creepers in your life. Demoed at NY Tech Meetup.

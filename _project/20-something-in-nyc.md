@@ -1,14 +1,18 @@
 ---
 layout: post
 title: 20-something in NYC
-creator: Kim Pham
-twitter: kim617
-site: http://20somethinginnyc.com
 image: /lib/img/projects/20something.jpg
-featured: false
+site: http://20somethinginnyc.com
+creator:
+  - name: Kim Pham
+    school: NYU
+    twitter: kim617
+    eboard: true
+    current: false
+    role:
+    - everything
+launchdate: 
 demodays: false
-eboard: true
-alumni: false
 ---
 Social project to collect the stories and learnings of 20-somethings in NYC.
 
