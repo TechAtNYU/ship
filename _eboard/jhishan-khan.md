@@ -3,7 +3,7 @@ layout: post
 title: Jhishan Khan
 school: NYU
 major: Major?
-image: http://placekitten.com/300/300
+image: /lib/img/people/headshot/jhishan-khan.jpg
 position: DemoDays
 positionURL: http://www.techatnyu.org/position
 twitter: jhishan
