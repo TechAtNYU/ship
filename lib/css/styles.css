@@ -198,7 +198,7 @@ header.main .logo img,
 header.main .logo h1 {
   display: block;
   position: relative;
-  z-index: 100;
+  z-index: 1;
 }
 header.main .logo img {
   max-width: 100%;
@@ -507,6 +507,7 @@ footer .eboard li .twitter:hover {
 @media only screen and (min-width: 40em) {
   header.main {
     background-position: center bottom;
+    background-size: cover;
     background-image: url(/lib/img/branch.jpg);
   }
   header.main.demodays {
@@ -529,7 +530,7 @@ footer .eboard li .twitter:hover {
   }
   header.main nav {
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     left: 0;
   }
@@ -537,9 +538,13 @@ footer .eboard li .twitter:hover {
     display: inline-block;
     position: relative;
     height: 24em;
-    padding-top: 22em;
     min-width: 2em;
     padding-bottom: 3em;
+  }
+  header.main nav li a {
+    display: block;
+    padding-top: 22em;
+    padding-bottom: 2em;
   }
   .container > section {
     padding: 2em 0;

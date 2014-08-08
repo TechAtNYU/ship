@@ -149,10 +149,8 @@ $(document).ready(function() {
 	var header = $("header.main nav li");
 	var windowTest = $(window).width();
 	
-	var containersize = header.parents("div").width();
-	
 	if (windowTest > 780) {
-		header.width(windowTest/7.75);
+		header.width(windowTest/8.5);
 		
 		header.hover( function() {
 			var current = $(this).index();
@@ -237,7 +235,7 @@ $(document).ready(function() {
 		var windowTest = $(window).width();
 		var containersize = header.parents("div").width();
 		if (windowTest > 620) {
-			header.width(containersize/5);
+			header.width(windowTest/8.5);
 		}
 		else {
 			header.removeAttr("style")
