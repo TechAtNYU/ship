@@ -2,7 +2,7 @@
 layout: post
 title: Hackers of NY
 site: http://hackersofny.com/
-image: https://d262ilb51hltx0.cloudfront.net/max/1702/1*s-U2hWi4hYJeNzBTg_6Htg.jpeg
+image: http://38.media.tumblr.com/d37f65636490129b2da37bc3ffffd880/tumblr_n7lg5lJFN71tqmaa2o1_1280.jpg
 creator: 
   - name: Dani Grant
     school: NYU

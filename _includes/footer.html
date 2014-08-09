@@ -35,7 +35,7 @@
 							<p>{{eboard.position}}</p>
 							
 							{% if eboard.twitter %}
-								<small><a href="http://twitter.com/{{ eboard.twitter }}" class="twitter" title="{{eboard.twitter}}"><i class="icon-social-twitter"></i> {{eboard.twitter}}</a></small>
+								<small><a href="http://twitter.com/{{ eboard.twitter }}" class="twitter" title="{{eboard.twitter}}"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span> {{eboard.twitter}}</a></small>
 							{% endif %}
 						</li>
 					{% endif %}
@@ -57,7 +57,7 @@
 							<p><em>{{alumni.now}}</em></p>
 							
 							{% if alumni.twitter %}
-								<small><a href="http://twitter.com/{{ alumni.twitter }}" class="twitter" title="{{alumni.twitter}}"><i class="icon-social-twitter"></i> {{alumni.twitter}}</a></small>
+								<small><a href="http://twitter.com/{{ alumni.twitter }}" class="twitter" title="{{alumni.twitter}}"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span> {{alumni.twitter}}</a></small>
 							{% endif %}
 						</li>
 						{% endif %}

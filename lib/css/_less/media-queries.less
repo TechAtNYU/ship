@@ -58,6 +58,13 @@
 			}
 		}
 	}
+	.posts {
+		.project {
+			.description {
+				width: 50%;
+			}
+		}
+	}
 	footer {
 		p {
 			font-size: 95%;
@@ -66,15 +73,27 @@
 
 }
 @media only screen and (min-width: 70em) {
-	.site, .normal {
+	.site {
 		max-width: 50em;
 		width: 65%;
+	}	
+	.site--fullbleed {
+		width: 100%;
+		max-width: 80em;
 		font-size: @bump;
 	}	
+	.site--grid {
+		width: 75%;
+		margin: 0 auto 0 250px;
+		font-size: @bump;
+		.description {
+			padding-left: 0 !important;
+		}
+	}
 	.posts {
 		.project {
 			.description {
-				width: 50%;
+				padding-left: 250px;
 			}
 		}
 	}

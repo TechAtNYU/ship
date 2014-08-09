@@ -1,7 +1,6 @@
 @import "webfonts.css";
 /* -- FLUID GRID STYLES -- */
 .grid {
-  margin-bottom: 40px;
   text-align: justify;
 }
 .grid.posts li {
@@ -329,6 +328,15 @@ header.main .tagline h1 {
 .container > section.blog ul {
   list-style: none;
 }
+.project__creator {
+  display: inline-block;
+  background-color: rgba(244, 244, 244, 0.25);
+  padding: 0 0.25em 0.2em;
+  margin: 0 0.25em 0.5em 0;
+}
+.project__content {
+  margin: 1.25em 0.25em 2em;
+}
 span[class^='creator__label--'] {
   border: 3px solid rgba(33, 52, 71, 0.75);
   border-radius: 100px;
@@ -420,26 +428,6 @@ span[class^='creator__label--'] > span {
 }
 .posts .twitter:hover {
   color: #213447;
-}
-.posts.grid {
-  *zoom: 1;
-}
-.posts.grid:before,
-.posts.grid:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.posts.grid:after {
-  clear: both;
-}
-.posts.grid:before,
-.posts.grid:after {
-  content: " ";
-  display: table;
-}
-.posts.grid:after {
-  clear: both;
 }
 .posts.grid .project {
   vertical-align: top;
@@ -575,19 +563,33 @@ footer .eboard li .twitter:hover {
   .container > section.intro p {
     padding: 0 3em;
   }
+  .posts .project .description {
+    width: 50%;
+  }
   footer p {
     font-size: 95%;
   }
 }
 @media only screen and (min-width: 70em) {
-  .site,
-  .normal {
+  .site {
     max-width: 50em;
     width: 65%;
+  }
+  .site--fullbleed {
+    width: 100%;
+    max-width: 80em;
     font-size: 125%;
   }
+  .site--grid {
+    width: 75%;
+    margin: 0 auto 0 250px;
+    font-size: 125%;
+  }
+  .site--grid .description {
+    padding-left: 0 !important;
+  }
   .posts .project .description {
-    width: 50%;
+    padding-left: 250px;
   }
   header.main {
     background-repeat: repeat;
