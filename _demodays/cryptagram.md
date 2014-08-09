@@ -7,12 +7,12 @@ creator:
   - name: Ian Spiro
     school: NYU
     twitter: 
-    eboard: true
+    eboard: false
     current: false
   - name: Matt Tierney
     school: NYU
     twitter: 
-    eboard: true
+    eboard: false
     current: false
 launchdate:
 demodays:

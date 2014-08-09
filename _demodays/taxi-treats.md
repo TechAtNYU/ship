@@ -7,7 +7,7 @@ creator:
   - name: Brian Shimmerlik
     school: NYU
     twitter: ShimmersAtStern
-    eboard: true
+    eboard: false
     current: false
 launchdate:
 demodays:

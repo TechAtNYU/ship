@@ -7,7 +7,7 @@ creator:
   - name: Prathamesh Godbole
     school: NYU Poly
     twitter: PrathameshGod
-    eboard: true
+    eboard: false
     current: false
 launchdate:
 demodays:

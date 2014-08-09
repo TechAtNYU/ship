@@ -7,7 +7,7 @@ creator:
   - name: John Fiorentino
     school: NYU
     twitter: 
-    eboard: true
+    eboard: false
     current: false
 launchdate:
 demodays: November 2013
