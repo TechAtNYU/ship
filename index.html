@@ -59,16 +59,13 @@ lego: false
 		<ul class="posts grid">
 			{% for demodays in site.demodays %}
 			<li class="project">
-					<div class="img-wrap">
+					<div class="img__wrap">
 						<a href="{{ demodays.site }}"><img src="/lib/img/shipplace.png" data-src="{{ demodays.image }}"></a>
 					</div>
 					<a href="{{ demodays.site }}">
 						<h2>{{ demodays.title }}</h2>
-			
 					</a>
 					
-					{% if demodays.demodays %}<p class="demodays__link">{{ demodays.demodays }}</p>{% endif %}
-			
 					{% for creator in demodays.creator %}
 					<p class="project__creator">{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
 					{% if creator.eboard %}
@@ -83,6 +80,7 @@ lego: false
 					</p>		
 					{% endfor %}
 				
+					{% if demodays.demodays %}<p class="demodays__link">{{ demodays.demodays }}</p>{% endif %}
 			</li>
 			{% endfor %}
 		</ul>

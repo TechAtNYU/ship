@@ -242,6 +242,10 @@ span[class^='creator__label--'] {
 		left: 2px;
 	}
 }
+.demodays__link {
+	color: @gentGreyT;
+	font-size: .75em;
+}
 span[class^='featured__bucket'] {
 	border: 3px solid @gentGreyT2;
 	text-transform: uppercase;
@@ -302,16 +306,9 @@ Startups
 	li {
 		padding: 1em 0;
 	}
-	.img-wrap {
-		min-height: 11em;
+	.img__wrap {
+		min-height: 15em;
 		text-align: center;
-	}
-	.dd__school {
-		color: @gentGreyT;
-		margin-top: -1em;
-		font-size: .75em;
-		text-transform: uppercase;
-		letter-spacing: .25em;
 	}
 	.project {
 		min-height: 15em;
@@ -366,6 +363,11 @@ Startups
 				text-align: left;
 			}
 		}
+	}
+}
+.person {
+	h4 {
+		.title();
 	}
 }
 footer {	

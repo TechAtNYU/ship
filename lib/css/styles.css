@@ -354,6 +354,10 @@ span[class^='creator__label--'] > span {
   top: -7px;
   left: 2px;
 }
+.demodays__link {
+  color: rgba(33, 52, 71, 0.25);
+  font-size: .75em;
+}
 span[class^='featured__bucket'] {
   border: 3px solid rgba(33, 52, 71, 0.75);
   text-transform: uppercase;
@@ -410,16 +414,9 @@ Startups
 .posts li {
   padding: 1em 0;
 }
-.posts .img-wrap {
-  min-height: 11em;
+.posts .img__wrap {
+  min-height: 15em;
   text-align: center;
-}
-.posts .dd__school {
-  color: rgba(33, 52, 71, 0.25);
-  margin-top: -1em;
-  font-size: .75em;
-  text-transform: uppercase;
-  letter-spacing: .25em;
 }
 .posts .project {
   min-height: 15em;
@@ -488,6 +485,11 @@ Startups
 .posts.grid .project .description {
   width: 100%;
   text-align: left;
+}
+.person h4 {
+  font-family: "League Gothic", helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
 }
 footer {
   font-size: 110%;
