@@ -30,7 +30,14 @@
 	bucket: [layout]
 	inactive: false
 
-Media is tentative
+
+Tentative:
+
+- media
+- role (creator)
+- launchdate
+
+Bucket means original category, this is used for featured posts.
 
 #People Schema
 
@@ -89,7 +96,7 @@ We start our alumni sorting at 11, sorted by the year the alumni left tech@NYU. 
 
 #Collections
 
-All categories' layouts should be interchangeable with any other category; the irrelevant metadata will just not render. This is important in the case of "Featured"-- you can drop in any project from any other bucket. (May need to add "bucket" to YML)
+All project layouts should be interchangeable with any other category. The irrelevant metadata will not render. This is important: in the case of "Featured", you can drop in any project from any other bucket. (May need to add "bucket" to YML)
 
 Of the collections, we will have:
 
@@ -117,6 +124,8 @@ DemoDays projects **from NYU students**. The main DemoDays archives are on [demo
 ###Library
 For all y'all to develop with: *Phys.js*
 
+Layout differences:
+
 - Language
 
 ###Project
@@ -125,11 +134,15 @@ Basic category. One-off and ongoing projects: *Beytrader*
 ###Game
 Games!: *Heads Up Hot Dogs*
 
+Layout differences:
+
 - Platform
 - Where to get
 
 ###Event
 An event that's really cool: *Raise Cache*
+
+Layout differences:
 
 - Date
 - Time
@@ -144,40 +157,9 @@ Layout differences:
 - Status (active, exited, etc)
 - ?
 
-##Development
+----
+
+#Development
 
 - Jekyll 2.0
 - LESS
-
------
-
-#Legacy Notes
-
-Notes on the migration
-
-###DD legacy schema
-
-	layout: post
-	title: Test
-	site: http://www.test.com
-	image: /lib/img/projects/test.jpg
-	category: demo
-	whichdd: February 2014
-	maker:
-	- name: Some Person
-	- school: NYU 
-	- twitter: someperson
-  
-### legacy Ship schema
-
-	layout: post
-	title: Test
-	creator: Some Person
-	school: NYU
-	twitter: false
-	site: http://www.test.com
-	image: /lib/img/projects/test.jpg
-	featured: false
-	demodays: true
-	eboard: false
-	alumni: false
