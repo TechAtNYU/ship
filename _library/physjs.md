@@ -15,4 +15,4 @@ creator:
     eboard: true
     current: true
 ---
-Physics Library for Javascript. Needs testers and physics nerds!
+Phys is a library created for individuals who want to use simple or advanced physics functions in their day-to-day work. This library includes functions for mechanics, thermal physics, oscillations and wave theory, electric current and electromagnetic induction, fields, forces and motions in fields, energy, power, and climate change, atomic and nuclear physics, quantum physics...
