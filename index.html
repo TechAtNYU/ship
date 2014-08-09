@@ -36,7 +36,7 @@ lego: false
 			
 			
 					{% for creator in demodays.creator %}
-					<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>		
+					<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}</p>		
 					{% endfor %}
 				
 			</li>
@@ -56,16 +56,22 @@ lego: false
 			
 					<div class="attribution">
 						{% for creator in library.creator %}
-						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
 						
 						
-							{% if creator.eboard %}
-								{% if creator.current == true %}
-									<p>tech@NYU e-board</p>
-								{% else %}
-									<p>tech@NYU Alumni</p>
-								{% endif %}
+						{% if creator.eboard %}
+							{% if creator.current == true %}
+								<span class="creator__label--eboard" title="tech@NYU Executive Board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
+								
+							{% else %}
+								<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+								
 							{% endif %}
+						{% endif %}
+						</p>
+						
+						
+							
 						
 							
 						
@@ -96,7 +102,7 @@ lego: false
 			
 					<div class="attribution">
 						{% for creator in project.creator %}
-						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}</p>
 						
 						
 							{% if creator.eboard %}
@@ -135,7 +141,7 @@ lego: false
 			
 					<div class="attribution">
 						{% for creator in game.creator %}
-						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}</p>
 						
 						
 							{% if creator.eboard %}
@@ -174,7 +180,7 @@ lego: false
 			
 					<div class="attribution">
 						{% for creator in event.creator %}
-						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}</p>
 						
 						
 							{% if creator.eboard %}
@@ -213,7 +219,7 @@ lego: false
 			
 					<div class="attribution">
 						{% for creator in startup.creator %}
-						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+						<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}</p>
 						
 						
 							{% if creator.eboard %}

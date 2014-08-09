@@ -216,6 +216,23 @@ header.main {
 		list-style: none;
 	}
 }
+span[class^='creator__label--'] {
+	border: 3px solid @gentGreyT2;
+	border-radius: 100px;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 6px;
+	display: inline-block;
+	&.creator__label--eboard {
+		border-color: @red;
+	}
+	> span {
+		position: absolute;
+		top: -7px;
+		left: 2px;
+	}
+}
 .posts {
 	a {
 		color: @gentGrey;

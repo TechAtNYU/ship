@@ -1,4 +1,3 @@
-@import "ionicons.css";
 @import "webfonts.css";
 /* -- FLUID GRID STYLES -- */
 .grid {
@@ -329,6 +328,23 @@ header.main .tagline h1 {
 }
 .container > section.blog ul {
   list-style: none;
+}
+span[class^='creator__label--'] {
+  border: 3px solid rgba(33, 52, 71, 0.75);
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 6px;
+  display: inline-block;
+}
+span[class^='creator__label--'].creator__label--eboard {
+  border-color: #cd231a;
+}
+span[class^='creator__label--'] > span {
+  position: absolute;
+  top: -7px;
+  left: 2px;
 }
 .posts a {
   color: #213447;
