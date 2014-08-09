@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Hublished
-creator: Ryan Kuhel
-school: NYU
-twitter: RyanKuhel
 site: https://hublished.com/HublishedWeb/index;jsessionid=DFD4BA3FFB91A061C3D5589F91BAD074
 image: /lib/img/projects/hublished.jpg
-featured: false
-demodays: true
-eboard: false
-alumni: false
+creator: 
+  - name: Ryan Kuhel
+    school: NYU
+    twitter: RyanKuhel
+    eboard: false
+    current: false
+launchdate:
+demodays:
 ---

@@ -1,13 +1,19 @@
 ---
 layout: post
 title: Cryptagram
-creator: Ian Spiro & Matt Tierney
-school: NYU
-twitter: false
 site: https://chrome.google.com/webstore/detail/cryptagram/adabfepaidfgaecmkcekhefdgjaihahc?hl=en
 image: /lib/img/projects/cryptagram.jpg
-featured: false
-demodays: true
-eboard: false
-alumni: false
+creator:
+  - name: Ian Spiro
+    school: NYU
+    twitter: 
+    eboard: true
+    current: false
+  - name: Matt Tierney
+    school: NYU
+    twitter: 
+    eboard: true
+    current: false
+launchdate:
+demodays:
 ---
