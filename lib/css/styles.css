@@ -546,6 +546,13 @@ footer .eboard li .twitter:hover {
     padding-top: 22em;
     padding-bottom: 2em;
   }
+  .project--half {
+    width: 50%;
+    float: left;
+  }
+  .project--half .description {
+    width: 100%;
+  }
   .container > section {
     padding: 2em 0;
   }

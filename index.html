@@ -22,31 +22,25 @@ lego: false
 <section class="blog" id="demodays">
 	<div class="site">
 		<h5 class="category">Demodays</h5>
-		<ul class="posts">
-			<!--
+		<p>DemoDays projects from NYU Students. <a href="http://demodays.co/archive/">Visit the full DemoDays Archive here.</a></p>
+		<ul class="posts grid">
 			{% for demodays in site.demodays %}
-						<li class="project">
-								<div class="description">
-									<div class="img-wrap">
-										<a href="{{ demodays.site }}"><img src="{{ demodays.image }}"></a>
-									</div>
-									<a href="{{ demodays.site }}">
-										<h2>{{ demodays.title }}</h2>
+			<li class="project">
+					<div class="img-wrap">
+						<a href="{{ demodays.site }}"><img src="{{ demodays.image }}"></a>
+					</div>
+					<a href="{{ demodays.site }}">
+						<h2>{{ demodays.title }}</h2>
 			
-									</a>
+					</a>
 			
 			
-										{% for creator in demodays.creator %}
-										<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
-										
-									
-									
-										{% endfor %}
+					{% for creator in demodays.creator %}
+					<p>{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>		
+					{% endfor %}
 				
-								</div>
-							</li>
-						{% endfor %}-->
-			
+			</li>
+			{% endfor %}
 		</ul>
 	</div>
 </section>
@@ -54,10 +48,9 @@ lego: false
 <section class="blog" id="library">
 	<div class="site">
 		<h5 class="category">Libraries</h5>
-		<ul class="posts">
+		<ul class="posts grid">
 			{% for library in site.library %}
-			<li class="project">
-				<a href="{{ library.site }}"><img src="{{ library.image }}"></a>
+			<li class="project half">
 				<div class="description">
 					<h1>{{ library.title }}</h1>
 			
