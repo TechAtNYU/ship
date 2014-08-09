@@ -1,6 +1,6 @@
 #Project Schema
 
-	layout: [layout]
+	layout: post
 	title: Name of Project
 	image: /lib/img/projects/whatever.jpg
 	site: http://www.test.com
@@ -27,6 +27,7 @@
 	  - unordered list of media
 	  - facebook
 	  - whatever
+	bucket: [layout]
 	inactive: false
 
 Media is tentative
@@ -88,36 +89,44 @@ We start our alumni sorting at 11, sorted by the year the alumni left tech@NYU. 
 
 #Collections
 
+All categories' layouts should be interchangeable with any other category; the irrelevant metadata will just not render. This is important in the case of "Featured"-- you can drop in any project from any other bucket. (May need to add "bucket" to YML)
+
 Of the collections, we will have:
 
-- Project
-- Startup
+- Featured
+- DemoDays
 - Library
-- Event
+- Project
 - Game
+- Event
+- Startup
 
-Plus
+Plus individuals:
 
 - Eboard
 - Alumni
 
-Which are just for individuals.
+###Featured
 
-###Project
-Basic category. One-off and ongoing projects: *Beytrader*
+Anything noteworthy or new. Updated (how often? weekly? monthly? every semester?)
 
-###Startup
-Incorporated, living the dream, possibly exited: *Branch*
+###DemoDays
 
-Layout differences:
-
-- Status (active, exited, etc)
-- ?
+DemoDays projects **from NYU students**. The main DemoDays archives are on [demodays.co](http://demodays.co/archives). We limit it to NYU students because of previous concerns that we were co-opting other schools' production on ship.**techatnyu**.org
 
 ###Library
 For all y'all to develop with: *Phys.js*
 
 - Language
+
+###Project
+Basic category. One-off and ongoing projects: *Beytrader*
+
+###Game
+Games!: *Heads Up Hot Dogs*
+
+- Platform
+- Where to get
 
 ###Event
 An event that's really cool: *Raise Cache*
@@ -127,11 +136,13 @@ An event that's really cool: *Raise Cache*
 - Location
 - Media coverage
 
-###Game
-Games!: *Heads Up Hot Dogs*
+###Startup
+Incorporated, living the dream, possibly exited: *Branch*
 
-- Platform
-- Where to get
+Layout differences:
+
+- Status (active, exited, etc)
+- ?
 
 ##Development
 
