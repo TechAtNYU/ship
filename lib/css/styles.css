@@ -1,8 +1,6 @@
-@import "ionicons.css";
 @import "webfonts.css";
 /* -- FLUID GRID STYLES -- */
 .grid {
-  margin-bottom: 40px;
   text-align: justify;
 }
 .grid.posts li {
@@ -10,11 +8,12 @@
   width: 31%;
   margin-bottom: 2%;
 }
-.grid li {
-  display: inline-block;
-}
-.grid li.half {
+.grid.posts li.half {
   width: 45%;
+}
+.grid.eboard li {
+  display: inline-block;
+  width: 24%;
 }
 .grid:after {
   content: '';
@@ -197,7 +196,7 @@ header.main .logo img,
 header.main .logo h1 {
   display: block;
   position: relative;
-  z-index: 100;
+  z-index: 1;
 }
 header.main .logo img {
   max-width: 100%;
@@ -273,13 +272,21 @@ header.main .tagline h1 {
   text-transform: none;
   font-style: normal;
 }
+.category {
+  color: rgba(33, 52, 71, 0.25);
+  text-align: center;
+  letter-spacing: .5em;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-style: normal;
+  font-weight: light;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.category.light {
+  color: rgba(244, 244, 244, 0.25);
+}
 .container > section {
   font-size: 110%;
-  background-color: white;
-}
-.container > section.load-wave {
-  background-image: url(/lib/img/wave2.png);
-  background-repeat: repeat-y;
 }
 .container > section:nth-child(2) {
   background-color: #e6f9ff;
@@ -295,6 +302,15 @@ header.main .tagline h1 {
 }
 .container > section:nth-child(6) {
   background-color: #0cc8fe;
+}
+.container > section:nth-child(7) {
+  background-color: #00bae5;
+}
+.container > section:nth-child(8) {
+  background-color: #0a86a3;
+}
+.container > section:nth-child(9) {
+  background-color: #08697f;
 }
 .container > section.intro p {
   font-size: 1.25em;
@@ -312,15 +328,76 @@ header.main .tagline h1 {
 .container > section.blog ul {
   list-style: none;
 }
-.container > section .category {
+.project__creator {
+  display: inline-block;
+  background-color: rgba(244, 244, 244, 0.25);
+  padding: 0 0.25em 0.2em;
+  margin: 0 0.25em 0.5em 0;
+}
+.project__content {
+  margin: 1.25em 0.25em 2em;
+}
+span[class^='creator__label--'] {
+  border: 3px solid rgba(33, 52, 71, 0.75);
+  border-radius: 100px;
+  position: relative;
+  display: inline-block;
+}
+span[class^='creator__label--'].creator__label--eboard {
+  border-color: #cd231a;
+}
+span[class^='creator__label--'] > span {
+  position: absolute;
+}
+.demodays__link {
   color: rgba(33, 52, 71, 0.25);
-  text-align: center;
-  letter-spacing: .5em;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
-  font-style: normal;
-  font-weight: light;
-  margin-bottom: 1em;
+  font-size: .75em;
+}
+span[class^='featured__bucket'] {
+  border: 3px solid rgba(33, 52, 71, 0.75);
   text-transform: uppercase;
+  font-size: 75%;
+  letter-spacing: 0.5em;
+  margin-left: 1em;
+  padding-left: 0.5em;
+}
+/*
+DD
+@boatMed: #8DE5FF;
+Libraries
+@boatDark: #64DCFF;
+Projects
+@boatDarker: #0CC8FE;
+Games
+@boatDarkerer: #00BAE5;
+Events
+@boatDarkererer: #0A86A3;
+Startups
+@boatDarkerererer: #08697F;
+*/
+.featured__bucket--demodays {
+  border-color: #8de5ff !important;
+  color: #8de5ff;
+}
+.featured__bucket--library {
+  border-color: #64dcff !important;
+  color: #64dcff;
+}
+.featured__bucket--project {
+  border-color: #0cc8fe !important;
+  color: #0cc8fe;
+}
+.featured__bucket--game {
+  border-color: #00bae5 !important;
+  color: #00bae5;
+}
+.featured__bucket--event {
+  border-color: #0a86a3 !important;
+  color: #0a86a3;
+}
+.featured__bucket--startup {
+  border-color: #08697f !important;
+  color: #08697f;
 }
 .posts a {
   color: #213447;
@@ -332,16 +409,9 @@ header.main .tagline h1 {
 .posts li {
   padding: 1em 0;
 }
-.posts .img-wrap {
-  min-height: 11em;
+.posts .img__wrap {
+  min-height: 16em;
   text-align: center;
-}
-.posts .dd__school {
-  color: rgba(33, 52, 71, 0.25);
-  margin-top: -1em;
-  font-size: .75em;
-  text-transform: uppercase;
-  letter-spacing: .25em;
 }
 .posts .project {
   min-height: 15em;
@@ -397,26 +467,6 @@ header.main .tagline h1 {
 .posts .twitter:hover {
   color: #213447;
 }
-.posts.grid {
-  *zoom: 1;
-}
-.posts.grid:before,
-.posts.grid:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.posts.grid:after {
-  clear: both;
-}
-.posts.grid:before,
-.posts.grid:after {
-  content: " ";
-  display: table;
-}
-.posts.grid:after {
-  clear: both;
-}
 .posts.grid .project {
   vertical-align: top;
 }
@@ -431,14 +481,19 @@ header.main .tagline h1 {
   width: 100%;
   text-align: left;
 }
+.person h4 {
+  font-family: "League Gothic", helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
 footer {
   font-size: 110%;
   padding: .5em 0;
   color: white;
-  background: #00a1c6;
+  background: #065466;
 }
-footer.cta {
-  background: #006070;
+footer.board {
+  background: #172633;
 }
 footer a:link,
 footer a:visited,
@@ -480,9 +535,30 @@ footer .colophon {
   clear: both;
   text-align: right;
 }
+footer .eboard li {
+  min-height: 16em;
+}
+footer .eboard li img {
+  width: 75%;
+  border-radius: 1000px;
+}
+footer .eboard li .twitter {
+  margin-top: 0;
+  border: none;
+  box-shadow: none;
+  color: rgba(244, 244, 244, 0.25);
+}
+footer .eboard li .twitter:hover {
+  color: white;
+  background-color: transparent;
+}
+footer .eboard.alumni li {
+  min-height: 22em;
+}
 @media only screen and (min-width: 40em) {
   header.main {
     background-position: center bottom;
+    background-size: cover;
     background-image: url(/lib/img/branch.jpg);
   }
   header.main.demodays {
@@ -505,17 +581,28 @@ footer .colophon {
   }
   header.main nav {
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     top: 0;
-    margin-left: -2em;
+    left: 0;
   }
   header.main nav li {
     display: inline-block;
     position: relative;
     height: 24em;
-    padding-top: 22em;
     min-width: 2em;
     padding-bottom: 3em;
+  }
+  header.main nav li a {
+    display: block;
+    padding-top: 22em;
+    padding-bottom: 2em;
+  }
+  .project--half {
+    width: 50%;
+    float: left;
+  }
+  .project--half .description {
+    width: 100%;
   }
   .container > section {
     padding: 2em 0;
@@ -523,19 +610,32 @@ footer .colophon {
   .container > section.intro p {
     padding: 0 3em;
   }
+  .posts .project .description {
+    width: 50%;
+  }
   footer p {
     font-size: 95%;
   }
 }
 @media only screen and (min-width: 70em) {
-  .site,
-  .normal {
+  .site {
+    font-size: 125%;
     max-width: 50em;
     width: 65%;
-    font-size: 125%;
+  }
+  .site--fullbleed {
+    width: 100%;
+    max-width: 80em;
+  }
+  .site--grid {
+    width: 75%;
+    margin: 0 auto 0 250px;
+  }
+  .site--grid .description {
+    padding-left: 0 !important;
   }
   .posts .project .description {
-    width: 50%;
+    padding-left: 250px;
   }
   header.main {
     background-repeat: repeat;
@@ -547,6 +647,15 @@ footer .colophon {
   }
   .tagline {
     font-size: 1.25em;
+  }
+  span[class^='creator__label--'] {
+    width: 30px;
+    height: 30px;
+    top: 6px;
+  }
+  span[class^='creator__label--'] > span {
+    top: -7px;
+    left: 2px;
   }
 }
 @media only screen and (max-width: 70em) {
@@ -567,12 +676,30 @@ footer .colophon {
   .posts {
     font-size: 106.25%;
   }
+  span[class^='creator__label--'] {
+    width: 24px;
+    height: 24px;
+    top: 6px;
+  }
+  span[class^='creator__label--'] > span {
+    top: -7px;
+    left: 1px;
+  }
 }
 @media only screen and (min-width: 40em) and (max-width: 50em) {
   .site {
     width: 90%;
     max-width: 45em;
     font-size: .85em;
+  }
+  span[class^='creator__label--'] {
+    width: 20px;
+    height: 20px;
+    top: 4px;
+  }
+  span[class^='creator__label--'] > span {
+    top: -6px;
+    left: 1px;
   }
 }
 @media only screen and (min-width: 30em) and (max-width: 70em) {
@@ -582,11 +709,10 @@ footer .colophon {
   }
 }
 @media only screen and (max-width: 30em) {
-  .grid li,
-  .grid.posts li {
-    width: 100%;
-    padding: 1em;
-    margin-bottom: 5%;
+  .grid li {
+    width: 100% !important;
+    padding: 1em !important;
+    margin-bottom: 5% !important;
   }
 }
 @media only screen and (max-width: 40em) {
@@ -597,6 +723,10 @@ footer .colophon {
     padding: 1em;
     width: 100%;
     font-size: .85em;
+  }
+  .posts .project img {
+    max-width: 100%;
+    float: none;
   }
   header.main {
     font-size: .75em;
@@ -622,6 +752,15 @@ footer .colophon {
   .container > section.speaker h1 + p {
     text-align: center;
     margin: 0 auto;
+  }
+  span[class^='creator__label--'] {
+    width: 20px;
+    height: 20px;
+    top: 4px;
+  }
+  span[class^='creator__label--'] > span {
+    top: -6px;
+    left: 1px;
   }
 }
 @media print {

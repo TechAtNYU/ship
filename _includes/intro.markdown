@@ -6,4 +6,4 @@ Tech@NYU is NYC's largest student-run organization of hackers, designers, and bu
 ##Ship often. Ship lousy stuff, but ship. Ship constantly.
 -Seth Godin
 
-This is what DemoDays participants, Tech@NYU board members, and alumni have shipped.
+This is a list of the stuff Tech@NYU members and alumni have shipped.

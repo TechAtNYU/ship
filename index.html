@@ -1,8 +1,9 @@
 ---
 layout: default
 title: SHIP tech@NYU
+lego: false
 ---
-<!-- Version 1.5.0 -->
+<!-- Version 2.0.0 -->
 <section class="intro">
 <div class="site">
 {% capture intro %}
@@ -13,118 +14,265 @@ title: SHIP tech@NYU
 </section>
 
 <section class="blog" id="featured">
-<div class="site">
-	<h5 class="category">Featured</h5>
-	
-<ul class="posts">
-{% for post in site.posts %}
-	{% if post.featured %}
-	<li class="project">
-		<a href="{{ post.site }}"><img src="{{ post.image }}"></a>
-		<div class="description">
-			<h1>{{ post.title }}</h1>
+	<div class="site site--fullbleed">
+		<h5 class="category">Featured</h5>
+		<ul class="posts">
+			{% for featured in site.featured %}
+			<li class="project">
+				<a href="{{ featured.site }}"><img src="/lib/img/shipplace.png" data-src="{{ featured.image }}" title="{{featured.title}}"></a>
+				<div class="description">
+					<h1>{{ featured.title }}</h1>
 			
-			<div class="attribution">
-				<p>{{ post.creator }} {% if post.twitter %}<a href="http://twitter.com/{{ post.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+					<div class="attribution">
+						{% for creator in featured.creator %}
+						<p class="project__creator">{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
+								
+								{% else %}
+									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+								
+								{% endif %}
+							{% endif %}
+						</p>
+						{% endfor %}
 	
-			</div>  
-			<p>{{post.content}}</p>
-			{% if post.site %}<p><a href="{{ post.site }}" class="project-link">{{ post.site }}</a></p>{% endif %}
-		</div>
-	</li>
-	{% endif %}
-{% endfor %}
-</ul>	
-</div>
+					</div>  
+					<p class="project__content">{{featured.content}}</p>
+					{% unless featured.inactive %}
+						{% if featured.site %}<p><a href="{{ featured.site }}" class="project-link">{{ featured.site }}</a>
+							<a href="#{{featured.bucket}}"><span class="featured__bucket--{{featured.bucket}}">{{featured.bucket}}</span></a>
+						</p>{% endif %}
+					{% endunless %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
 </section>
-
-
 
 <section class="blog" id="demodays">
-<div class="site">
-	<h5 class="category">DemoDays</h5>
-<ul class="posts grid">
-{% for post in site.posts %}
-	{% if post.demodays %}
-	<li class="project">
-		<div class="description">
-			<div class="img-wrap">
-				<a href="{{ post.site }}"><img src="{{ post.image }}"></a>
-			</div>
-			<a href="{{ post.site }}">
-				<h2>{{ post.title }}</h2>
+	<div class="site site--grid">
+		<h5 class="category">Demodays</h5>
+		<p>DemoDays projects from NYU Students. For all demos, <a href="http://demodays.co/archive/">visit the full DemoDays Archive here.</a></p>
+		<ul class="posts grid">
+			{% for demodays in site.demodays %}
+			<li class="project">
+					<div class="img__wrap">
+						<a href="{{ demodays.site }}"><img src="/lib/img/shipplace.png" data-src="{{ demodays.image }}" title="{{demodays.title}}"></a>
+					</div>
+					<a href="{{ demodays.site }}">
+						<h2>{{ demodays.title }}</h2>
+					</a>
+					
+					{% for creator in demodays.creator %}
+					<p class="project__creator">{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
+					{% if creator.eboard %}
+						{% if creator.current == true %}
+							<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
+						
+						{% else %}
+							<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+						
+						{% endif %}
+					{% endif %}
+					</p>		
+					{% endfor %}
 				
-			</a>
-			
-			
-			<p>{{ post.creator }} {% if post.twitter %}<a href="http://twitter.com/{{ post.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p> 
-			{% if post.school %}<p class="dd__school">{{post.school}}</p>{% endif %}
-			
-		</div>
-	</li>
-	{% endif %}
-{% endfor %}
-	<li class="placeholder"></li>
-	<li class="placeholder"></li>
-</ul>	
-</div>
+					{% if demodays.demodays %}<p class="demodays__link">{{ demodays.demodays }}</p>{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
 </section>
 
-
-
-<section class="blog" id="eboard">
-<div class="site">
-	<h5 class="category">2013-2014 e-board</h5>
-<ul class="posts">
-{% for post in site.posts %}
-	{% if post.eboard %}
-	<li class="project">
-		<a href="{{ post.site }}"><img src="{{ post.image }}"></a>
-		<div class="description">
-			<h1>{{ post.title }}</h1>
+<section class="blog" id="library">
+	<div class="site site--grid">
+		<h5 class="category">Libraries</h5>
+		<ul class="posts grid">
+			{% for library in site.library %}
+			<li class="project half">
+				<div class="description">
+					<h1>{{ library.title }}</h1>
 			
-			<div class="attribution">
-				<p>{{ post.creator }} {% if post.twitter %}<a href="http://twitter.com/{{ post.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
+					<div class="attribution">
+						{% for creator in library.creator %}
+							<p class="project__creator">{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
+							
+							
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
+									
+								{% else %}
+									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+									
+								{% endif %}
+							{% endif %}
+							</p>
+						{% endfor %}
 	
-			</div>  
-			<p>{{post.content}}</p>
-			{% if post.site %}<p><a href="{{ post.site }}" class="project-link">{{ post.site }}</a></p>{% endif %}
-		</div>
-	</li>
-	{% endif %}
-{% endfor %}
-</ul>	
-</div>
+					</div>  
+					<p class="project__content">{{library.content}}</p>
+					
+					{% unless library.inactive %}
+						{% if library.site %}<p><a href="{{ library.site }}" class="project-link">{{ library.site }}</a></p>{% endif %}
+					{% endunless %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
 </section>
 
-
-<section class="blog" id="alumni">
-<div class="site">
-	<h5 class="category">Alumni</h5>
-<ul class="posts">
-{% for post in site.posts %}
-	{% if post.alumni %}
-	<li class="project">
-		<a href="{{ post.site }}"><img src="{{ post.image }}"></a>
-		<div class="description">
-			<h1>{{ post.title }}</h1>
+<section class="blog" id="project">
+	<div class="site site--fullbleed">
+		<h5 class="category">Projects</h5>
+		<ul class="posts">
+			{% for project in site.project %}
+			<li class="project">
+				<a href="{{ project.site }}"><img src="/lib/img/shipplace.png" data-src="{{ project.image }}" title="{{project.title}}"></a>
+				<div class="description">
+					<h1>{{ project.title }}</h1>
 			
-			<div class="attribution">
-				<p>{{ post.creator }} {% if post.twitter %}<a href="http://twitter.com/{{ post.twitter }}" class="twitter"><i class="icon-social-twitter"></i></a>{% endif %}</p>
-				
+					<div class="attribution">
+						{% for creator in project.creator %}
+						<p class="project__creator">{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
+								
+								{% else %}
+									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+								
+								{% endif %}
+							{% endif %}
+						</p>
+						{% endfor %}
 	
-			</div>  
-			<p>{{post.content}}</p>
-			{% if post.site %}<p><a href="{{ post.site }}" class="project-link">{{ post.site }}</a></p>{% endif %}
-		</div>
-	</li>
-	{% endif %}
-{% endfor %}
-</ul>	
-</div>
+					</div>  
+					<p class="project__content">{{project.content}}</p>
+					{% unless project.inactive %}
+						{% if project.site %}<p><a href="{{ project.site }}" class="project-link">{{ project.site }}</a></p>{% endif %}
+					{% endunless %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
 </section>
 
+<section class="blog" id="game">
+	<div class="site site--fullbleed">
+		<h5 class="category">Games</h5>
+		<ul class="posts">
+			{% for game in site.game %}
+			<li class="project">
+				<a href="{{ game.site }}"><img src="/lib/img/shipplace.png" data-src="{{ game.image }}" title="{{ game.title }}"></a>
+				<div class="description">
+					<h1>{{ game.title }}</h1>
+			
+					<div class="attribution">
+						{% for creator in game.creator %}
+						<p class="project__creator">{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
+								
+								{% else %}
+									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+								
+								{% endif %}
+							{% endif %}
+						</p>
+						{% endfor %}
+	
+					</div>  
+					<p class="project__content">{{game.content}}</p>
+					{% unless game.inactive %}
+						{% if game.site %}<p><a href="{{ game.site }}" class="project-link">{{ game.site }}</a></p>{% endif %}
+					{% endunless %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
 
+<section class="blog" id="event">
+	<div class="site site--fullbleed">
+		<h5 class="category">Events</h5>
+		<ul class="posts">
+			{% for event in site.event %}
+			<li class="project">
+				<a href="{{ event.site }}"><img src="/lib/img/shipplace.png" data-src="{{ event.image }}" title="{{ event.title }}"></a>
+				<div class="description">
+					<h1>{{ event.title }}</h1>
+			
+					<div class="attribution">
+						{% for creator in event.creator %}
+						<p class="project__creator">{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
+								
+								{% else %}
+									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+								
+								{% endif %}
+							{% endif %}
+						</p>
+						{% endfor %}
+	
+					</div>  
+					<p class="project__content">{{event.content}}</p>
+					{% unless event.inactive %}
+						{% if event.site %}<p><a href="{{ event.site }}" class="project-link">{{ event.site }}</a></p>{% endif %}
+					{% endunless %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+
+<section class="blog" id="startup">
+	<div class="site site--fullbleed">
+		<h5 class="category">Startups</h5>
+		<ul class="posts">
+			{% for startup in site.startup %}
+			<li class="project">
+				<a href="{{ startup.site }}"><img src="/lib/img/shipplace.png" data-src="{{ startup.image }}" title="{{ startup.title }}"></a>
+				<div class="description">
+					<h1>{{ startup.title }}</h1>
+			
+					<div class="attribution">
+						{% for creator in startup.creator %}
+						<p class="project__creator">{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
+								
+								{% else %}
+									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+								
+								{% endif %}
+							{% endif %}
+						</p>
+						{% endfor %}
+	
+					</div>  
+					<p class="project__content">{{startup.content}}</p>
+					{% unless startup.inactive %}
+						{% if startup.site %}<p><a href="{{ startup.site }}" class="project-link">{{ startup.site }}</a></p>{% endif %}
+					{% endunless %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
 
 
 {% include footer.html %}

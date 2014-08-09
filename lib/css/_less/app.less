@@ -74,7 +74,7 @@ header.main {
 		img, h1 {
 			display: block;
 			position: relative;
-			z-index: 100;
+			z-index: 1;
 		}
 		img {
 			max-width: 100%;
@@ -158,13 +158,21 @@ header.main {
 		}
 	}
 }
+.category {
+	color: @gentGreyT;
+	text-align: center;
+	letter-spacing: .5em;
+	font-family: @light;
+	font-style: normal;
+	font-weight: light;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	&.light {
+		color: @lightGreyT;
+	}
+}
 .container > section {
 	font-size: @miniBump;
-		background-color: white;
-		&.load-wave {
-			background-image: url(/lib/img/wave2.png);
-			background-repeat: repeat-y;
-		}
 	&:nth-child(2) {
 		background-color: @boatLightest;
 	}
@@ -179,6 +187,15 @@ header.main {
 	}
 	&:nth-child(6) {
 		background-color: @boatDarker;
+	}
+	&:nth-child(7) {
+		background-color: @boatDarkerer;
+	}
+	&:nth-child(8) {
+		background-color: @boatDarkererer;
+	}
+	&:nth-child(9) {
+		background-color: @boatDarkerererer;
 	}
 	&.intro {
 		p {
@@ -198,15 +215,79 @@ header.main {
 	&.blog ul {
 		list-style: none;
 	}
-	.category {
-		color: @gentGreyT;
-		text-align: center;
-		letter-spacing: .5em;
-		font-family: @light;
-		font-style: normal;
-		font-weight: light;
-		margin-bottom: 1em;
-		text-transform: uppercase;
+}
+.project__creator {
+	display: inline-block;
+	background-color: @lightGreyT;
+	padding: 0 0.25em 0.2em;
+	margin: 0 0.25em 0.5em 0;
+}
+.project__content {
+	margin: 1.25em 0.25em 2em;
+}
+span[class^='creator__label--'] {
+	border: 3px solid @gentGreyT2;
+	border-radius: 100px;
+	position: relative;
+	display: inline-block;
+	&.creator__label--eboard {
+		border-color: @red;
+	}
+	> span {
+		position: absolute;
+	}
+}
+.demodays__link {
+	color: @gentGreyT;
+	font-size: .75em;
+}
+span[class^='featured__bucket'] {
+	border: 3px solid @gentGreyT2;
+	text-transform: uppercase;
+	font-size: 75%;
+	letter-spacing: 0.5em;
+	margin-left: 1em;
+	padding-left: 0.5em;
+}
+/*
+DD
+@boatMed: #8DE5FF;
+Libraries
+@boatDark: #64DCFF;
+Projects
+@boatDarker: #0CC8FE;
+Games
+@boatDarkerer: #00BAE5;
+Events
+@boatDarkererer: #0A86A3;
+Startups
+@boatDarkerererer: #08697F;
+*/
+
+.featured__bucket-- {
+	&demodays {
+		border-color: @boatMed !important;
+		color: @boatMed;
+	}
+	&library {
+		border-color: @boatDark !important;
+		color: @boatDark;
+	}
+	&project {
+		border-color: @boatDarker !important;
+		color: @boatDarker;
+	}
+	&game {
+		border-color: @boatDarkerer !important;
+		color: @boatDarkerer;
+	}
+	&event {
+		border-color: @boatDarkererer !important;
+		color: @boatDarkererer;
+	}
+	&startup {
+		border-color: @boatDarkerererer !important;
+		color: @boatDarkerererer;
 	}
 }
 .posts {
@@ -220,16 +301,9 @@ header.main {
 	li {
 		padding: 1em 0;
 	}
-	.img-wrap {
-		min-height: 11em;
+	.img__wrap {
+		min-height: 16em;
 		text-align: center;
-	}
-	.dd__school {
-		color: @gentGreyT;
-		margin-top: -1em;
-		font-size: .75em;
-		text-transform: uppercase;
-		letter-spacing: .25em;
 	}
 	.project {
 		min-height: 15em;
@@ -271,7 +345,6 @@ header.main {
 		}
 	}
 	&.grid {
-		.clearfix();
 		.project {
 			vertical-align: top;
 			img, h2 {
@@ -287,13 +360,18 @@ header.main {
 		}
 	}
 }
+.person {
+	h4 {
+		.title();
+	}
+}
 footer {	
 	font-size: @miniBump;
 	padding: .5em 0;
 	color: white;
 	background: @boatDarkest;
-	&.cta {
-		background: #006070;
+	&.board {
+		background: @boatDarkestest;
 	}
 	a:link, a:visited, a:active {
 		color: white;
@@ -332,5 +410,26 @@ footer {
 	.colophon {
 		clear: both;
 		text-align: right;
+	}
+	.eboard li {
+		min-height: 16em;
+	
+		img {
+			width: 75%;
+			border-radius: 1000px; // to at least mitigate the border problem
+		}
+		.twitter {
+			margin-top: 0;
+			border: none;
+			box-shadow: none;
+			color: @lightGreyT;
+			&:hover {
+				color: white;
+				background-color: transparent;
+			}
+		}
+	}
+	.eboard.alumni li {
+		min-height: 22em;
 	}
 }
