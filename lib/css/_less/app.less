@@ -242,6 +242,55 @@ span[class^='creator__label--'] {
 		left: 2px;
 	}
 }
+span[class^='featured__bucket'] {
+	border: 3px solid @gentGreyT2;
+	text-transform: uppercase;
+	font-size: 75%;
+	letter-spacing: 0.5em;
+	margin-left: 1em;
+	padding-left: 0.5em;
+}
+/*
+DD
+@boatMed: #8DE5FF;
+Libraries
+@boatDark: #64DCFF;
+Projects
+@boatDarker: #0CC8FE;
+Games
+@boatDarkerer: #00BAE5;
+Events
+@boatDarkererer: #0A86A3;
+Startups
+@boatDarkerererer: #08697F;
+*/
+
+.featured__bucket-- {
+	&demodays {
+		border-color: @boatMed !important;
+		color: @boatMed;
+	}
+	&library {
+		border-color: @boatDark !important;
+		color: @boatDark;
+	}
+	&project {
+		border-color: @boatDarker !important;
+		color: @boatDarker;
+	}
+	&game {
+		border-color: @boatDarkerer !important;
+		color: @boatDarkerer;
+	}
+	&event {
+		border-color: @boatDarkererer !important;
+		color: @boatDarkererer;
+	}
+	&startup {
+		border-color: @boatDarkerererer !important;
+		color: @boatDarkerererer;
+	}
+}
 .posts {
 	a {
 		color: @gentGrey;

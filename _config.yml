@@ -1,5 +1,7 @@
 name: SHIP tech@NYU
 collections:
+  featured:
+    output: true
   demodays:
     output: true
   project:

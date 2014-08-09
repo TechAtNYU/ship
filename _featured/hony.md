@@ -13,5 +13,6 @@ creator:
     - everything
 launchdate: February 2014
 demodays:
+bucket: project
 ---
 Documenting hackers all around the world. Hackers are superheroes to one another. This is so empowering, even outside the scope of tech. What could I do to give this optimism to others, to get people hacking? Covered by Techcrunch, Business Insider, and Inc. Magazine.

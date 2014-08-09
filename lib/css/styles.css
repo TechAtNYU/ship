@@ -354,6 +354,52 @@ span[class^='creator__label--'] > span {
   top: -7px;
   left: 2px;
 }
+span[class^='featured__bucket'] {
+  border: 3px solid rgba(33, 52, 71, 0.75);
+  text-transform: uppercase;
+  font-size: 75%;
+  letter-spacing: 0.5em;
+  margin-left: 1em;
+  padding-left: 0.5em;
+}
+/*
+DD
+@boatMed: #8DE5FF;
+Libraries
+@boatDark: #64DCFF;
+Projects
+@boatDarker: #0CC8FE;
+Games
+@boatDarkerer: #00BAE5;
+Events
+@boatDarkererer: #0A86A3;
+Startups
+@boatDarkerererer: #08697F;
+*/
+.featured__bucket--demodays {
+  border-color: #8de5ff !important;
+  color: #8de5ff;
+}
+.featured__bucket--library {
+  border-color: #64dcff !important;
+  color: #64dcff;
+}
+.featured__bucket--project {
+  border-color: #0cc8fe !important;
+  color: #0cc8fe;
+}
+.featured__bucket--game {
+  border-color: #00bae5 !important;
+  color: #00bae5;
+}
+.featured__bucket--event {
+  border-color: #0a86a3 !important;
+  color: #0a86a3;
+}
+.featured__bucket--startup {
+  border-color: #08697f !important;
+  color: #08697f;
+}
 .posts a {
   color: #213447;
   text-decoration: none;

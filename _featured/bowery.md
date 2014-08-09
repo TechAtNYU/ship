@@ -16,5 +16,6 @@ creator:
     current: false
 launchdate:
 demodays: false
+bucket: startup
 ---
 Bowery is a limitless development environment. Does your application need to run on multiple machines? Does it need more computing resources than your laptop has? Are you tired of installing, configuring, and reconfiguring software? Perfect.

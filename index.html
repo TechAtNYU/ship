@@ -14,8 +14,41 @@ lego: false
 </section>
 
 <section class="blog" id="featured">
-	<div class="site site--grid">
+	<div class="site site--fullbleed">
 		<h5 class="category">Featured</h5>
+		<ul class="posts">
+			{% for featured in site.featured %}
+			<li class="project">
+				<a href="{{ featured.site }}"><img src="/lib/img/shipplace.png" data-src="{{ featured.image }}"></a>
+				<div class="description">
+					<h1>{{ featured.title }}</h1>
+			
+					<div class="attribution">
+						{% for creator in featured.creator %}
+						<p class="project__creator">{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
+								
+								{% else %}
+									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+								
+								{% endif %}
+							{% endif %}
+						</p>
+						{% endfor %}
+	
+					</div>  
+					<p class="project__content">{{featured.content}}</p>
+					{% unless featured.inactive %}
+						{% if featured.site %}<p><a href="{{ featured.site }}" class="project-link">{{ featured.site }}</a>
+							<a href="#{{featured.bucket}}"><span class="featured__bucket--{{featured.bucket}}">{{featured.bucket}}</span></a>
+						</p>{% endif %}
+					{% endunless %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
 	</div>
 </section>
 
