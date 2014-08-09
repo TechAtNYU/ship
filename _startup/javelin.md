@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Javelin
-site: https://javelinapp.com/
-image: http://www.javelin.com/img/logo@2x.png
+site: http://javelin.com/
+image: /lib/img/projects/javelin.png
 creator:
   - name: Trevor Owens
     school: NYU

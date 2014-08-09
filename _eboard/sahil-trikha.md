@@ -3,7 +3,7 @@ layout: post
 title: Sahil Trikha
 school: NYU
 major: Major?
-image: http://placekitten.com/300/300
+image: /lib/img/shipplace.png
 position: Business Development
 positionURL: http://www.techatnyu.org/position
 twitter: sahil_trikha

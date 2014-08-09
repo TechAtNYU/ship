@@ -26,9 +26,9 @@
 					{% if eboard.weight == weight %}
 						<li class="person">
 							{% if page.lego == true %}
-								<img src="{{eboard.lego}}" title="{{eboard.title}}">
+								<img src="/lib/img/shipplace.png" data-src="{{eboard.lego}}" title="{{eboard.title}}">
 							{% else %}
-								<img src="{{eboard.image}}" title="{{eboard.title}}">
+								<img src="/lib/img/shipplace.png" data-src="{{eboard.image}}" title="{{eboard.title}}">
 							{% endif %}
 							<h4>{{eboard.title}} </h4>
 							
@@ -51,7 +51,7 @@
 					{% for alumni in site.alumni %}
 						{% if alumni.weight == weight %}
 						<li class="person">
-							<img src="{{alumni.image}}" title="{{eboard.title}}">
+							<img src="/lib/img/shipplace.png" data-src="{{alumni.image}}" title="{{eboard.title}}">
 							<h4>{{alumni.title}}</h4>
 							{% if alumni.position != "??" %}<p>{{alumni.position}}</p>{% endif %}
 							<p><em>{{alumni.now}}</em></p>

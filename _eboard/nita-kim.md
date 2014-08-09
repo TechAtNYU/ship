@@ -3,7 +3,7 @@ layout: post
 title: Nita Kim
 school: NYU
 major: Major?
-image: http://placekitten.com/300/300
+image: /lib/img/shipplace.png
 position: Communications
 positionURL: http://www.techatnyu.org/position
 twitter: NitaKimm

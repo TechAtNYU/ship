@@ -27,7 +27,7 @@ lego: false
 			{% for demodays in site.demodays %}
 			<li class="project">
 					<div class="img-wrap">
-						<a href="{{ demodays.site }}"><img src="{{ demodays.image }}"></a>
+						<a href="{{ demodays.site }}"><img src="/lib/img/shipplace.png" data-src="{{ demodays.image }}"></a>
 					</div>
 					<a href="{{ demodays.site }}">
 						<h2>{{ demodays.title }}</h2>
@@ -90,7 +90,7 @@ lego: false
 		<ul class="posts">
 			{% for project in site.project %}
 			<li class="project">
-				<a href="{{ project.site }}"><img src="{{ project.image }}"></a>
+				<a href="{{ project.site }}"><img src="/lib/img/shipplace.png" data-src="{{ project.image }}"></a>
 				<div class="description">
 					<h1>{{ project.title }}</h1>
 			
@@ -127,7 +127,7 @@ lego: false
 		<ul class="posts">
 			{% for game in site.game %}
 			<li class="project">
-				<a href="{{ game.site }}"><img src="{{ game.image }}"></a>
+				<a href="{{ game.site }}"><img src="/lib/img/shipplace.png" data-src="{{ game.image }}"></a>
 				<div class="description">
 					<h1>{{ game.title }}</h1>
 			
@@ -164,7 +164,7 @@ lego: false
 		<ul class="posts">
 			{% for event in site.event %}
 			<li class="project">
-				<a href="{{ event.site }}"><img src="{{ event.image }}"></a>
+				<a href="{{ event.site }}"><img src="/lib/img/shipplace.png" data-src="{{ event.image }}"></a>
 				<div class="description">
 					<h1>{{ event.title }}</h1>
 			
@@ -201,7 +201,7 @@ lego: false
 		<ul class="posts">
 			{% for startup in site.startup %}
 			<li class="project">
-				<a href="{{ startup.site }}"><img src="{{ startup.image }}"></a>
+				<a href="{{ startup.site }}"><img src="/lib/img/shipplace.png" data-src="{{ startup.image }}"></a>
 				<div class="description">
 					<h1>{{ startup.title }}</h1>
 			

@@ -13,5 +13,6 @@ creator:
     - everything
 launchdate:
 demodays:
+inactive: true
 ---
 NYU's social media together into one place. Had 6,000++ people on the first night using the app.
