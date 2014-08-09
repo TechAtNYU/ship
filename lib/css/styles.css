@@ -572,18 +572,17 @@ footer .eboard li .twitter:hover {
 }
 @media only screen and (min-width: 70em) {
   .site {
+    font-size: 125%;
     max-width: 50em;
     width: 65%;
   }
   .site--fullbleed {
     width: 100%;
     max-width: 80em;
-    font-size: 125%;
   }
   .site--grid {
     width: 75%;
     margin: 0 auto 0 250px;
-    font-size: 125%;
   }
   .site--grid .description {
     padding-left: 0 !important;
