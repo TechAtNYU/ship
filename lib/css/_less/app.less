@@ -228,18 +228,13 @@ header.main {
 span[class^='creator__label--'] {
 	border: 3px solid @gentGreyT2;
 	border-radius: 100px;
-	width: 30px;
-	height: 30px;
 	position: relative;
-	top: 6px;
 	display: inline-block;
 	&.creator__label--eboard {
 		border-color: @red;
 	}
 	> span {
 		position: absolute;
-		top: -7px;
-		left: 2px;
 	}
 }
 .demodays__link {
@@ -375,7 +370,7 @@ footer {
 	padding: .5em 0;
 	color: white;
 	background: @boatDarkest;
-	&.cta {
+	&.board {
 		background: @boatDarkestest;
 	}
 	a:link, a:visited, a:active {
@@ -417,19 +412,24 @@ footer {
 		text-align: right;
 	}
 	.eboard li {
-		width: 24%;
+		min-height: 16em;
+	
 		img {
 			width: 75%;
 			border-radius: 1000px; // to at least mitigate the border problem
 		}
 		.twitter {
+			margin-top: 0;
 			border: none;
 			box-shadow: none;
 			color: @lightGreyT;
 			&:hover {
-				color: @boatDarkestest;
+				color: white;
 				background-color: transparent;
 			}
 		}
+	}
+	.eboard.alumni li {
+		min-height: 22em;
 	}
 }

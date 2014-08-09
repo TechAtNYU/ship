@@ -106,7 +106,15 @@
 	.tagline {
 		font-size: 1.25em;
 	}
-	
+	span[class^='creator__label--'] {
+		width: 30px;
+		height: 30px;
+		top: 6px;
+		> span {
+			top: -7px;
+			left: 2px;
+		}
+	}
 }
 @media only screen and (max-width: 70em) {
 	header.main {
@@ -127,7 +135,14 @@
 	.post, .post-header, .posts {
 		font-size: @bump * .85;
 	}
-	header.main {
+	span[class^='creator__label--'] {
+		width: 24px;
+		height: 24px;
+		top: 6px;
+		> span {
+			top: -7px;
+			left: 1px;
+		}
 	}
 }
 
@@ -137,7 +152,14 @@
 		max-width: 45em;
 		font-size: .85em;
 	}
-	header.main {
+	span[class^='creator__label--'] {
+		width: 20px;
+		height: 20px;
+		top: 4px;
+		> span {
+			top: -6px;
+			left: 1px;
+		}
 	}
 }
 @media only screen and (min-width: 30em) and (max-width: 70em) {
@@ -148,10 +170,10 @@
 	
 } 
 @media only screen and (max-width: 30em) {
-    .grid li, .grid.posts li {
-	  width: 100%;
-	  padding: 1em;
-	  margin-bottom: 5%;
+    .grid li {
+	  width: 100% !important;
+	  padding: 1em !important;
+	  margin-bottom: 5% !important;
 	}
 }
 @media only screen and (max-width: 40em) {
@@ -162,6 +184,12 @@
 		padding: 1em;
 		width: 100%;
 		font-size: .85em;
+	}
+	.posts .project {
+		img {
+			max-width: 100%;
+			float: none;
+		}
 	}
 	header.main {
 		font-size: .75em;
@@ -192,7 +220,15 @@
 			}
 		}
 	}
-	
+	span[class^='creator__label--'] {
+		width: 20px;
+		height: 20px;
+		top: 4px;
+		> span {
+			top: -6px;
+			left: 1px;
+		}
+	}
 }
 @media print {
 	body {

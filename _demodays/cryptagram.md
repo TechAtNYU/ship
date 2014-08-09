@@ -15,5 +15,5 @@ creator:
     eboard: false
     current: false
 launchdate:
-demodays:
+demodays: April 2013
 ---

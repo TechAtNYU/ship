@@ -10,68 +10,6 @@
 
 		<p>If you're an NYC startup looking to give back to the student community, we also want to find ways you can help.</p>
 		
-			<h1>A cta to join and sponsor us should go here</h1>
-		</div>
-		
-</div>
-</footer>
-
-
-<footer id="board">
-	<h5 class="category light">Executive Board 2014-2015</h5>
-		<div class="site">
-			<ul class="eboard grid">
-				{% for weight in (1..10) %}
-					{% for eboard in site.eboard %}
-					{% if eboard.weight == weight %}
-						<li class="person">
-							{% if page.lego == true %}
-								<img src="/lib/img/shipplace.png" data-src="{{eboard.lego}}" title="{{eboard.title}}">
-							{% else %}
-								<img src="/lib/img/shipplace.png" data-src="{{eboard.image}}" title="{{eboard.title}}">
-							{% endif %}
-							<h4>{{eboard.title}} </h4>
-							
-							<p>{{eboard.position}}</p>
-							
-							{% if eboard.twitter %}
-								<small><a href="http://twitter.com/{{ eboard.twitter }}" class="twitter" title="{{eboard.twitter}}"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span> {{eboard.twitter}}</a></small>
-							{% endif %}
-						</li>
-					{% endif %}
-					
-					{% endfor %}
-				{% endfor %}
-			</ul>
-	
-			<h5 class="category light">Alumni</h5>
-			
-			<ul class="eboard grid">
-				{% for weight in (1..20) %}
-					{% for alumni in site.alumni %}
-						{% if alumni.weight == weight %}
-						<li class="person">
-							<img src="/lib/img/shipplace.png" data-src="{{alumni.image}}" title="{{eboard.title}}">
-							<h4>{{alumni.title}}</h4>
-							{% if alumni.position != "??" %}<p>{{alumni.position}}</p>{% endif %}
-							<p><em>{{alumni.now}}</em></p>
-							
-							{% if alumni.twitter %}
-								<small><a href="http://twitter.com/{{ alumni.twitter }}" class="twitter" title="{{alumni.twitter}}"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span> {{alumni.twitter}}</a></small>
-							{% endif %}
-						</li>
-						{% endif %}
-					{% endfor %}
-				{% endfor %}
-			</ul>
-		</div>
-</footer>
-
-
-
-<footer class="cta" id="submit">
-	<div class="site">
-
 		<ul class="grid">
 			<li>
 				<h2>Student?</h2>
@@ -89,6 +27,68 @@
 				<a href="mailto:hello@techatnyu.org">Post on our Job Board</a>
 			</li>
 		</ul>
+		</div>
+		
+</div>
+</footer>
+
+
+<footer id="board">
+	
+</footer>
+
+
+
+<footer class="board" id="submit">
+	<div class="site">
+		<h5 class="category light">Executive Board 2014-2015</h5>
+				<ul class="eboard grid">
+					{% for weight in (1..10) %}
+						{% for eboard in site.eboard %}
+						{% if eboard.weight == weight %}
+							<li class="person">
+								{% if page.lego == true %}
+									<img src="/lib/img/shipplace.png" data-src="{{eboard.lego}}" title="{{eboard.title}}">
+								{% else %}
+									<img src="/lib/img/shipplace.png" data-src="{{eboard.image}}" title="{{eboard.title}}">
+								{% endif %}
+								<h4>{{eboard.title}} </h4>
+							
+								<p>{{eboard.position}}</p>
+							
+								{% if eboard.twitter %}
+									<small><a href="http://twitter.com/{{ eboard.twitter }}" class="twitter" title="{{eboard.twitter}}"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span> {{eboard.twitter}}</a></small>
+								{% endif %}
+							</li>
+						{% endif %}
+					
+						{% endfor %}
+					{% endfor %}
+				</ul>
+	
+				<h5 class="category light">Alumni</h5>
+			
+				<ul class="eboard grid alumni">
+					{% for weight in (1..20) %}
+						{% for alumni in site.alumni %}
+							{% if alumni.weight == weight %}
+							<li class="person">
+								<img src="/lib/img/shipplace.png" data-src="{{alumni.image}}" title="{{eboard.title}}">
+								<h4>{{alumni.title}}</h4>
+								{% if alumni.position != "??" %}<p>{{alumni.position}}</p>{% endif %}
+								<p><em>{{alumni.now}}</em></p>
+							
+								{% if alumni.twitter %}
+									<small><a href="http://twitter.com/{{ alumni.twitter }}" class="twitter" title="{{alumni.twitter}}"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span> {{alumni.twitter}}</a></small>
+								{% endif %}
+							</li>
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+				</ul>
+		
+		
+		
 		
 		<div class="info">
 			<p>Ship is presented by <a href="http://techatnyu.org">tech@NYU</a>. Want to learn about tech@NYU events? <a href="http://techatnyu.org/join-us">Subscribe to our newsletter!</a></p>
