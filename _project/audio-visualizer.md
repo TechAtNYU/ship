@@ -12,7 +12,7 @@ creator:
     role:
     - everything
 launchdate: October 2013
-demodays:
+demodays: March 2013
 ---
 This project provides realtime 3d visualization of WAV audio streams. The visualizations created are mainly abstract and can be considered an emulation of the iTunes (or, more accurately, WMP) visualizer. It uses OpenGL, freeglut, portaudio and libsndfile to create these visuals in real time.
 
