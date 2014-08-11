@@ -28,7 +28,7 @@
   display: inline-block;
 }
 body {
-  font: 1em "Open Sans", helvetica, arial, sans-serif;
+  font: 1em "ff-meta-web-pro", helvetica, arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
 }
@@ -65,7 +65,7 @@ h5 {
   font-style: italic;
 }
 .header {
-  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-family: "ff-meta-web-pro", helvetica, arial, sans-serif;
 }
 .header h1 {
   line-height: 1;
@@ -79,7 +79,7 @@ p {
   margin-bottom: .75em;
 }
 a {
-  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-family: "ff-meta-web-pro", helvetica, arial, sans-serif;
   font-weight: normal;
 }
 a:link,
@@ -267,7 +267,7 @@ header.main .tagline {
   width: 50%;
 }
 header.main .tagline h1 {
-  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-family: "ff-meta-web-pro", helvetica, arial, sans-serif;
   font-weight: 100;
   text-transform: none;
   font-style: normal;
@@ -276,7 +276,7 @@ header.main .tagline h1 {
   color: rgba(33, 52, 71, 0.25);
   text-align: center;
   letter-spacing: .5em;
-  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-family: "ff-meta-web-pro", helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: light;
   margin-bottom: 1em;
