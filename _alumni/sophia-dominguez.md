@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Naomi Eichenbaum
+title: Sophia Dominguez
 school: NYU
 major: Major?
-position: Marketing
+image: /lib/img/shipplace.png
+position: ??
 positionURL: http://www.techatnyu.org/position
-now: Capgemini
-nowURL: http://www.google.com
-twitter: naomiinnyc
+now:
+nowURL: 
+twitter: 
 email: t@NYU email?
 graduate: 2014
-weight: 11
+weight: 14
 ---
