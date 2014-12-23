@@ -3,6 +3,7 @@ layout: post
 title: Naomi Eichenbaum
 school: NYU
 major: Major?
+image: /lib/img/shipplace.png
 position: Marketing
 positionURL: http://www.techatnyu.org/position
 now: Capgemini
