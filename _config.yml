@@ -1,3 +1,20 @@
-name: demodays
-markdown: redcarpet
-pygments: true
+name: SHIP tech@NYU
+collections:
+  featured:
+    output: true
+  demodays:
+    output: true
+  project:
+    output: true
+  startup:
+    output: true
+  library:
+    output: true
+  event:
+    output: true
+  game:
+    output: true
+  eboard:
+    output: true
+  alumni:
+    output: true

@@ -9,14 +9,7 @@
 		<p>If you're a student in New York City that's interested in the intersection of startups, entrepreneurship, coding, art and design - we want you to join us.</p>
 
 		<p>If you're an NYC startup looking to give back to the student community, we also want to find ways you can help.</p>
-		</div>
 		
-</div>
-</footer>
-
-<footer class="cta" id="submit">
-	<div class="site">
-
 		<ul class="grid">
 			<li>
 				<h2>Student?</h2>
@@ -29,22 +22,87 @@
 				<a href="mailto:hello@techatnyu.org">Partner with us</a>
 			</li>
 			<li>
-				<h2>Participant?</h2>
-				<a href="mailto:hello@techatnyu.org">Submit project</a>
+				<h2>Hiring?</h2>
+
+				<a href="mailto:hello@techatnyu.org">Post on our Job Board</a>
 			</li>
 		</ul>
+		</div>
+		
+</div>
+</footer>
+
+
+<footer id="board">
+	
+</footer>
+
+
+
+<footer class="board" id="submit">
+	<div class="site">
+		<h5 class="category light">Executive Board 2014-2015</h5>
+				<ul class="eboard grid">
+					{% for weight in (1..10) %}
+						{% for eboard in site.eboard %}
+						{% if eboard.weight == weight %}
+							<li class="person">
+								{% if page.lego == true %}
+									<img src="/lib/img/shipplace.png" data-src="{{eboard.lego}}" title="{{eboard.title}}">
+								{% else %}
+									<img src="/lib/img/shipplace.png" data-src="{{eboard.image}}" title="{{eboard.title}}">
+								{% endif %}
+								<h4>{{eboard.title}} </h4>
+							
+								<p>{{eboard.position}}</p>
+							
+								{% if eboard.twitter %}
+									<small><a href="http://twitter.com/{{ eboard.twitter }}" class="twitter" title="{{eboard.twitter}}"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span> {{eboard.twitter}}</a></small>
+								{% endif %}
+							</li>
+						{% endif %}
+					
+						{% endfor %}
+					{% endfor %}
+				</ul>
+	
+				<h5 class="category light">Alumni</h5>
+			
+				<ul class="eboard grid alumni">
+					{% for weight in (1..20) %}
+						{% for alumni in site.alumni %}
+							{% if alumni.weight == weight %}
+							<li class="person">
+								<img src="/lib/img/shipplace.png" data-src="{{alumni.image}}" title="{{eboard.title}}">
+								<h4>{{alumni.title}}</h4>
+								{% if alumni.position != "??" %}<p>{{alumni.position}}</p>{% endif %}
+								<p><em>{{alumni.now}}</em></p>
+							
+								{% if alumni.twitter %}
+									<small><a href="http://twitter.com/{{ alumni.twitter }}" class="twitter" title="{{alumni.twitter}}"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span> {{alumni.twitter}}</a></small>
+								{% endif %}
+							</li>
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+				</ul>
+		
+		
+		
 		
 		<div class="info">
 			<p>Ship is presented by <a href="http://techatnyu.org">tech@NYU</a>. Want to learn about tech@NYU events? <a href="http://techatnyu.org/join-us">Subscribe to our newsletter!</a></p>
 			<ul>
-				<li><a href="https://www.facebook.com/TechatNYU"><i class="icon-social-facebook"><span>facebook</span></i></a></li>
-				<li><a href="https://twitter.com/TechatNYU"><i class="icon-social-twitter"><span>twitter</span></i></a></li>
-				<li><a href="mailto:hello@techatnyu.org"><i class="icon-ios7-email"><span>email</span></i></a></li>
+				<li><a href="https://www.facebook.com/TechatNYU"><span class="ion-social-facebook" data-pack="social" data-tags="like, post, share"></span></a></li>
+				<li><a href="https://twitter.com/TechatNYU"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a></li>
+				<li><a href="mailto:hello@techatnyu.org"><span class="ion-ios7-email" data-pack="ios7" data-tags="snail, mail"></span></li>
 			</ul>
         	
+<!--
 			<div class="colophon">
 				<p>SHIP version 1.4.0. made with <i class="icon-ios7-heart-outline"><span>love</span></i> in NYC by <a href="http://grungerabbit.com">cheryl wu</a></p>
-			</div>
+			</div>-->
+
 		</div>
 		
 	</div>
