@@ -18,3 +18,4 @@ collections:
     output: true
   alumni:
     output: true
+exclude: ["circle.yml", "README.md", "requirements.txt", "venv"]
