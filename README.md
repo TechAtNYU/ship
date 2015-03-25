@@ -163,3 +163,4 @@ Layout differences:
 
 - Jekyll 2.0
 - LESS
+- CircleCI
