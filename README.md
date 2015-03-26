@@ -1,3 +1,7 @@
+# Ship
+
+[![Circle CI](https://circleci.com/gh/TechAtNYU/ship/tree/master.svg?style=svg)](https://circleci.com/gh/TechAtNYU/ship/tree/master)
+
 #Project Schema
 
 	layout: post
