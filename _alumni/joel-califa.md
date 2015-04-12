@@ -10,5 +10,5 @@ positionURL: http://www.techatnyu.org/position
 twitter: notdetails
 email: t@NYU email?
 graduate: 2014
-weight: 5
+weight: 15
 ---

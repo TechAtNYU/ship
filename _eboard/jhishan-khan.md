@@ -4,7 +4,7 @@ title: Jhishan Khan
 school: NYU
 major: Major?
 image: /lib/img/people/headshot/jhishan-khan.jpg
-position: DemoDays
+position: Demo Days Lead
 positionURL: http://www.techatnyu.org/position
 twitter: jhishan
 email: t@NYU email?
