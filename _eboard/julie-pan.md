@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Julie Pan
-image: https://pbs.twimg.com/profile_images/511299259606376448/6Mq7hm96_400x400.jpeg
+image: /lib/img/people/headshot/julie-pan.jpg
 position: Startup Week
 twitter: julie_panda
 weight: 5
