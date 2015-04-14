@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Simona Aksman
-image: /lib/img/shipplace.png
+twitter: pixelsim
+image: http://files.tnyu.org/simona.JPG
 position: Demo Days
 weight: 5
 ---
