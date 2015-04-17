@@ -2,7 +2,7 @@
 layout: post
 title: Bowery
 site: http://bowery.io/
-image: /lib/img/projects/bowery.png
+image: http://files.tnyu.org/projects/bowery.png
 creator:
   - name: David Byrd
     school: NYU

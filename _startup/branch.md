@@ -2,7 +2,7 @@
 layout: post
 title: Branch
 site: http://branch.com
-image: /lib/img/projects/branch.png
+image: http://files.tnyu.org/projects/branch.png
 creator:
   - name: Hursh Agrawal
     school: NYU

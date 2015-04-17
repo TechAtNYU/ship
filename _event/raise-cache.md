@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Raise Cache
-image: /lib/img/projects/raisecache.jpg
+image: http://files.tnyu.org/projects/raisecache.jpg
 site: http://thenextweb.com/insider/2011/11/20/raise-cache-one-party-in-nyc-raises-over-100000-for-local-hackers/
 creator:
   - name: Rebecca Zhou

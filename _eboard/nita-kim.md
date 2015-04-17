@@ -3,7 +3,7 @@ layout: post
 title: Nita Kim
 school: NYU
 major: Major?
-image: /lib/img/shipplace.png
+image: http://files.tnyu.org/shipplace.png
 position: Marketing
 positionURL: http://www.techatnyu.org/position
 twitter: NitaKimm

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bento
-image: /lib/img/projects/bento.jpg
+image: http://files.tnyu.org/projects/bento.jpg
 site: http://bentobox.io
 creator: 
   - name: Jon Chan

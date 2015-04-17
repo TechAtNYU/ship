@@ -2,7 +2,7 @@
 layout: post
 title: Event Book 2.0
 site: https://itunes.apple.com/us/app/event-book/id599232745
-image: /lib/img/projects/eventbook.jpeg
+image: http://files.tnyu.org/projects/eventbook.jpeg
 creator:
   - name: Abhinay Ashutosh
     school: NYU

@@ -2,7 +2,7 @@
 layout: post
 title: Students Against Surveillance
 site: http://www.studentsagainstsurveillance.com/
-image: /lib/img/projects/sas.png
+image: http://files.tnyu.org/projects/sas.png
 creator:
   - name: Tommy Collison
     school: NYU

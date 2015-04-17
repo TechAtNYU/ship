@@ -2,7 +2,7 @@
 layout: post
 title: HashMash
 site: http://hashmash.me/
-image: /lib/img/projects/hashmash.jpg
+image: http://files.tnyu.org/projects/hashmash.jpg
 creator: 
   - name: Matt Ruzicka
     school: NYU

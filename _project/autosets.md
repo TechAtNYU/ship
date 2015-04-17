@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Autosets
-image: /lib/img/projects/autosets.jpg
+image: http://files.tnyu.org/projects/autosets.jpg
 site: http://www.autosets.com/
 creator: 
   - name: Matt Ruzicka

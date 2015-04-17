@@ -2,7 +2,7 @@
 layout: post
 title: Heads Up! Hot Dogs
 site: https://itunes.apple.com/app/heads-up!-hot-dogs/id557891567?mt=8
-image: /lib/img/projects/headsuphotdogs.jpeg
+image: http://files.tnyu.org/projects/headsuphotdogs.jpeg
 creator:
   - name: Emmett Butler
     school: NYU

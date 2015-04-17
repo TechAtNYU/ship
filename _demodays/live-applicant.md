@@ -2,7 +2,7 @@
 layout: post
 title: LiveApplicant
 site: http://www.liveapplicant.com/
-image: /lib/img/projects/liveapplicant.png
+image: http://files.tnyu.org/projects/liveapplicant.png
 creator:
   - name: Michael Lisovetsky
     school: NYU

@@ -2,7 +2,7 @@
 layout: post
 title: Never Ending Night
 site: http://www.nengame.com/
-image: /lib/img/projects/nen.png
+image: http://files.tnyu.org/projects/nen.png
 creator:
   - name: Dhruv Gupta
     school: NYU

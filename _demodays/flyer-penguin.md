@@ -2,7 +2,7 @@
 layout: post
 title: Flyer Penguin
 site: http://flyerpenguin.com/
-image: /lib/img/projects/flyer-penguin.png
+image: http://files.tnyu.org/projects/flyer-penguin.png
 creator:
   - name: Michael Garate
     school: NYU

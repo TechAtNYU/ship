@@ -2,7 +2,7 @@
 layout: post
 title: Phys.Js
 site: http://www.physjs.org/
-image: /lib/img/projects/physics.jpg
+image: http://files.tnyu.org/projects/physics.jpg
 creator:
   - name: Abhi Agarwal
     school: NYU

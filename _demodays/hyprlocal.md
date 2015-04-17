@@ -2,7 +2,7 @@
 layout: post
 title: Hyprlocal
 site: http://jukehacker.herokuapp.com/
-image: /lib/img/shipplace.png
+image: http://files.tnyu.org/shipplace.png
 creator:
   - name: Mehul Patel
     school: NYU

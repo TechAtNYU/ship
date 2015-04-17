@@ -2,7 +2,7 @@
 layout: post
 title: Diabetes Machine Learning
 site: http://demodays.co/archive/12/2012/
-image: /lib/img/shipplace.png
+image: http://files.tnyu.org/shipplace.png
 creator:
   - name: Jeremiah Malina
     school: NYU

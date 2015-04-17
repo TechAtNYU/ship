@@ -2,7 +2,7 @@
 layout: post
 title: Jukehacker
 site: http://jukehacker.herokuapp.com/
-image: /lib/img/projects/jukehacker.png
+image: http://files.tnyu.org/projects/jukehacker.png
 creator:
   - name: Sahil Trikha
     school: NYU

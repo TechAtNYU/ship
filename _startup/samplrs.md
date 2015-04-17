@@ -2,7 +2,7 @@
 layout: post
 title: Samplrs
 site: http://samplrs.com
-image: /lib/img/projects/samplrs.jpeg
+image: http://files.tnyu.org/projects/samplrs.jpeg
 creator:
   - name: Jake Siegal
     school: NYU

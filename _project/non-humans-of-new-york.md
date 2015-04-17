@@ -2,7 +2,7 @@
 layout: post
 title: Non-humans of New York
 site: 
-image: /lib/img/projects/terrapin.jpg
+image: http://files.tnyu.org/projects/terrapin.jpg
 creator:
   - name: Sarah Scott
     school: NYU

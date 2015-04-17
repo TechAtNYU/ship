@@ -2,7 +2,7 @@
 layout: post
 title: Italian Conjugator
 site: http://www.ethanresnick.com/civem/#!start
-image: /lib/img/projects/conjugator.png
+image: http://files.tnyu.org/projects/conjugator.png
 creator: 
   - name: Ethan Resnick
     school: NYU

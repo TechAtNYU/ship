@@ -2,7 +2,7 @@
 layout: post
 title: uiuiu.me
 site: http://uiuiu.me
-image: /lib/img/projects/tiles.png
+image: http://files.tnyu.org/projects/tiles.png
 creator:
   - name: Cheryl Wu
     school: NYU

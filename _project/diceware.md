@@ -2,7 +2,7 @@
 layout: post
 title: Diceware
 site: http://www.ethanresnick.com/diceware/
-image: /lib/img/projects/diceware.png
+image: http://files.tnyu.org/projects/diceware.png
 creator: 
   - name: Ethan Resnick
     school: NYU

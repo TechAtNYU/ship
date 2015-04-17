@@ -2,7 +2,7 @@
 layout: post
 title: Javelin
 site: http://javelin.com/
-image: /lib/img/projects/javelin.png
+image: http://files.tnyu.org/projects/javelin.png
 creator:
   - name: Trevor Owens
     school: NYU

@@ -2,7 +2,7 @@
 layout: post
 title: Kipin Hall
 site: http://kipinhall.com/
-image: /lib/img/projects/kipin-hall.png
+image: http://files.tnyu.org/projects/kipin-hall.png
 creator:
   - name: Abhinay Ashutosh
     school: NYU

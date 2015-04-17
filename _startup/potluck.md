@@ -2,7 +2,7 @@
 layout: post
 title: Potluck
 site: http://potluck.it
-image: /lib/img/projects/potluck.jpg
+image: http://files.tnyu.org/projects/potluck.jpg
 creator:
   - name: Hursh Agrawal
     school: NYU

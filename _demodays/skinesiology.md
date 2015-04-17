@@ -2,7 +2,7 @@
 layout: post
 title: Skinesiology
 site: http://www.skinesiology.com/
-image: /lib/img/shipplace.png
+image: http://files.tnyu.org/shipplace.png
 creator:
   - name: Frank Yao
     school: NYU

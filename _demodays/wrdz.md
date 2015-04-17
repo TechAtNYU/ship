@@ -2,7 +2,7 @@
 layout: post
 title: Wrdz
 site: http://www.wrdz.co/
-image: /lib/img/projects/wrdz.png
+image: http://files.tnyu.org/projects/wrdz.png
 creator:
   - name: Joey Organisak
     school: NYU

@@ -2,7 +2,7 @@
 layout: post
 title: Cbuilder
 site: http://caffeinatedlabs.github.com/cbuilder
-image: /lib/img/projects/cbuilder.jpg
+image: http://files.tnyu.org/projects/cbuilder.jpg
 creator:
   - name: Nate Berkopec
     school: NYU

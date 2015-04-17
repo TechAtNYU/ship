@@ -2,7 +2,7 @@
 layout: post
 title: besimpler
 site: http://simpler.im
-image: /lib/img/projects/besimplr.jpg
+image: http://files.tnyu.org/projects/besimplr.jpg
 creator:
   - name: Ben Paster
     school: NYU

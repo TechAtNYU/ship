@@ -2,7 +2,7 @@
 layout: post
 title: CrowdsUnite
 site: http://crowdsunite.com/
-image: /lib/img/projects/crowds.png
+image: http://files.tnyu.org/projects/crowds.png
 creator:
   - name: Alex Feldman
     school: NYU

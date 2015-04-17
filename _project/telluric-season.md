@@ -2,7 +2,7 @@
 layout: post
 title: Telluric Season
 site: http://www.telluricseason.com/
-image: /lib/img/projects/telluric.jpg
+image: http://files.tnyu.org/projects/telluric.jpg
 creator:
   - name: Terri Burns
     school: NYU

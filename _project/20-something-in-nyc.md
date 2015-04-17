@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 20-something in NYC
-image: /lib/img/projects/20something.jpg
+image: http://files.tnyu.org/projects/20something.jpg
 site: http://20somethinginnyc.com
 creator:
   - name: Kim Pham

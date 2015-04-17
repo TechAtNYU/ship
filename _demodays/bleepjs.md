@@ -2,7 +2,7 @@
 layout: post
 title: Bleep.js
 site: https://github.com/mpgarate/bleep.js
-image: /lib/img/projects/bleepjs.png
+image: http://files.tnyu.org/projects/bleepjs.png
 creator:
   - name: Michael Garate
     school: NYU

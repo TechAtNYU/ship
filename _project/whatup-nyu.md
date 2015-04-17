@@ -2,7 +2,7 @@
 layout: post
 title: WhatupNYU
 site: http://whatupnyu.com
-image: /lib/img/projects/whatupnyu.jpg
+image: http://files.tnyu.org/projects/whatupnyu.jpg
 creator:
   - name: Abhi Agarwal
     school: NYU

@@ -2,7 +2,7 @@
 layout: post
 title: Sydney Rogers App
 site: http://www.sydneyrogersland.com/home
-image: /lib/img/projects/sydneyrogers.png
+image: http://files.tnyu.org/projects/sydneyrogers.png
 creator:
   - name: John Fiorentino
     school: NYU

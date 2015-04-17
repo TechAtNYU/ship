@@ -2,7 +2,7 @@
 layout: post
 title: Amplifyre
 site: http://amplifyre.com/
-image: /lib/img/projects/amplifyre.png
+image: http://files.tnyu.org/projects/amplifyre.png
 creator:
   - name: Misha Ponizil
     school: NYU

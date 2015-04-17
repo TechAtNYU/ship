@@ -2,7 +2,7 @@
 layout: post
 title: Eat With Me
 site: http://eatwithmenow.herokuapp.com
-image: /lib/img/projects/eatwithme.png
+image: http://files.tnyu.org/projects/eatwithme.png
 creator:
   - name: Cheryl Wu
     school: NYU

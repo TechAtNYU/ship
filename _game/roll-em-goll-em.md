@@ -2,7 +2,7 @@
 layout: post
 title: Roll'em Goll'em
 site: http://archive.globalgamejam.org/2012/rollem-golem
-image: /lib/img/projects/rollemgollem.png
+image: http://files.tnyu.org/projects/rollemgollem.png
 creator:
   - name: Michael Bartnett
     school: NYU

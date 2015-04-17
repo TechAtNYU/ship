@@ -2,7 +2,7 @@
 layout: post
 title: Jigitt
 site: http://www.jigitt.com/
-image: /lib/img/projects/jigitt.png
+image: http://files.tnyu.org/projects/jigitt.png
 creator: 
   - name: Kevin Dang
     school: NYU

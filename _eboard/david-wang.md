@@ -1,7 +1,7 @@
 ---
 layout: post
 title: David Wang
-image: /lib/img/shipplace.png
+image: http://files.tnyu.org/shipplace.png
 position: Demo Days
 twitter: 
 weight: 5

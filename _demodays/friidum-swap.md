@@ -2,7 +2,7 @@
 layout: post
 title: Friidum Swap
 site: http://swap.friidum.com/
-image: /lib/img/projects/swap.png
+image: http://files.tnyu.org/projects/swap.png
 creator:
   - name: Jon Chan
     school: NYU

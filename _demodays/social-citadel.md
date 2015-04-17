@@ -2,7 +2,7 @@
 layout: post
 title: Social Citadel
 site: http://socialcitadel.com
-image: /lib/img/projects/social-citadel.png
+image: http://files.tnyu.org/projects/social-citadel.png
 creator: 
   - name: Morgante Pell
     school: NYU 

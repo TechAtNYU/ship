@@ -2,7 +2,7 @@
 layout: post
 title: Ratafire
 site: http://ratafire.com/
-image: /lib/img/projects/ratafire.png
+image: http://files.tnyu.org/projects/ratafire.png
 creator:
   - name: Fari Liang
     school: NYU

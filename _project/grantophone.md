@@ -2,7 +2,7 @@
 layout: post
 title: Grantophone
 site: http://grantkot.com/grantophone.html
-image: /lib/img/projects/grantophone.jpg
+image: http://files.tnyu.org/projects/grantophone.jpg
 creator:
   - name: Grant Kot
     school: NYU
