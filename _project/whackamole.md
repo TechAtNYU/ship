@@ -2,7 +2,7 @@
 layout: post
 title: Whackamole
 site: https://github.com/danigrant/whackamole
-image: lib/img/projects/whackamole.png
+image: http://files.tnyu.org/projects/whackamole.png
 creator: 
   - name: Dani Grant
     school: NYU

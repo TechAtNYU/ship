@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Beyonce Trader
-image: lib/img/projects/errorbeybey.png
+image: http://files.tnyu.org/projects/errorbeybey.png
 site: http://beyoncetrader.com
 creator:
   - name: Andrew Bryk

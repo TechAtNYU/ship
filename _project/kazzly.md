@@ -2,7 +2,7 @@
 layout: post
 title: Kazzly
 site: http://kazzly.com
-image: http://kazzly.s3.amazonaws.com/home-demo.png
+image:
 creator:
   - name: Ben Paster
     school: NYU

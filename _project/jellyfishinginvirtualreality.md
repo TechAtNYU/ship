@@ -2,7 +2,7 @@
 layout: post
 title: Jellyfishing in Virtual Reality
 site: http://instagram.com/p/g_cA6BtvXP/
-image: lib/img/projects/jellyfishing.png
+image: http://files.tnyu.org/projects/jellyfishing.png
 creator: 
   - name: Dani Grant
     school: NYU

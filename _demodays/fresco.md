@@ -2,7 +2,7 @@
 layout: post
 title: Fresco
 site: http://www.fresconews.com
-image: lib/img/projects/sqFresco.jpg
+image: http://files.tnyu.org/projects/sqFresco.jpg
 creator: 
   - name: John Meyer
     school: NYU Poly 
