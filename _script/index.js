@@ -73,16 +73,32 @@ var game = function(){
     });
     dataMapping["description"] = data[data.length - 1];
     var dataSubmit = {
-      title: dataMapping.title || '',
-      description: dataMapping.description || '',
-      imgUrl: dataMapping.image || '',
-      url: dataMapping.site || '',
-      category: 'Game',
-      featured: false,
-      creators: []
+      "data": [
+        {
+          title: dataMapping.title || '',
+          type: "projects",
+          description: dataMapping.description || '',
+          imgUrl: dataMapping.image || '',
+          url: dataMapping.site || '',
+          category: 'Game',
+          featured: false,
+          creators: [],
+          links: {} 
+          /*,
+          links: {
+            // creators: [] or {}
+            // then type and ID
+            // creator: {
+            // type: people,
+            //  id: 402sahflasdkfhalsdfkh
+            // }
+            }
+          }*/
+        }
+      ]
     };
 
-    //console.log(dataSubmit)
+    
 
     if(!peopleNamesToPeoples[dataMapping['creatorName']]){
       var newPerson = {
@@ -96,24 +112,55 @@ var game = function(){
           }
         ]
       }
-      var convertPerson = JSON.stringify(newPerson);
-
       request({
         'rejectUnauthorized': false,
         'method': "POST",
         'url': 'https://api.tnyu.org/v2/people',
         'headers': {
           'x-api-key': process.env.ApiKey,
-          'accept': 'application/vnd.api+json'
+          'accept': 'application/vnd.api+json',
+          'content-type': 'application/vnd.api+json'
         },
         'timeout': 100000,
         'json': true,
-        'body': convertPerson
-      }).then(function(err, httpResponse, body){
-        console.log(httpResponse);
-      })
+        'body': newPerson
+      }).then(function(body){
+        //console.log(body);     
+      }, function(err) {
+        console.log(err.response.body);
+      });
     } else {
-      dataSubmit.creators.insert(peopleNamesToPeoples[dataMapping['creatorName']].id)
+      dataSubmit.data[0].creators = [];
+      dataSubmit.data[0].creators.push(peopleNamesToPeoples[dataMapping['creatorName']].id);
+      dataSubmit.data[0].links.creators = {};
+      dataSubmit.data[0].links.creators.linkage = [];
+      dataSubmit.data[0].links.creators.linkage.push(
+        {'type': 'people', id: peopleNamesToPeoples[dataMapping['creatorName']].id}
+      );
     }
+
+    console.log(dataSubmit)
+
+   // console.log(dataSubmit)
+   // console.log(dataSubmit.data[0].links.creator)
+
+    request({
+        'rejectUnauthorized': false,
+        'method': "POST",
+        'url': 'https://api.tnyu.org/v2/projects',
+        'headers': {
+          'x-api-key': process.env.ApiKey,
+          'accept': 'application/vnd.api+json',
+          'content-type': 'application/vnd.api+json'
+        },
+        'timeout': 100000,
+        'json': true,
+        'body': dataSubmit
+      }).then(function(body){
+        console.log(body);
+      }, function(err) {
+        console.log(JSON.stringify(dataSubmit))
+        console.log(err.response.body);
+      })
   });
 };
