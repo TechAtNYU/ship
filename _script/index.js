@@ -26,11 +26,14 @@ var game = function(){
     }
     data = data.split("\n");
     delete data[0]; delete data[1];
+
     var dataMapping = {};
     data.forEach(function(eachLine) {
       var splitLine = eachLine.split(": ");
       switch (splitLine[0]) {
         case "creator:":
+          return;
+        case "---":
           return;
         case "  - name":
           dataMapping['creatorName'] = splitLine[1];
@@ -42,21 +45,29 @@ var game = function(){
           dataMapping['creatorTwitter'] = splitLine[1];
           break;
         case "    eboard":
-          dataMapping['creatorEboard'] = splitLine[1];
+          dataMapping['creatorEboard'] = splitLine[1] === "true" ? true : false;
           break;
         case "    current":
-          dataMapping['creatorEboardCurrent'] = splitLine[1];
+          dataMapping['creatorEboardCurrent'] = splitLine[1] === "true" ? true : false;
           break;
-        case "    role":
-          dataMapping['creatorRole'] = splitLine[1];
-          break;
+        case "    role:":
+          //dataMapping['creatorRole'] = splitLine[1];
+          //break;
+          return;
         case "    - everything":
-          dataMapping['creatorEverything'] = splitLine[1];
+          return;
+        case "demodays:":
+          if (splitLine[1] !== undefined) {
+            dataMapping['shownAt'] = splitLine[1];
+          }
           break;
-        case "demodays":
-          dataMapping['creatorEverything'] = splitLine[1];
-          break;
+        case "launchdate":
+          return;
         default:
+          if (splitLine[0].length > 20 && splitLine[1] === undefined) {
+            // to exclude description assignment
+            return;
+          }
           dataMapping[splitLine[0]] = splitLine[1];
       }
     });
@@ -70,13 +81,23 @@ var game = function(){
       featured: false,
       creators: []
     };
+
+    //console.log(dataSubmit)
+
     if(!peopleNamesToPeoples[dataMapping['creatorName']]){
       var newPerson = {
-        "name": dataMapping['creatorName'],
-        "contact": {
-          "twitter": dataMapping['creatorTwitter']
-        }
+        "data": [
+          {
+            "type": "people",
+            "name": dataMapping['creatorName'],
+            "contact": {
+              "twitter": dataMapping['creatorTwitter']
+            }
+          }
+        ]
       }
+      var convertPerson = JSON.stringify(newPerson);
+
       request({
         'rejectUnauthorized': false,
         'method': "POST",
@@ -87,7 +108,7 @@ var game = function(){
         },
         'timeout': 100000,
         'json': true,
-        'body': newPerson
+        'body': convertPerson
       }).then(function(err, httpResponse, body){
         console.log(httpResponse);
       })
