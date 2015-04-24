@@ -22,7 +22,8 @@ request({
   var apiJson = JSON.parse(body)
     , projects = apiJson["data"]
     , creators = apiJson["included"]
-    , gamesJSON;
+    , gamesJSON
+    , projectJSON;
 
     var peopleIDflat = [], 
         projectList = [], 
@@ -40,9 +41,10 @@ request({
         //console.log(peopleIDflat.indexOf(person.id));
 
         var creatorIndex = peopleIDflat.indexOf(person.id);
+
         var JekyllCreator = function(original) {
           this.name = original.name;
-          this.twitter = original.contact.twitter || null;
+          //this.twitter = original.contact.twitter ? original.contact.twitter || null;
         }
 
         // TODO: need to figure out how to assign eboard / alumni
@@ -125,6 +127,9 @@ request({
 
     gamesJSON = JSON.stringify(gamesList);
     fs.writeFileSync(path.resolve(__dirname, '../../_data/games.yaml'), gamesJSON);
+
+    projectJSON = JSON.stringify(projectList);
+    fs.writeFileSync(path.resolve(__dirname, '../../_data/projects.yaml'), projectJSON);
 
     //rebuild jekyll
     var parentDir = path.resolve(__dirname, '../../');

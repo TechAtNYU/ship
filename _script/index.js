@@ -1,6 +1,8 @@
 var fs = require('fs');
 var request = require('request-promise');
 
+var datasets = ["demodays", "event", "game", "library", "project", "startup", "featured"];
+
 var peopleNamesToPeoples = {};
 request({url: 'https://api.tnyu.org/v2/teams?include=memberships', 
   "rejectUnauthorized": false,
@@ -16,17 +18,19 @@ request({url: 'https://api.tnyu.org/v2/teams?include=memberships',
       var currentPerson = people[i];
       peopleNamesToPeoples[currentPerson.name] = currentPerson;
   }
-  game();
+  for (var j = 0; j < datasets.length; j++) {
+    generateData(datasets[j]);
+  }
 });
 
-var game = function(){
-  fs.readdir('../_game', function(err, file) {
+var generateData = function(currentDataset){
+  fs.readdir('../_' + currentDataset, function(err, file) {
     if (err) {
       return console.log(err);
     }
 
-    file.forEach(function(current) {
-        fs.readFile('../_game/' + current, 'utf8', function(errFile, data) {
+    file.forEach(function(currentFile) {
+        fs.readFile('../_' + currentDataset + '/' + currentFile, 'utf8', function(errFile, data) {
           if (errFile) {
             return console.log(errFile);
           }
@@ -78,6 +82,33 @@ var game = function(){
                 dataMapping[splitLine[0]] = splitLine[1];
             }
           });
+
+          var isEvent = false, isDemodays = false, isFeatured = false;
+          var categoryName;
+
+          switch (currentDataset) {
+            case "demodays":
+            case "event":
+            case "project":
+            case "featured":
+              categoryName = "Other";
+              // TODO: this needs to create a demodays linkage for demodays
+              break;
+            case "demodays":
+              isDemodays = true;
+              break;
+            case "event":
+              isEvent = true;
+              break;
+            case "featured":
+              isFeatured = true;
+              break;
+            default:
+              categoryName = currentDataset.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+          }
+
+          console.log(categoryName);
+
           dataMapping["description"] = data[data.length - 1];
           var dataSubmit = {
             "data": [
@@ -87,8 +118,8 @@ var game = function(){
                 description: dataMapping.description || '',
                 imgUrl: dataMapping.image || '',
                 url: dataMapping.site || '',
-                category: 'Game',
-                featured: false,
+                category: categoryName,
+                featured: isFeatured,
                 links: {} 
               }
             ]

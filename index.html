@@ -130,9 +130,9 @@ lego: false
 	<div class="site site--fullbleed">
 		<h5 class="category">Projects</h5>
 		<ul class="posts">
-			{% for project in site.project %}
+			{% for project in site.data.projects %}
 			<li class="project">
-				<a href="{{ project.site }}"><img src="/lib/img/shipplace.png" data-src="{{ project.image }}" title="{{project.title}}"></a>
+				<a href="{{ project.site }}"><img src="/lib/img/shipplace.png" data-src="{{ project.imgUrl }}" title="{{project.title}}"></a>
 				<div class="description">
 					<h1>{{ project.title }}</h1>
 			
@@ -152,9 +152,9 @@ lego: false
 						{% endfor %}
 	
 					</div>  
-					<p class="project__content">{{project.content}}</p>
+					<p class="project__content">{{project.description}}</p>
 					{% unless project.inactive %}
-						{% if project.site %}<p><a href="{{ project.site }}" class="project-link">{{ project.site }}</a></p>{% endif %}
+						{% if project.url %}<p><a href="{{ project.url }}" class="project-link">{{ project.url }}</a></p>{% endif %}
 					{% endunless %}
 				</div>
 			</li>
