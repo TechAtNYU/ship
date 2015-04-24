@@ -22,20 +22,46 @@ request({
   var apiJson = JSON.parse(body)
     , projects = apiJson["data"]
     , creators = apiJson["included"]
-    , finalJSON
-    , pastJSON;
+    , gamesJSON;
 
-    console.log(projects)
-    console.log(creators)
+    var peopleIDflat = [], 
+        projectList = [], 
+        gamesList = [];
 
-    var gamesList = [];
+    for (var i = 0; i < creators.length; i++) {
+      peopleIDflat.push(creators[i].id);
+    }
 
     projects.forEach(function(project, idx) {
       var id = project.id, category = project.category, projectsLinkage;
+      project.creator = [];
 
-      console.log(category);
+      project.links.creators.linkage.forEach(function(person, personIdx) {
+        //console.log(peopleIDflat.indexOf(person.id));
 
+        var creatorIndex = peopleIDflat.indexOf(person.id);
+        var JekyllCreator = function(original) {
+          this.name = original.name;
+          this.twitter = original.contact.twitter || null;
+        }
+
+        // TODO: need to figure out how to assign eboard / alumni
+
+        project.creator.push(new JekyllCreator(creators[creatorIndex]));
+      });
+
+      switch (category) {
+        case "Game":
+          gamesList.push(project);
+          break;
+        default:
+          projectList.push(project);
+          break;
+      }
     });
+
+    //console.log(creators)
+
 
  /* var currentEventsList = [],
       pastEventsList = [],
@@ -87,15 +113,18 @@ request({
   });*/
 
   //output merged events
-  /*try {
-    finalJSON = JSON.stringify(currentEventsList);
+ try {
+    /*finalJSON = JSON.stringify(currentEventsList);
     fs.writeFileSync(path.resolve(__dirname, '../../_data/current.yaml'), finalJSON);
 
     pastJSON = JSON.stringify(pastEventsList);
     fs.writeFileSync(path.resolve(__dirname, '../../_data/past.yaml'), pastJSON);
 
     allJSON = JSON.stringify(allEventsList);
-    fs.writeFileSync(path.resolve(__dirname, '../../_data/all.yaml'), allJSON);
+    fs.writeFileSync(path.resolve(__dirname, '../../_data/all.yaml'), allJSON);*/
+
+    gamesJSON = JSON.stringify(gamesList);
+    fs.writeFileSync(path.resolve(__dirname, '../../_data/games.yaml'), gamesJSON);
 
     //rebuild jekyll
     var parentDir = path.resolve(__dirname, '../../');
@@ -111,5 +140,5 @@ request({
     console.log('ERROR');
     //something went wrong converting the json...
     //just don't update the old file.
-  }*/
+  }
 });

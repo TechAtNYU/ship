@@ -31,7 +31,7 @@ lego: false
 									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
 								
 								{% else %}
-									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+									<span class="creator__label--alumni" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
 								
 								{% endif %}
 							{% endif %}
@@ -73,7 +73,7 @@ lego: false
 							<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
 						
 						{% else %}
-							<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+							<span class="creator__label--alumni" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
 						
 						{% endif %}
 					{% endif %}
@@ -106,7 +106,7 @@ lego: false
 									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
 									
 								{% else %}
-									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+									<span class="creator__label--alumni" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
 									
 								{% endif %}
 							{% endif %}
@@ -144,7 +144,7 @@ lego: false
 									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
 								
 								{% else %}
-									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+									<span class="creator__label--alumni" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
 								
 								{% endif %}
 							{% endif %}
@@ -166,7 +166,7 @@ lego: false
 <section class="blog" id="game">
 	<div class="site site--fullbleed">
 		<h5 class="category">Games</h5>
-		<ul class="posts">
+		<!-- <ul class="posts">
 			{% for game in site.game %}
 			<li class="project">
 				<a href="{{ game.site }}"><img src="/lib/img/shipplace.png" data-src="{{ game.image }}" title="{{ game.title }}"></a>
@@ -181,7 +181,7 @@ lego: false
 									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
 								
 								{% else %}
-									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+									<span class="creator__label--alumni" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
 								
 								{% endif %}
 							{% endif %}
@@ -192,6 +192,38 @@ lego: false
 					<p class="project__content">{{game.content}}</p>
 					{% unless game.inactive %}
 						{% if game.site %}<p><a href="{{ game.site }}" class="project-link">{{ game.site }}</a></p>{% endif %}
+					{% endunless %}
+				</div>
+			</li>
+			{% endfor %}
+		</ul> -->
+
+		<ul class="posts">
+			{% for game in site.data.games %}
+			<li class="project">
+				<a href="{{ game.url }}"><img src="/lib/img/shipplace.png" data-src="{{ game.imgUrl }}" title="{{ game.title }}"></a>
+				<div class="description">
+					<h1>{{ game.title }}</h1>
+
+					<div class="attribution">
+						{% for creator in game.creator %}
+						<p class="project__creator">{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
+							{% if creator.eboard %}
+								{% if creator.current == true %}
+									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
+								
+								{% else %}
+									<span class="creator__label--alumni" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+								
+								{% endif %}
+							{% endif %}
+						</p>
+						{% endfor %}
+	
+					</div>  
+					<p class="project__content">{{game.description}}</p>
+					{% unless game.inactive %}
+						{% if game.url %}<p><a href="{{ game.url }}" class="project-link">{{ game.url }}</a></p>{% endif %}
 					{% endunless %}
 				</div>
 			</li>
@@ -212,13 +244,13 @@ lego: false
 			
 					<div class="attribution">
 						{% for creator in event.creator %}
-						<p class="project__creator">{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
+						<p class="project__creator">{{ creator.name }} {% if creator.contact.twitter %}<a href="http://twitter.com/{{ creator.contact.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
 							{% if creator.eboard %}
 								{% if creator.current == true %}
 									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
 								
 								{% else %}
-									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+									<span class="creator__label--alumni" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
 								
 								{% endif %}
 							{% endif %}
@@ -255,7 +287,7 @@ lego: false
 									<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
 								
 								{% else %}
-									<span class="creator__label--alumi" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+									<span class="creator__label--alumni" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
 								
 								{% endif %}
 							{% endif %}
