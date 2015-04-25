@@ -17,7 +17,7 @@ lego: false
 	<div class="site site--fullbleed">
 		<h5 class="category">Featured</h5>
 		<ul class="posts">
-			{% for featured in site.featured %}
+			{% for featured in site.data.featured %}
 			<li class="project">
 				<a href="{{ featured.url }}"><img src="/lib/img/shipplace.png" data-src="{{ featured.imgUrl }}" title="{{featured.title}}"></a>
 				<div class="description">
@@ -42,7 +42,7 @@ lego: false
 					<p class="project__content">{{featured.description}}</p>
 					{% unless featured.inactive %}
 						{% if featured.url %}<p><a href="{{ featured.url }}" class="project-link">{{ featured.url }}</a>
-							<a href="#{{featured.bucket}}"><span class="featured__bucket--{{featured.bucket}}">{{featured.bucket}}</span></a>
+							<a href="#{{featured.category}}"><span class="featured__bucket--{{featured.category}}">{{featured.category}}</span></a>
 						</p>{% endif %}
 					{% endunless %}
 				</div>
@@ -166,7 +166,7 @@ lego: false
 <section class="blog" id="game">
 	<div class="site site--fullbleed">
 		<h5 class="category">Games</h5>
-		
+
 		<ul class="posts">
 			{% for game in site.data.games %}
 			<li class="project">
@@ -205,7 +205,7 @@ lego: false
 	<div class="site site--fullbleed">
 		<h5 class="category">Events</h5>
 		<ul class="posts">
-			{% for event in site.event %}
+			{% for event in site.data.events %}
 			<li class="project">
 				<a href="{{ event.url }}"><img src="/lib/img/shipplace.png" data-src="{{ event.imgUrl }}" title="{{ event.title }}"></a>
 				<div class="description">

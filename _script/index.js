@@ -1,3 +1,7 @@
+// THIS SCRIPT WAS USED TO UPDATE THE API WITH THE SHIP PROJECTS STORED AS MARKDOWN
+// this does not need to be run anymore, unless we remove all the projects from the API.
+// keeping it for reference
+
 var fs = require('fs');
 var request = require('request-promise');
 
