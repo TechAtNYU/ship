@@ -137,28 +137,28 @@ request({
   if (!dev) {
     try {
       featuredJSON = JSON.stringify(featuredList);
-      fs.writeFileSync(path.resolve(__dirname, '../../_data/featured.yaml'), featuredJSON);
+      fs.writeFileSync(path.resolve(__dirname, '../_data/featured.yaml'), featuredJSON);
 
       demodaysJSON = JSON.stringify(demodaysList);
-      fs.writeFileSync(path.resolve(__dirname, '../../_data/demodays.yaml'), demodaysJSON);
+      fs.writeFileSync(path.resolve(__dirname, '../_data/demodays.yaml'), demodaysJSON);
 
       libraryJSON = JSON.stringify(libraryList);
-      fs.writeFileSync(path.resolve(__dirname, '../../_data/libraries.yaml'), libraryJSON);
+      fs.writeFileSync(path.resolve(__dirname, '../_data/libraries.yaml'), libraryJSON);
 
       projectJSON = JSON.stringify(projectList);
-      fs.writeFileSync(path.resolve(__dirname, '../../_data/projects.yaml'), projectJSON);
+      fs.writeFileSync(path.resolve(__dirname, '../_data/projects.yaml'), projectJSON);
 
       gamesJSON = JSON.stringify(gamesList);
-      fs.writeFileSync(path.resolve(__dirname, '../../_data/games.yaml'), gamesJSON);
+      fs.writeFileSync(path.resolve(__dirname, '../_data/games.yaml'), gamesJSON);
 
       eventJSON = JSON.stringify(eventList);
-      fs.writeFileSync(path.resolve(__dirname, '../../_data/events.yaml'), eventJSON);
+      fs.writeFileSync(path.resolve(__dirname, '../_data/events.yaml'), eventJSON);
 
       startupJSON = JSON.stringify(startupList);
-      fs.writeFileSync(path.resolve(__dirname, '../../_data/startups.yaml'), startupJSON);
+      fs.writeFileSync(path.resolve(__dirname, '../_data/startups.yaml'), startupJSON);
 
       //rebuild jekyll
-      var parentDir = path.resolve(__dirname, '../../');
+      var parentDir = path.resolve(__dirname, '../');
       var exec = require('child_process').exec;
       var puts = function (error, stdout, stderr){
         sys.puts(stdout)

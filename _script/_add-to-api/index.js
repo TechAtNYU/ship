@@ -28,13 +28,13 @@ request({url: 'https://api.tnyu.org/v2/teams?include=memberships',
 });
 
 var generateData = function(currentDataset){
-  fs.readdir('../_' + currentDataset, function(err, file) {
+  fs.readdir('../../_' + currentDataset, function(err, file) {
     if (err) {
       return console.log(err);
     }
 
     file.forEach(function(currentFile) {
-        fs.readFile('../_' + currentDataset + '/' + currentFile, 'utf8', function(errFile, data) {
+        fs.readFile('../../_' + currentDataset + '/' + currentFile, 'utf8', function(errFile, data) {
           if (errFile) {
             return console.log(errFile);
           }
