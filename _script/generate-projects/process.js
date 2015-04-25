@@ -19,9 +19,6 @@ request({
   timeout: 100000
 }, function(err, response, body) {
 
-  //console.log(body);
-
-
   var apiJson = JSON.parse(body)
     , projects = apiJson["data"]
     , included = apiJson["included"]
@@ -50,11 +47,14 @@ request({
       return -1;
     }
 
-    /*var manualData = {
+    var manualData = {
+      // Raise Cache
+      "5539c061f0b5fe7dbe393189": {
+        "category": "Event"
+      }
+    }
 
-
-    }*/
-
+    // {?} Flat ID array for included resources
     for (var i = 0; i < included.length; i++) {
       includedIDflat.push(included[i].id);
     }
@@ -63,81 +63,53 @@ request({
       var id = project.id, category = project.category, projectsLinkage;
       project.creator = [];
 
-      /*if (manualData[id]) {
+      // {?} assign events
+      if (manualData[id]) {
         category = manualData[id].category;
-      }*/
-
-      // jank exception for Raise Cache
-      if (id === "5539c061f0b5fe7dbe393189") {
-        category = "Event";
       }
 
+      // {?} loop through included people to assign Name and Twitter
       project.links.creators.linkage.forEach(function(person, personIdx) {
         
         var includedPersonIndex = includedIDflat.indexOf(person.id);
         var originalPerson = included[includedPersonIndex];
-        
-
-        //console.log(creators[creatorIndex]);
-
-
-
-
-
-        //console.log(original.contact)
-
-      /*  if (typeof original.contact === "undefined") {
-          console.log(original)
-        }
-*/
-
-        // {?} Dramatically simplify creator data
+      
+        // {?} dramatically simplify creator data
         var JekyllCreator = function(original) {
           this.name = original.name;
           this.twitter = (original.contact && original.contact.twitter) ? original.contact.twitter : false;
         }
 
-
         // TODO: need to figure out how to assign eboard / alumni
+        // this will be a lot of data entry on the API
         project.creator.push(new JekyllCreator(originalPerson));
       });
 
-
+      // {?} for projects shown at DemoDays
       var eventId = project.links.shownAt.linkage && project.links.shownAt.linkage[0] && project.links.shownAt.linkage[0].id;
       var includedEventIndex = includedIDflat.indexOf(eventId);
-      console.log(eventId)
 
       if (eventId !== undefined) {
-        console.log("YEEE")
-        //console.log()
-
         var originalEvent = included[includedEventIndex];
-
-        //console.log(event.links.teams.linkage)
-
 
         // {?} Assigning DemoDays
         if (findIndex(originalEvent.links.teams.linkage, "53f99d48c66b44cf6f8f6d81", "id") > -1) {
-          //console.log(event.startDateTime)
-
           var dateArray = originalEvent.startDateTime.split("-");
 
           //console.log();
 
           category = "DemoDays";
           project.demodays = dateArray[1] + " " + dateArray[0];
+
+          // TODO: the link assignment which happens in app.js right now can be done here
         }
       }
 
-
-        console.log(project.featured)
-
-        if (project.featured) {
-          featuredList.push(project);
-        }
-
-
-      console.log(category);
+      // {?} for Featured projects
+      // featured is independent of category
+      if (project.featured) {
+        featuredList.push(project);
+      }
 
       switch (category) {
         case "DemoDays":
@@ -167,17 +139,17 @@ request({
       featuredJSON = JSON.stringify(featuredList);
       fs.writeFileSync(path.resolve(__dirname, '../../_data/featured.yaml'), featuredJSON);
 
-      gamesJSON = JSON.stringify(gamesList);
-      fs.writeFileSync(path.resolve(__dirname, '../../_data/games.yaml'), gamesJSON);
-
       demodaysJSON = JSON.stringify(demodaysList);
       fs.writeFileSync(path.resolve(__dirname, '../../_data/demodays.yaml'), demodaysJSON);
+
+      libraryJSON = JSON.stringify(libraryList);
+      fs.writeFileSync(path.resolve(__dirname, '../../_data/libraries.yaml'), libraryJSON);
 
       projectJSON = JSON.stringify(projectList);
       fs.writeFileSync(path.resolve(__dirname, '../../_data/projects.yaml'), projectJSON);
 
-      libraryJSON = JSON.stringify(libraryList);
-      fs.writeFileSync(path.resolve(__dirname, '../../_data/libraries.yaml'), libraryJSON);
+      gamesJSON = JSON.stringify(gamesList);
+      fs.writeFileSync(path.resolve(__dirname, '../../_data/games.yaml'), gamesJSON);
 
       eventJSON = JSON.stringify(eventList);
       fs.writeFileSync(path.resolve(__dirname, '../../_data/events.yaml'), eventJSON);
