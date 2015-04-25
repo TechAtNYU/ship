@@ -87,6 +87,9 @@ request({
         project.creator.push(new JekyllCreator(originalPerson));
       });
 
+
+      //console.log(project.creator)
+
       // {?} for projects shown at DemoDays
       var eventId = project.links.shownAt.linkage && project.links.shownAt.linkage[0] && project.links.shownAt.linkage[0].id;
       var includedEventIndex = includedIDflat.indexOf(eventId);
@@ -135,28 +138,43 @@ request({
       }
     });
 
+  function sortAlpha(array) {
+    array.sort(function (a, b) {
+      if (a.title > b.title) {
+        return 1;
+      }
+      if (a.title < b.title) {
+        return -1;
+      }
+      // a must be equal to b
+      return 0;
+    });
+    return array;
+  }
+
+
   //output datasets
   if (!dev) {
     try {
-      featuredJSON = JSON.stringify(featuredList);
+      featuredJSON = JSON.stringify(sortAlpha(featuredList));
       fs.writeFileSync(path.resolve(__dirname, '../_data/featured.yaml'), featuredJSON);
 
-      demodaysJSON = JSON.stringify(demodaysList);
+      demodaysJSON = JSON.stringify(sortAlpha(demodaysList));
       fs.writeFileSync(path.resolve(__dirname, '../_data/demodays.yaml'), demodaysJSON);
 
-      libraryJSON = JSON.stringify(libraryList);
+      libraryJSON = JSON.stringify(sortAlpha(libraryList));
       fs.writeFileSync(path.resolve(__dirname, '../_data/libraries.yaml'), libraryJSON);
 
-      projectJSON = JSON.stringify(projectList);
+      projectJSON = JSON.stringify(sortAlpha(projectList));
       fs.writeFileSync(path.resolve(__dirname, '../_data/projects.yaml'), projectJSON);
 
-      gamesJSON = JSON.stringify(gamesList);
+      gamesJSON = JSON.stringify(sortAlpha(gamesList));
       fs.writeFileSync(path.resolve(__dirname, '../_data/games.yaml'), gamesJSON);
 
-      eventJSON = JSON.stringify(eventList);
+      eventJSON = JSON.stringify(sortAlpha(eventList));
       fs.writeFileSync(path.resolve(__dirname, '../_data/events.yaml'), eventJSON);
 
-      startupJSON = JSON.stringify(startupList);
+      startupJSON = JSON.stringify(sortAlpha(startupList));
       fs.writeFileSync(path.resolve(__dirname, '../_data/startups.yaml'), startupJSON);
 
       //rebuild jekyll
