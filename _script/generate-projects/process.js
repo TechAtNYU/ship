@@ -27,12 +27,23 @@ request({
     , included = apiJson["included"]
     , gamesJSON
     , projectJSON
-    , demodaysJSON;
+    , demodaysJSON
+    , libraryJSON
+    , startupJSON;
 
     var includedIDflat = [], 
         projectList = [], 
         gamesList = [],
-        demodaysList = [];
+        demodaysList = [],
+        libraryList = [],
+        startupList = [];
+
+
+
+    /*var manualData = {
+
+
+    }*/
 
     for (var i = 0; i < included.length; i++) {
       //console.log(included[i])
@@ -42,6 +53,10 @@ request({
     projects.forEach(function(project, idx) {
       var id = project.id, category = project.category, projectsLinkage;
       project.creator = [];
+
+      /*if (manualData[id]) {
+        category = manualData[id].category;
+      }*/
 
       project.links.creators.linkage.forEach(function(person, personIdx) {
         //console.log(peopleIDflat.indexOf(person.id));
@@ -118,6 +133,12 @@ request({
         case "DemoDays":
           demodaysList.push(project);
           break;
+        case "Library":
+          libraryList.push(project);
+          break;
+        case "Startup":
+          startupList.push(project);
+          break;
         default:
           projectList.push(project);
           break;
@@ -143,6 +164,13 @@ request({
 
       projectJSON = JSON.stringify(projectList);
       fs.writeFileSync(path.resolve(__dirname, '../../_data/projects.yaml'), projectJSON);
+
+      libraryJSON = JSON.stringify(libraryList);
+      fs.writeFileSync(path.resolve(__dirname, '../../_data/libraries.yaml'), libraryJSON);
+
+      startupJSON = JSON.stringify(startupList);
+      fs.writeFileSync(path.resolve(__dirname, '../../_data/startups.yaml'), startupJSON);
+
 
       //rebuild jekyll
       var parentDir = path.resolve(__dirname, '../../');
