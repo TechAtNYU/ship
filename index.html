@@ -87,6 +87,42 @@ lego: false
 	</div>
 </section>
 
+
+<section class="blog" id="demodays">
+	<div class="site site--grid">
+		<h5 class="category">Demodays</h5>
+		<p>DemoDays projects from NYU Students. For all demos, <a href="http://demodays.co/archive/">visit the full DemoDays Archive here.</a></p>
+		<ul class="posts grid">
+			{% for demodays in site.data.demodays %}
+			<li class="project">
+					<div class="img__wrap">
+						<a href="{{ demodays.url }}"><img src="/lib/img/shipplace.png" data-src="{{ demodays.imgUrl }}" title="{{demodays.title}}"></a>
+					</div>
+					<a href="{{ demodays.url }}">
+						<h2>{{ demodays.title }}</h2>
+					</a>
+					
+					{% for creator in demodays.creator %}
+					<p class="project__creator">{{ creator.name }} {% if creator.twitter %}<a href="http://twitter.com/{{ creator.twitter }}" class="twitter"><span class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></span></a>{% endif %}
+					{% if creator.eboard %}
+						{% if creator.current == true %}
+							<span class="creator__label--eboard" title="tech@NYU current e-board"><span class="ion-bug" data-pack="default" data-tags="develop, program, hacker, error"></span></span>
+						
+						{% else %}
+							<span class="creator__label--alumni" title="tech@NYU Alumni"><span class="ion-university" data-pack="default" data-tags="graduate, education, school, tassle"></span></span>
+						
+						{% endif %}
+					{% endif %}
+					</p>		
+					{% endfor %}
+				
+					{% if demodays.demodays %}<p class="demodays__link">{{ demodays.demodays }}</p>{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+
 <section class="blog" id="library">
 	<div class="site site--grid">
 		<h5 class="category">Libraries</h5>
