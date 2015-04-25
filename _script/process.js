@@ -78,10 +78,12 @@ request({
         var JekyllCreator = function(original) {
           this.name = original.name;
           this.twitter = (original.contact && original.contact.twitter) ? original.contact.twitter : false;
+          this.eboard = original.roles.indexOf("TEAM_MEMBER") > -1 ? true : false;
         }
 
-        // TODO: need to figure out how to assign eboard / alumni
+        // TODO: need to figure out how to assign alumni
         // this will be a lot of data entry on the API
+
         project.creator.push(new JekyllCreator(originalPerson));
       });
 
