@@ -2,6 +2,8 @@
 
 [![Circle CI](https://circleci.com/gh/TechAtNYU/ship/tree/master.svg?style=svg)](https://circleci.com/gh/TechAtNYU/ship/tree/master)
 
+## Do not delete this reference branch until Ship is completely running on API
+
 #Project Schema
 
 	layout: post
