@@ -98,7 +98,6 @@ request({
 
         // TODO: need to figure out how to assign alumni
         // this will be a lot of data entry on the API
-
         project.creator.push(new JekyllCreator(originalPerson));
       });
 
@@ -116,12 +115,51 @@ request({
         if (findIndex(originalEvent.links.teams.linkage, "53f99d48c66b44cf6f8f6d81", "id") > -1) {
           var dateArray = originalEvent.startDateTime.split("-");
 
-          //console.log();
-
           category = "DemoDays";
-          project.demodays = dateArray[1] + " " + dateArray[0];
+          var month;
 
-          // TODO: the link assignment which happens in app.js right now can be done here
+          // TODO: let's not do this
+          switch (dateArray[1]) {
+          case "01":
+            month = "January";
+            break;
+          case "02":
+            month = "February";
+            break;
+          case "03":
+            month = "March";
+            break;
+          case "04":
+            month = "April";
+            break;
+          case "05":
+            month = "May";
+            break;
+          case "06":
+            month = "June";
+            break;
+          case "07":
+            month = "July";
+            break;
+          case "08":
+            month = "August";
+            break;
+          case "09":
+            month = "September";
+            break;
+          case "10":
+            month = "October";
+            break;
+          case "11":
+            month = "November";
+            break;
+          case "12":
+            month = "December";
+            break;
+          }
+
+          project.demodaysDate = month + " " + dateArray[0];
+          project.demodaysUrl = "http://demodays.co/archive/" + dateArray[1] + "/" + dateArray[0];
         }
       }
 

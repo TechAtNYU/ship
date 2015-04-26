@@ -68,7 +68,11 @@ lego: false
 					</p>		
 					{% endfor %}
 				
-					{% if demodays.demodays %}<p class="demodays__link">{{ demodays.demodays }}</p>{% endif %}
+					{% if demodays.demodaysDate %}
+					<a href="{{demodays.demodaysUrl}}">
+						<p class="demodays__link"><span class="ion-wand" data-pack="default" data-tags="images, levels, light, dark, settings" target="_blank"></span> {{ demodays.demodaysDate }}
+					</a>
+					{% endif %}
 			</li>
 			{% endfor %}
 		</ul>
