@@ -2,46 +2,25 @@
 
 [![Circle CI](https://circleci.com/gh/TechAtNYU/ship/tree/master.svg?style=svg)](https://circleci.com/gh/TechAtNYU/ship/tree/master)
 
-#Project Schema
+# Projects
 
-	layout: post
-	title: Name of Project
-	image: /lib/img/projects/whatever.jpg
-	site: http://www.test.com
-	creator:
-	  - name: Some Person
-	    school: NYU
-	    twitter: someperson
-	    eboard: true
-	    current: false
-		role:
-		- XYZ
-		- ZYX
-		- ABC
-	  - name: Another Person
-	    school: NYU
-		twitter: anotherperson
-		eboard: true
-		current: true
-		role:
-		- ABC
-	launchdate: August 2014
-	demodays: April 2014
-	media:
-	  - unordered list of media
-	  - facebook
-	  - whatever
-	bucket: [layout]
-	inactive: false
+Ship projects are now fully generated from the API. To generate the right data, run:
+
+`cd _script`
+`node process.js`
+
+---
 
 
-Tentative:
+#Development
 
-- media
-- role (creator)
-- launchdate
+- Jekyll 2.0
+- LESS
+- CircleCI
 
-Bucket means original category, this is used for featured posts.
+
+----
+
 
 #People Schema
 
@@ -95,76 +74,3 @@ We start our alumni sorting at 11, sorted by the year the alumni left tech@NYU. 
 3. 2011-2012
 4. 2012-2013
 5. 2013-2014
-
-----
-
-#Collections
-
-All project layouts should be interchangeable with any other category. The irrelevant metadata will not render. This is important: in the case of "Featured", you can drop in any project from any other bucket. (May need to add "bucket" to YML)
-
-Of the collections, we will have:
-
-- Featured
-- DemoDays
-- Library
-- Project
-- Game
-- Event
-- Startup
-
-Plus individuals:
-
-- Eboard
-- Alumni
-
-###Featured
-
-Anything noteworthy or new. Updated (how often? weekly? monthly? every semester?)
-
-###DemoDays
-
-DemoDays projects **from NYU students**. The main DemoDays archives are on [demodays.co](http://demodays.co/archives). We limit it to NYU students because of previous concerns that we were co-opting other schools' production on ship.**techatnyu**.org
-
-###Library
-For all y'all to develop with: *Phys.js*
-
-Layout differences:
-
-- Language
-
-###Project
-Basic category. One-off and ongoing projects: *Beytrader*
-
-###Game
-Games!: *Heads Up Hot Dogs*
-
-Layout differences:
-
-- Platform
-- Where to get
-
-###Event
-An event that's really cool: *Raise Cache*
-
-Layout differences:
-
-- Date
-- Time
-- Location
-- Media coverage
-
-###Startup
-Incorporated, living the dream, possibly exited: *Branch*
-
-Layout differences:
-
-- Status (active, exited, etc)
-- ?
-
-----
-
-#Development
-
-- Jekyll 2.0
-- LESS
-- CircleCI
