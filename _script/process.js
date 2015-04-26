@@ -6,6 +6,21 @@ var request = require('request')
 
   var dev = false;
 
+
+  function sortAlpha(array, property) {
+    array.sort(function (a, b) {
+      if (a[property] > b[property]) {
+        return 1;
+      }
+      if (a[property] < b[property]) {
+        return -1;
+      }
+      // a must be equal to b
+      return 0;
+    });
+    return array;
+  }
+
 //the processing
 request({
   //this disables the ssl security (would accept a fake certificate). see:
@@ -87,8 +102,8 @@ request({
         project.creator.push(new JekyllCreator(originalPerson));
       });
 
-
-      //console.log(project.creator)
+      // {?} display creators alphabetically
+      sortAlpha(project.creator, "name");
 
       // {?} for projects shown at DemoDays
       var eventId = project.links.shownAt.linkage && project.links.shownAt.linkage[0] && project.links.shownAt.linkage[0].id;
@@ -138,43 +153,31 @@ request({
       }
     });
 
-  function sortAlpha(array) {
-    array.sort(function (a, b) {
-      if (a.title > b.title) {
-        return 1;
-      }
-      if (a.title < b.title) {
-        return -1;
-      }
-      // a must be equal to b
-      return 0;
-    });
-    return array;
-  }
+
 
 
   //output datasets
   if (!dev) {
     try {
-      featuredJSON = JSON.stringify(sortAlpha(featuredList));
+      featuredJSON = JSON.stringify(sortAlpha(featuredList, "title"));
       fs.writeFileSync(path.resolve(__dirname, '../_data/featured.yaml'), featuredJSON);
 
-      demodaysJSON = JSON.stringify(sortAlpha(demodaysList));
+      demodaysJSON = JSON.stringify(sortAlpha(demodaysList, "title"));
       fs.writeFileSync(path.resolve(__dirname, '../_data/demodays.yaml'), demodaysJSON);
 
-      libraryJSON = JSON.stringify(sortAlpha(libraryList));
+      libraryJSON = JSON.stringify(sortAlpha(libraryList, "title"));
       fs.writeFileSync(path.resolve(__dirname, '../_data/libraries.yaml'), libraryJSON);
 
-      projectJSON = JSON.stringify(sortAlpha(projectList));
+      projectJSON = JSON.stringify(sortAlpha(projectList, "title"));
       fs.writeFileSync(path.resolve(__dirname, '../_data/projects.yaml'), projectJSON);
 
-      gamesJSON = JSON.stringify(sortAlpha(gamesList));
+      gamesJSON = JSON.stringify(sortAlpha(gamesList, "title"));
       fs.writeFileSync(path.resolve(__dirname, '../_data/games.yaml'), gamesJSON);
 
-      eventJSON = JSON.stringify(sortAlpha(eventList));
+      eventJSON = JSON.stringify(sortAlpha(eventList, "title"));
       fs.writeFileSync(path.resolve(__dirname, '../_data/events.yaml'), eventJSON);
 
-      startupJSON = JSON.stringify(sortAlpha(startupList));
+      startupJSON = JSON.stringify(sortAlpha(startupList, "title"));
       fs.writeFileSync(path.resolve(__dirname, '../_data/startups.yaml'), startupJSON);
 
       //rebuild jekyll
