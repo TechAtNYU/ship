@@ -3,9 +3,7 @@ var request = require('request')
   , sys     = require('sys')
   , path    = require('path');
 
-
   var dev = false;
-
 
   function sortAlpha(array, property) {
     array.sort(function (a, b) {
@@ -114,49 +112,8 @@ request({
         // {?} Assigning DemoDays
         if (findIndex(originalEvent.links.teams.linkage, "53f99d48c66b44cf6f8f6d81", "id") > -1) {
           var dateArray = originalEvent.startDateTime.split("-");
-
           category = "DemoDays";
-          var month;
-
-          // TODO: let's not do this
-          switch (dateArray[1]) {
-          case "01":
-            month = "January";
-            break;
-          case "02":
-            month = "February";
-            break;
-          case "03":
-            month = "March";
-            break;
-          case "04":
-            month = "April";
-            break;
-          case "05":
-            month = "May";
-            break;
-          case "06":
-            month = "June";
-            break;
-          case "07":
-            month = "July";
-            break;
-          case "08":
-            month = "August";
-            break;
-          case "09":
-            month = "September";
-            break;
-          case "10":
-            month = "October";
-            break;
-          case "11":
-            month = "November";
-            break;
-          case "12":
-            month = "December";
-            break;
-          }
+          var month = new Date(originalEvent.startDateTime).toLocaleString("en-US", {"month": "long"});
 
           project.demodaysDate = month + " " + dateArray[0];
           project.demodaysUrl = "http://demodays.co/archive/" + dateArray[1] + "/" + dateArray[0];
@@ -190,9 +147,6 @@ request({
           break;
       }
     });
-
-
-
 
   //output datasets
   if (!dev) {
