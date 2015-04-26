@@ -349,8 +349,8 @@ span[class^='creator__label--'].creator__label--eboard {
 span[class^='creator__label--'] > span {
   position: absolute;
 }
-.demodays__link {
-  color: rgba(33, 52, 71, 0.25);
+.demodays__link a {
+  color: rgba(33, 52, 71, 0.25) !important;
   font-size: .75em;
 }
 span[class^='featured__bucket'] {
