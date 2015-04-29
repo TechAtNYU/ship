@@ -13,8 +13,7 @@ machine:
 dependencies:
   post:
     - gem install jekyll
-    - jekyll build:
-        timeout: 300 # 5 min
+    - cd $HOME/$CIRCLE_PROJECT_REPONAME/_script && npm install && node process.js
 
 test:
   override:
