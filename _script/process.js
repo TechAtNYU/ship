@@ -114,7 +114,7 @@ request({
 
 			// {?} Assigning DemoDays
 			if (findIndex(originalEvent.links.teams.linkage, '53f99d48c66b44cf6f8f6d81', 'id') > -1) {
-				var dateArray = originalEvent.startDateTime.split('-');
+				var dateArray = originalEvent.startDateTime && originalEvent.startDateTime.split('-');
 				category = 'DemoDays';
 				var month = new Date(originalEvent.startDateTime).toLocaleString('en-US', {'month': 'long'});
 
