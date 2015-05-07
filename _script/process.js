@@ -118,7 +118,7 @@ request({
 				category = 'DemoDays';
 				var month = new Date(originalEvent.startDateTime).toLocaleString('en-US', {'month': 'long'});
 
-				if(dateArray[0]){
+				if(dateArray && dateArray[0]){
 					project.demodaysDate = month + ' ' + dateArray[0];
 					project.demodaysUrl = 'http://demodays.co/archive/' + dateArray[1] + '/' + dateArray[0];
 				}
