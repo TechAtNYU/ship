@@ -77,7 +77,8 @@ request({
 
 	projects.forEach(function(project) {
 		var id = project.id;
-		var category = project.category;
+		var category = project.attributes.category;
+
 		project.creator = [];
 
 		// {?} assign events
@@ -91,9 +92,10 @@ request({
 			var originalPerson = included[includedPersonIndex];
 			// {?} dramatically simplify creator data
 			var JekyllCreator = function(original) {
-				this.name = original.name;
-				this.twitter = (original.contact && original.contact.twitter) ? original.contact.twitter : false;
-				this.eboard = (original.roles && original.roles.indexOf('TEAM_MEMBER') > -1) ? true : false;
+				this.name = original.attributes.name;
+				this.twitter = (original.attributes.contact &&
+								original.attributes.contact.twitter) ? original.attributes.contact.twitter : false;
+				this.eboard = (original.attributes.roles && original.attributes.roles.indexOf('TEAM_MEMBER') > -1) ? true : false;
 			};
 
 			// TODO: need to figure out how to assign alumni
@@ -118,7 +120,7 @@ request({
 				category = 'DemoDays';
 				var month = new Date(originalEvent.startDateTime).toLocaleString('en-US', {'month': 'long'});
 
-				if(dateArray && dateArray[0]){
+				if (dateArray && dateArray[0]) {
 					project.demodaysDate = month + ' ' + dateArray[0];
 					project.demodaysUrl = 'http://demodays.co/archive/' + dateArray[1] + '/' + dateArray[0];
 				}
