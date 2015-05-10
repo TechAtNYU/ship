@@ -17,11 +17,11 @@ lego: false
 	<div class="site site--fullbleed">
 		<h5 class="category">Featured</h5>
 		<ul class="posts">
-			{% for featured in site.data.featured %}
+			{% for featured in site.data.attributes.featured %}
 			<li class="project">
-				<a href="{{ featured.url }}"><img src="/lib/img/shipplace.png" data-src="{{ featured.imgUrl }}" title="{{featured.title}}"></a>
+				<a href="{{ featured.attributes.url }}"><img src="/lib/img/shipplace.png" data-src="{{ featured.attributes.imgUrl }}" title="{{featured.attributes.title}}"></a>
 				<div class="description">
-					<h1>{{ featured.title }}</h1>
+					<h1>{{ featured.attributes.title }}</h1>
 			
 					<div class="attribution">
 						{% for creator in featured.creator %}
@@ -33,10 +33,10 @@ lego: false
 						{% endfor %}
 	
 					</div>  
-					<p class="project__content">{{featured.description}}</p>
+					<p class="project__content">{{featured.attributes.description}}</p>
 					{% unless featured.inactive %}
-						{% if featured.url %}<p><a href="{{ featured.url }}" class="project-link">{{ featured.url }}</a>
-							<a href="#{{featured.category}}"><span class="featured__bucket--{{featured.category}}">{{featured.category}}</span></a>
+						{% if featured.attributes.url %}<p><a href="{{ featured.attributes.url }}" class="project-link">{{ featured.attributes.url }}</a>
+							<a href="#{{featured.attributes.category}}"><span class="featured__bucket--{{featured.attributes.category}}">{{featured.attributes.category}}</span></a>
 						</p>{% endif %}
 					{% endunless %}
 				</div>
@@ -54,10 +54,10 @@ lego: false
 			{% for demodays in site.data.demodays %}
 			<li class="project">
 					<div class="img__wrap">
-						<a href="{{ demodays.url }}"><img src="/lib/img/shipplace.png" data-src="{{ demodays.imgUrl }}" title="{{demodays.title}}"></a>
+						<a href="{{ demodays.attributes.url }}"><img src="/lib/img/shipplace.png" data-src="{{ demodays.attributes.imgUrl }}" title="{{demodays.attributes.title}}"></a>
 					</div>
-					<a href="{{ demodays.url }}">
-						<h2>{{ demodays.title }}</h2>
+					<a href="{{ demodays.attributes.url }}">
+						<h2>{{ demodays.attributes.title }}</h2>
 					</a>
 					
 					{% for creator in demodays.creator %}
@@ -86,7 +86,7 @@ lego: false
 			{% for library in site.data.libraries %}
 			<li class="project half">
 				<div class="description">
-					<h1>{{ library.title }}</h1>
+					<h1>{{ library.attributes.title }}</h1>
 			
 					<div class="attribution">
 						{% for creator in library.creator %}
@@ -100,10 +100,10 @@ lego: false
 						{% endfor %}
 	
 					</div>  
-					<p class="project__content">{{library.description}}</p>
+					<p class="project__content">{{library.attributes.description}}</p>
 					
 					{% unless library.inactive %}
-						{% if library.url %}<p><a href="{{ library.url }}" class="project-link">{{ library.url }}</a></p>{% endif %}
+						{% if library.attributes.url %}<p><a href="{{ library.attributes.url }}" class="project-link">{{ library.attributes.url }}</a></p>{% endif %}
 					{% endunless %}
 				</div>
 			</li>
@@ -118,9 +118,9 @@ lego: false
 		<ul class="posts">
 			{% for project in site.data.projects %}
 			<li class="project">
-				<a href="{{ project.url }}"><img src="/lib/img/shipplace.png" data-src="{{ project.imgUrl }}" title="{{project.title}}"></a>
+				<a href="{{ project.attributes.url }}"><img src="/lib/img/shipplace.png" data-src="{{ project.attributes.imgUrl }}" title="{{project.attributes.title}}"></a>
 				<div class="description">
-					<h1>{{ project.title }}</h1>
+					<h1>{{ project.attributes.title }}</h1>
 			
 					<div class="attribution">
 						{% for creator in project.creator %}
@@ -132,9 +132,9 @@ lego: false
 						{% endfor %}
 	
 					</div>  
-					<p class="project__content">{{project.description}}</p>
+					<p class="project__content">{{project.attributes.description}}</p>
 					{% unless project.inactive %}
-						{% if project.url %}<p><a href="{{ project.url }}" class="project-link">{{ project.url }}</a></p>{% endif %}
+						{% if project.attributes.url %}<p><a href="{{ project.attributes.url }}" class="project-link">{{ project.attributes.url }}</a></p>{% endif %}
 					{% endunless %}
 				</div>
 			</li>
@@ -150,9 +150,9 @@ lego: false
 		<ul class="posts">
 			{% for game in site.data.games %}
 			<li class="project">
-				<a href="{{ game.url }}"><img src="/lib/img/shipplace.png" data-src="{{ game.imgUrl }}" title="{{ game.title }}"></a>
+				<a href="{{ game.attributes.url }}"><img src="/lib/img/shipplace.png" data-src="{{ game.attributes.imgUrl }}" title="{{ game.attributes.title }}"></a>
 				<div class="description">
-					<h1>{{ game.title }}</h1>
+					<h1>{{ game.attributes.title }}</h1>
 
 					<div class="attribution">
 						{% for creator in game.creator %}
@@ -164,9 +164,9 @@ lego: false
 						{% endfor %}
 	
 					</div>  
-					<p class="project__content">{{game.description}}</p>
+					<p class="project__content">{{game.attributes.description}}</p>
 					{% unless game.inactive %}
-						{% if game.url %}<p><a href="{{ game.url }}" class="project-link">{{ game.url }}</a></p>{% endif %}
+						{% if game.attributes.url %}<p><a href="{{ game.attributes.url }}" class="project-link">{{ game.attributes.url }}</a></p>{% endif %}
 					{% endunless %}
 				</div>
 			</li>
@@ -181,9 +181,9 @@ lego: false
 		<ul class="posts">
 			{% for event in site.data.events %}
 			<li class="project">
-				<a href="{{ event.url }}"><img src="/lib/img/shipplace.png" data-src="{{ event.imgUrl }}" title="{{ event.title }}"></a>
+				<a href="{{ event.attributes.url }}"><img src="/lib/img/shipplace.png" data-src="{{ event.attributes.imgUrl }}" title="{{ event.attributes.title }}"></a>
 				<div class="description">
-					<h1>{{ event.title }}</h1>
+					<h1>{{ event.attributes.title }}</h1>
 			
 					<div class="attribution">
 						{% for creator in event.creator %}
@@ -195,9 +195,9 @@ lego: false
 						{% endfor %}
 	
 					</div>  
-					<p class="project__content">{{event.description}}</p>
+					<p class="project__content">{{event.attributes.description}}</p>
 					{% unless event.inactive %}
-						{% if event.url %}<p><a href="{{ event.url }}" class="project-link">{{ event.url }}</a></p>{% endif %}
+						{% if event.attributes.url %}<p><a href="{{ event.attributes.url }}" class="project-link">{{ event.attributes.url }}</a></p>{% endif %}
 					{% endunless %}
 				</div>
 			</li>
@@ -212,9 +212,9 @@ lego: false
 		<ul class="posts">
 			{% for startup in site.data.startups %}
 			<li class="project">
-				<a href="{{ startup.url }}"><img src="/lib/img/shipplace.png" data-src="{{ startup.imgUrl }}" title="{{ startup.title }}"></a>
+				<a href="{{ startup.attributes.url }}"><img src="/lib/img/shipplace.png" data-src="{{ startup.attributes.imgUrl }}" title="{{ startup.attributes.title }}"></a>
 				<div class="description">
-					<h1>{{ startup.title }}</h1>
+					<h1>{{ startup.attributes.title }}</h1>
 			
 					<div class="attribution">
 						{% for creator in startup.creator %}
@@ -226,9 +226,9 @@ lego: false
 						{% endfor %}
 	
 					</div>  
-					<p class="project__content">{{startup.description}}</p>
+					<p class="project__content">{{startup.attributes.description}}</p>
 					{% unless startup.inactive %}
-						{% if startup.url %}<p><a href="{{ startup.url }}" class="project-link">{{ startup.url }}</a></p>{% endif %}
+						{% if startup.attributes.url %}<p><a href="{{ startup.attributes.url }}" class="project-link">{{ startup.attributes.url }}</a></p>{% endif %}
 					{% endunless %}
 				</div>
 			</li>
