@@ -3,9 +3,9 @@ layout: post
 title: Freia Lisa Lobo
 school: NYU
 major: Major?
-image: https://static.squarespace.com/static/50354720c4aa2d2d3150d3d8/t/53d83172e4b0733761a23dd3/1406677366723/frie.png?format=300w
+image: http://files.tnyu.org/people/headshot/freia-lisa-lobo.jpg
 lego: http://files.tnyu.org/people/lego/freia.jpg
-position: BD / Marketing / Freshman Circuit
+position: Vice-President
 positionURL: http://www.techatnyu.org/position
 twitter: freialobo
 email: t@NYU email?
