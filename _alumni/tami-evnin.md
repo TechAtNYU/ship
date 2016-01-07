@@ -3,7 +3,7 @@ layout: post
 title: Tami Evnin
 school: Parsons
 major: Major?
-image: https://static.squarespace.com/static/50354720c4aa2d2d3150d3d8/t/50365837c4aa2d2d3152d120/1345738809318/?format=300w
+image: /lib/img/shipplace.png
 position: DesignDays
 positionURL: http://www.techatnyu.org/position
 now: NASDAQ OMX

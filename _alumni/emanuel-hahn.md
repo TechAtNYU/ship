@@ -3,7 +3,7 @@ layout: post
 title: Emanuel Hahn
 school: NYU
 major: Major?
-image: https://static.squarespace.com/static/50354720c4aa2d2d3150d3d8/t/522fa58ce4b0ad0c9682a642/1378854285108/Emanuel.png?format=300w
+image: /lib/img/shipplace.png
 lego: http://files.tnyu.org/people/lego/emanuel.jpg
 position: Chair
 positionURL: http://www.techatnyu.org/position

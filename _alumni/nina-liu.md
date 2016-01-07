@@ -3,7 +3,7 @@ layout: post
 title: Nina Liu
 school: NYU
 major: Major?
-image: https://static.squarespace.com/static/50354720c4aa2d2d3150d3d8/t/522ff62fe4b048babe0c8b73/1378874929225/Nina%20Liu.png?format=300w
+image: /lib/img/shipplace.png
 position: Startup Week
 positionURL: http://www.techatnyu.org/position
 now: Handy

@@ -6,11 +6,12 @@
 
 Ship projects are now fully generated from the API. To generate the right data, run:
 
-`cd _script`
-`node process.js`
+- `cd _script`
+- `npm install`
+- `node process.js`
+- `jekyll serve`
 
 ---
-
 
 #Development
 
@@ -18,9 +19,7 @@ Ship projects are now fully generated from the API. To generate the right data, 
 - LESS
 - CircleCI
 
-
 ----
-
 
 #People Schema
 

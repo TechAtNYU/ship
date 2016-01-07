@@ -3,7 +3,7 @@ layout: post
 title: Matylda Czarnecka
 school: NYU
 major: Major?
-image: https://static.squarespace.com/static/50354720c4aa2d2d3150d3d8/t/503657a084ae416826d264a8/1345738658585/?format=300w
+image: /lib/img/shipplace.png
 position: ??
 positionURL: http://www.techatnyu.org/position
 now: Internet Week

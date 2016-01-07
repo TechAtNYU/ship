@@ -3,7 +3,7 @@ layout: post
 title: Max Stoller
 school: NYU
 major: Major?
-image: https://dl.dropboxusercontent.com/u/758553/max.jpg
+image: /lib/img/shipplace.png
 position: ??
 positionURL: http://www.techatnyu.org/position
 now: Red/Green
