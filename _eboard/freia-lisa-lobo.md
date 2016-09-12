@@ -5,7 +5,7 @@ school: NYU
 major: Major?
 image: http://files.tnyu.org/people/headshot/freia-lisa-lobo.jpg
 lego: http://files.tnyu.org/people/lego/freia.jpg
-position: Vice-President
+position: Chair
 positionURL: http://www.techatnyu.org/position
 twitter: freialobo
 email: t@NYU email?

@@ -5,7 +5,7 @@ school: NYU
 major: Major?
 image: http://files.tnyu.org/people/headshot/terri-burns.jpg
 lego: http://files.tnyu.org/people/lego/terri.jpg
-position: President
+position: Chair
 twitter: tcburning
 email: t@NYU email?
 graduate: 2015
