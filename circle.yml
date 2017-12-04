@@ -8,7 +8,7 @@ machine:
     America/Los_Angeles
   ruby:
     version:
-      2.1.1
+      2.2.5
   node:
     version: 
       0.12.2
