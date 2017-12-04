@@ -24,7 +24,6 @@ test:
 
 deployment:
   production:
-    branch: master
+    branch: ci-test
     commands:
       - jekyll build
-      - turbolift -u $RAXUSER -a $RAXAPIKEY --os-rax-auth $RAXREGION upload -s $HOME/$CIRCLE_PROJECT_REPONAME/_site -c $CONTAINER
